@@ -1,0 +1,4343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CHART RACE_DATE="2023-10-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://info.trackmaster.com/xmlSchema/tchSchema.xsd">
+   <TRACK>
+      <CODE>CTD</CODE>
+      <NAME>CENTURY DOWNS</NAME>
+   </TRACK>
+<RACE NUMBER="1">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Maiden Claiming</TYPE>
+   <PURSE>13500</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    1  3 1/2F Dirt CR: 59. Maiden Claiming Purse 13500. FOR MAIDENS, TWO YEARS OLD. Weight, 122 lbs. Claiming Price $16,000. Alberta Bred Claiming Price $20,000.      </RACE_TEXT>
+   <AGE_RESTRICTIONS>02   </AGE_RESTRICTIONS>
+   <DISTANCE>350</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>59</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>12:46</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>22.40</FRACTION_1>
+   <FRACTION_2>0.00</FRACTION_2>
+   <FRACTION_3>0.00</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>39.92</WIN_TIME>
+   <PACE_CALL1>53</PACE_CALL1>
+   <PACE_CALL2></PACE_CALL2>
+   <PACE_FINAL>53</PACE_FINAL>
+   <PAR_TIME>0.00</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>5927</SPLIT_1>
+      <SPLIT_2>1976</SPLIT_2>
+      <SPLIT_3>988</SPLIT_3>
+      <SPLIT_4>494</SPLIT_4>
+      <SPLIT_5>198</SPLIT_5>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>1219</POOL_TOTAL>
+      <WINNERS> 1-4</WINNERS>
+      <PAYOFF>33.50</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>1352</POOL_TOTAL>
+      <WINNERS> 1-4-2</WINNERS>
+      <PAYOFF>27.40</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>3107.00</WPS_POOL>
+   <FOOTNOTES>HE LIKES WINNING vied hard inside for the early lead, gained a short advantage through the turn, opened up into stretch, and was ridden out. HOCKEYDAYINCANADA vied four to five wide to the turn, dueled determinedly outside of EL PASO, dug in the final strides, and won the nod. EL PASO hurried away but was outsprinted to the turn, battled inside and lost the nod after a game effort. COOL MOOD raced greenly in the turn, and lacked a bid. JOKERSRWILD AGAIN trailed throughout.</FOOTNOTES>
+      <ENTRY>
+         <NAME>He Likes Winning</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTM</CODE>
+               <NAME>CENTURY MILE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-08-19</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>2</AGE>
+         <SEX>
+            <CODE>C</CODE>
+            <DESCRIPTION>Colt</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP/>
+         <DOLLAR_ODDS>3.45</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>16000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>53</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Dane</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Nelson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>156255</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Craig</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>Robert</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>278102</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Don B. Danard</OWNER>
+         <COMMENT>vied hard, gained, ridden out</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>CH</CODE>
+               <DESCRIPTION>Chestnut</DESCRIPTION>
+            </COLOR>
+            <SIRE>Collected</SIRE>
+            <DAM>Golden Orb</DAM>
+            <DAM_SIRE>Orb</DAM_SIRE>
+            <BREEDER>Speedway Stables LLC</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>8.90</WIN_PAYOFF>
+         <PLACE_PAYOFF>6.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.30</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050050050051052055061056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>El Paso</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-23</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>2</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.1</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>41</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Whitehall</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158439</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rodney</FIRST_NAME>
+            <LAST_NAME>Cone</LAST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>41230</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Jennifer A. Smith</OWNER>
+         <COMMENT>hurried away, outsprinted, battled inside, lost nod</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.90</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050050050052061062061064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Jokersrwild Again</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>122</WEIGHT>
+         <AGE>2</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP/>
+         <DOLLAR_ODDS>2.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>7.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>12.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>11.1</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>11</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Francisco</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Guerrero</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169832</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jerri</FIRST_NAME>
+            <LAST_NAME>Robertson</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>41251</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Dale Ellson</OWNER>
+         <COMMENT>trailed throughout</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050050050052061054059055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Hockeydayincanada</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>122</WEIGHT>
+         <AGE>2</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP/>
+         <DOLLAR_ODDS>3.85</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>16000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>41</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kemar</FIRST_NAME>
+            <MIDDLE_NAME>Richard</MIDDLE_NAME>
+            <LAST_NAME>Chase</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173135</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Colleen</FIRST_NAME>
+            <LAST_NAME>O&apos;Hagan</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>954342</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Ed Esquirol</OWNER>
+         <COMMENT>vied 4-5w, dueled determinedly, won nod</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>6.10</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.80</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050050050052061057054061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Cool Mood</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>121</WEIGHT>
+         <AGE>2</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>6.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>6.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>13.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>10.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>14</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Richard</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Lunan</LAST_NAME>
+            <SUFFIX/>
+            <KEY>161274</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Craig</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>Robert</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>278102</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kropp Janet Kropp Gary and Dory Bill</OWNER>
+         <COMMENT>raced greenly, lacked bid</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050050050052053056060063</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="2">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>9200</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    2  7 1/2F Dirt CR: 64. Claiming Purse 9200. FOR FILLIES AND MARES THREE YEARS OLD  AND UPWARD WHICH HAVE NEVER WON THREE RACES OR ALBERTA BREDS WHICH HAVE NEVER WON FOUR RACES. Three Year Olds, 122 lbs.; Older, 125 lbs. Non-winners Of A Race In 2023 Allowed 2 lbs. Claiming Price $3,500. Alberta Bre d Claiming Price $4,500.    </RACE_TEXT>
+   <AGE_RESTRICTIONS>3UF C</AGE_RESTRICTIONS>
+   <DISTANCE>750</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>64</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>2,3,4</STRT_DESC>
+   <POST_TIME>1:16</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>22.51</FRACTION_1>
+   <FRACTION_2>46.24</FRACTION_2>
+   <FRACTION_3>72.00</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>92.99</WIN_TIME>
+   <PACE_CALL1>95</PACE_CALL1>
+   <PACE_CALL2>81</PACE_CALL2>
+   <PACE_FINAL>64</PACE_FINAL>
+   <PAR_TIME>92.72</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>4039</SPLIT_1>
+      <SPLIT_2>1346</SPLIT_2>
+      <SPLIT_3>673</SPLIT_3>
+      <SPLIT_4>337</SPLIT_4>
+      <SPLIT_5>135</SPLIT_5>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>424</POOL_TOTAL>
+      <WINNERS> 1-4</WINNERS>
+      <PAYOFF>152.30</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>5050</POOL_TOTAL>
+      <WINNERS> 4-2</WINNERS>
+      <PAYOFF>35.60</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>6645</POOL_TOTAL>
+      <WINNERS> 4-2-1</WINNERS>
+      <PAYOFF>30.75</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>10166.00</WPS_POOL>
+   <FOOTNOTES>CUVEE TEE jostled leaving, trailed the field, moved up four wide leaving the backstretch then swept the lead, and remained clear. SWIFT SWALLOW brushed leaving, allowed to settle inside, shifted out then went in pursuit of the leader, improved position, and finished evenly. REBATE pressed the early pace, and faded. PERPETUAL BLISS broke outward, reserved off the early pacesetters, lodged a bid in the final turn but failed to threaten. ARANY jostled away from the gate, set a pressured pace in the two path, dropped back then fell, did not finish, and was vanned off. STEWARDS INQUIRY- The Stewards conducted an inquiry into the final turn of the race but made no change after review.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Rebate</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>1.45</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>3500</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>57</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keihton</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Natera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>166302</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Craig</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>Robert</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>278102</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Dialed In Racing Stable</OWNER>
+         <COMMENT>pressed pace, faded</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.30</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052059053061058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Swift Swallow</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>1.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>4500</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>1.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>2.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>60</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Rafael</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Zenteno Jr</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148510</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rick</FIRST_NAME>
+            <LAST_NAME>Hedge</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>37463</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Glen Stouffer</OWNER>
+         <COMMENT>brushed, settled, shifted out, improved, finished evenly</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.10</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050052059059062064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Arany</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>25.05</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>4500</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>0.00</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>0.00</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>0</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Andre</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Martin</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158479</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rodney</FIRST_NAME>
+            <LAST_NAME>Cone</LAST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>41230</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Antoine Kristina and Smith Jennifer A</OWNER>
+         <COMMENT>jostled, set pace, dropped back, DNF, vanned off</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050053052057054064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Cuvee Tee</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>6.25</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>4500</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>0.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>64</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kemar</FIRST_NAME>
+            <MIDDLE_NAME>Richard</MIDDLE_NAME>
+            <LAST_NAME>Chase</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173135</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Anderson</FIRST_NAME>
+            <LAST_NAME>Ward</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>964081</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Anderson Ward</OWNER>
+         <COMMENT>jostled, moved up 4w, swept lead, remained clear</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>B</CODE>
+               <DESCRIPTION>Bay</DESCRIPTION>
+            </COLOR>
+            <SIRE>Teeman</SIRE>
+            <DAM>Cuvecious</DAM>
+            <DAM_SIRE>Cuvee</DAM_SIRE>
+            <BREEDER>Lorn Nysted</BREEDER>
+            <BRED_LOCATION>
+               <CODE>AB</CODE>
+               <DESCRIPTION>Alberta</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>14.50</WIN_PAYOFF>
+         <PLACE_PAYOFF>5.90</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050053054053061058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Perpetual Bliss</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTM</CODE>
+               <NAME>CENTURY MILE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-01</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>120</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>3.35</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>4500</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>1.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>50</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Da-Sean</FIRST_NAME>
+            <MIDDLE_NAME>Zavier</MIDDLE_NAME>
+            <LAST_NAME>Gaskin</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173136</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ron</FIRST_NAME>
+            <LAST_NAME>Grieves</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>41257</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Bar None Ranches Ltd.</OWNER>
+         <COMMENT>broke outward, reserved, no threat</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051053062063055</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="3">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Allowance</TYPE>
+   <PURSE>23000</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    3  1 1/16M Dirt CR: 95. Allowance Purse 23000. FOR THREE YEAR OLDS AND UPWARD. Three Year Olds, 122 lbs.; Older, 125 lbs.      </RACE_TEXT>
+   <AGE_RESTRICTIONS>3U   </AGE_RESTRICTIONS>
+   <DISTANCE>850</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>95</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>2:06</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>23.08</FRACTION_1>
+   <FRACTION_2>46.77</FRACTION_2>
+   <FRACTION_3>71.01</FRACTION_3>
+   <FRACTION_4>96.93</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>103.68</WIN_TIME>
+   <PACE_CALL1>89</PACE_CALL1>
+   <PACE_CALL2>96</PACE_CALL2>
+   <PACE_FINAL>94</PACE_FINAL>
+   <PAR_TIME>103.32</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>10098</SPLIT_1>
+      <SPLIT_2>3366</SPLIT_2>
+      <SPLIT_3>1683</SPLIT_3>
+      <SPLIT_4>842</SPLIT_4>
+      <SPLIT_5>337</SPLIT_5>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>7361</POOL_TOTAL>
+      <WINNERS> 5-3</WINNERS>
+      <PAYOFF>30.30</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>8619</POOL_TOTAL>
+      <WINNERS> 5-3-2</WINNERS>
+      <PAYOFF>52.05</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>13823.00</WPS_POOL>
+   <FOOTNOTES>SLAATS was under a snug hold while three wide leaving the opening turn, gained closer order outside then took over, and opened up to an easy victory. KYSTONE saved ground from the rail, chased in the final turn, was kept under heavy urging, and got by late for second. QUINTO SOL pressed the early pace, gained an advantage entering the backstretch, was overtaken by SLAATS nearing the final turn, and faded gradually. I&apos;M DASHING trailed the field, and offered a late mild bid. SMART PLAY set a pressured pace, was overtaken, and was done early.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Smart Play</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-16</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.10</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>9.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>12.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>74</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Francisco</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Guerrero</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169832</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jerri</FIRST_NAME>
+            <LAST_NAME>Robertson</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>41251</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kane Tim Robertson Jerri R Hardy Lesley and Chieffo Heather</OWNER>
+         <COMMENT>set pace, done early</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050053053061056060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Quinto Sol</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>9.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>80</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Dane</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Nelson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>156255</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Gonzalo</FIRST_NAME>
+            <LAST_NAME>Anderson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>966144</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Cates Crystal and Anderson Gonzalo</OWNER>
+         <COMMENT>pressed pace, gained, overtaken, faded gradually</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.70</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052057059062060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Kystone</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-01</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>9.85</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>8.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>82</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Rafael</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Zenteno Jr</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148510</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rick</FIRST_NAME>
+            <LAST_NAME>Hedge</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>37463</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Empire Equestrian Kerredge Farm Stock Curtis McPherson Cam and Lenheiser Ray</OWNER>
+         <COMMENT>saved ground, chased, urged, got by</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>7.80</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.90</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052059053057060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>I&apos;m Dashing</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>4.05</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>5</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>8.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>10.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>78</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>N&apos;Rico</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Prescod</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171228</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Madison</FIRST_NAME>
+            <LAST_NAME>Zielke</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>971628</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Fischer Duane and Demmings Brad</OWNER>
+         <COMMENT>trailed, late mild bid</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052060059063059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Slaats</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>ASD</CODE>
+               <NAME>ASSINIBOIA DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-19</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>1.65</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>1.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>94</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keishan</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Balgobin</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148582</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Gonzalo</FIRST_NAME>
+            <LAST_NAME>Anderson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>966144</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kirk Sutherland</OWNER>
+         <COMMENT>snug hold 3w, gained, opened up</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>B</CODE>
+               <DESCRIPTION>Bay</DESCRIPTION>
+            </COLOR>
+            <SIRE>Palace</SIRE>
+            <DAM>Tregrandibambini</DAM>
+            <DAM_SIRE>Stonesider</DAM_SIRE>
+            <BREEDER>Hanzly Albina, Ronald Blake &amp; NickSallusto</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>5.30</WIN_PAYOFF>
+         <PLACE_PAYOFF>4.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.50</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051053054062064</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="4">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Maiden Claiming</TYPE>
+   <PURSE>11500</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    4  6F Dirt CR: 56. Maiden Claiming Purse 11500. FOR MAIDENS, FILLIES AND MARES THREE YEARS OLD  AND UPWARD. Three Year Olds, 122 lbs.; Older, 125 lbs. Claiming Price $16,000. Alberta Bred Claiming Price $20,000.      </RACE_TEXT>
+   <AGE_RESTRICTIONS>3UF  </AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>56</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>2:28</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>23.11</FRACTION_1>
+   <FRACTION_2>46.73</FRACTION_2>
+   <FRACTION_3>0.00</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>71.88</WIN_TIME>
+   <PACE_CALL1>74</PACE_CALL1>
+   <PACE_CALL2>60</PACE_CALL2>
+   <PACE_FINAL>59</PACE_FINAL>
+   <PAR_TIME>72.70</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>5049</SPLIT_1>
+      <SPLIT_2>1683</SPLIT_2>
+      <SPLIT_3>842</SPLIT_3>
+      <SPLIT_4>421</SPLIT_4>
+      <SPLIT_5>168</SPLIT_5>
+      <SPLIT_6>88</SPLIT_6>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>796</POOL_TOTAL>
+      <WINNERS> 4-5-2</WINNERS>
+      <PAYOFF>436.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Pick 4</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>1846</POOL_TOTAL>
+      <WINNERS> 1-4-5-2</WINNERS>
+      <PAYOFF>692.25</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>1097</POOL_TOTAL>
+      <WINNERS> 5-2</WINNERS>
+      <PAYOFF>49.00</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>2933</POOL_TOTAL>
+      <WINNERS> 2-6</WINNERS>
+      <PAYOFF>39.00</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>1344</POOL_TOTAL>
+      <WINNERS> 2-6-5-1</WINNERS>
+      <PAYOFF>642.40</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="6">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>2625</POOL_TOTAL>
+      <WINNERS> 2-6-5</WINNERS>
+      <PAYOFF>179.65</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>8996.00</WPS_POOL>
+   <FOOTNOTES>BLAZING SUN quickly went to the front, responded to a looming threat at the head of the lane, and held safely. TENDER LOVE raced four wide into the first turn, chased the pacesetters in the backstretch, loomed boldly nearing the final turn, and was along in time for place. STARMA stalked the pace from the two path, rallied inside then weakened late stretch. DARKCLOUDOFSMOKE lagged early, and offered little. SHES A COOL CAT chased and tired. GOTTALOVETHATGIRL outrun throughout.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Darkcloudofsmoke</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>27.45</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>8.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>10.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>9.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>10.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>35</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Rashaun</FIRST_NAME>
+            <MIDDLE_NAME>Delane Tristan</MIDDLE_NAME>
+            <LAST_NAME>Griffith</LAST_NAME>
+            <SUFFIX/>
+            <KEY>170151</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Karline</FIRST_NAME>
+            <LAST_NAME>Kingston</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>974302</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Perry Pellerin</OWNER>
+         <COMMENT>lagged early, offered little</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050053053058063057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Blazing Sun</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-01</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>7</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP/>
+         <DOLLAR_ODDS>5.95</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>59</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keihton</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Natera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>166302</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Alivia</FIRST_NAME>
+            <LAST_NAME>Kettleson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>963597</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Beaverford Denise and Ball Lisa</OWNER>
+         <COMMENT>led, held safely</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Boadini</SIRE>
+            <DAM>Chimesplay</DAM>
+            <DAM_SIRE>Teeman</DAM_SIRE>
+            <BREEDER>Bob &amp; Denise Beaverford</BREEDER>
+            <BRED_LOCATION>
+               <CODE>AB</CODE>
+               <DESCRIPTION>Alberta</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>13.90</WIN_PAYOFF>
+         <PLACE_PAYOFF>6.10</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051059062062056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Shes a Cool Cat</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP/>
+         <DOLLAR_ODDS>9.35</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>7.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>9.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>9.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>10.6</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>35</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Whitehall</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158439</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Deanne</FIRST_NAME>
+            <LAST_NAME>Davies</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>209327</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Sheridan Lehouillier</OWNER>
+         <COMMENT>chased, tired</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050053052059060063</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Gottalovethatgirl</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>ASD</CODE>
+               <NAME>ASSINIBOIA DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-06</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>1.15</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>16000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>14.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>24.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>30.6</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>0</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Dane</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Nelson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>156255</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Karline</FIRST_NAME>
+            <LAST_NAME>Kingston</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>974302</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kane Kachur</OWNER>
+         <COMMENT>outrun throughout</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052053057056064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Starma</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-01</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>7.50</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>20000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>52</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>N&apos;Rico</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Prescod</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171228</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Craig</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>Robert</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>278102</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Mar Lee Stables</OWNER>
+         <COMMENT>stalked 2pth, rallied inside, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>4.30</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051052055059055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Tender Love</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-01</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>2.10</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>16000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>56</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Rafael</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Zenteno Jr</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148510</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>William</FIRST_NAME>
+            <LAST_NAME>Leech</LAST_NAME>
+            <MIDDLE_NAME>H</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>118389</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Brigden William R Guest Trent and Erikson Dan</OWNER>
+         <COMMENT>4w, chased, loomed boldly, along 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.10</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051057053061062</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="5">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>10000</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    5  7 1/2F Dirt CR: 72. Claiming Purse 10000. FOR THREE YEAR OLDS AND UPWARD WHICH HAVE NEVER WON TWO RACES. Three Year Olds, 122 lbs.; Older, 125 lbs. Non-winners Of A Race In 2023 Allowed 2 lbs. Claiming Price $6,000 (Lesser Claiming Races For $3,500 (AB $4,500) Or Less at Century Mile/Downs Not Co nsidered In Eligibility). Alberta Bred Claiming Price $8,000.    </RACE_TEXT>
+   <AGE_RESTRICTIONS>3U  NW2LX</AGE_RESTRICTIONS>
+   <DISTANCE>750</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>72</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>Poor</STRT_DESC>
+   <POST_TIME>2:55</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>22.46</FRACTION_1>
+   <FRACTION_2>44.81</FRACTION_2>
+   <FRACTION_3>70.65</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>91.59</WIN_TIME>
+   <PACE_CALL1>97</PACE_CALL1>
+   <PACE_CALL2>110</PACE_CALL2>
+   <PACE_FINAL>79</PACE_FINAL>
+   <PAR_TIME>91.94</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>4391</SPLIT_1>
+      <SPLIT_2>1464</SPLIT_2>
+      <SPLIT_3>732</SPLIT_3>
+      <SPLIT_4>366</SPLIT_4>
+      <SPLIT_5>146</SPLIT_5>
+      <SPLIT_6>88</SPLIT_6>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>4414</POOL_TOTAL>
+      <WINNERS> 3-7</WINNERS>
+      <PAYOFF>11.80</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>4204</POOL_TOTAL>
+      <WINNERS> 3-7-2-1</WINNERS>
+      <PAYOFF>41.35</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>3203</POOL_TOTAL>
+      <WINNERS> 3-7-2</WINNERS>
+      <PAYOFF>21.80</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED>
+      <CLAIM NUMBER="1">
+      <HORSE>LAHUN</HORSE>
+      <PRICE>6000</PRICE>
+         <OWNER>Jack Bolin</OWNER>
+         <TRAINER>
+            <FIRST_NAME>Seymour</FIRST_NAME>
+            <LAST_NAME>Biggs</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+         </TRAINER>
+      </CLAIM>
+   </CLAIMED>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>7681.00</WPS_POOL>
+   <FOOTNOTES>ANOTHERFORBROOKS sandwiched leaving then settled near the back of the field, quickly gained closer order through the backstretch, drove three wide at the head of the lane, closed steadily, and was along in time. LAHUN raced in closest pursuit, set sights on LOLLIPOP KID then overtook the lead, was showing signs of tiring, and was caught late. LAST OF WAR broke outward bumping ANOTHERFORBROOKS, raced wide through the backstretch, and rallied belatedly for show. AMEER saved ground inside, lodged a bid into the stretch, and was bested late. LOLLIPOP KID broke inward bumping inside foes, drew away to good margins entering the backstretch, saw the margins diminish into the far turn, was overtaken then gave way. SUPER D&apos;ORO squeezed out away from the gate and was unable to recover from the poor start. STEWARDS INQUIRY- The Stewards conducted an inquiry into the start of the race but made no change after a review of the film.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Ameer</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.45</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>8000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>14.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>72</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Linton</FIRST_NAME>
+            <MIDDLE_NAME>Leon</MIDDLE_NAME>
+            <LAST_NAME>Steadman</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173311</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Seymour</FIRST_NAME>
+            <LAST_NAME>Biggs</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>971956</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Jacks Stable</OWNER>
+         <COMMENT>saved ground, bid, bested</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051056059059056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Last of War</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>7</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>11.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>8000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>17.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>74</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Trevor</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Simpson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>16075</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rod</FIRST_NAME>
+            <LAST_NAME>Heggie</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>41319</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Max Gibb</OWNER>
+         <COMMENT>broke outward, wide, rallied belatedly</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>4.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050053052055063056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Anotherforbrooks</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>120</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.65</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>6000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>9.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>14.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>79</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keihton</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Natera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>166302</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Cheryl</FIRST_NAME>
+            <LAST_NAME>Humbke</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>971327</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>White Pine Ranch</OWNER>
+         <COMMENT>sandwiched, gained, drove 3w, closed steadily, along</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>GR/RO</CODE>
+               <DESCRIPTION>Gray or Roan</DESCRIPTION>
+            </COLOR>
+            <SIRE>I&apos;ll Have Another</SIRE>
+            <DAM>Dressed to a T</DAM>
+            <DAM_SIRE>Square Eddie</DAM_SIRE>
+            <BREEDER>Reddam Racing, LLC</BREEDER>
+            <BRED_LOCATION>
+               <CODE>CA</CODE>
+               <DESCRIPTION>California</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>5.30</WIN_PAYOFF>
+         <PLACE_PAYOFF>2.80</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.50</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051058055063060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Super d&apos;Oro</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LBG</CODE>
+               <NAME>LETHBRIDGE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>7</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>38.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>6000</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>16.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>32.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>25.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>27.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>29</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Da-Sean</FIRST_NAME>
+            <MIDDLE_NAME>Zavier</MIDDLE_NAME>
+            <LAST_NAME>Gaskin</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173136</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Allan</FIRST_NAME>
+            <LAST_NAME>Brown</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>117650</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Andre Ellis</OWNER>
+         <COMMENT>squeezed, no recovery</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052056060054057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Lollipop Kid</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-30</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.65</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>6000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>69</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Renaldo</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Cumberbatch</LAST_NAME>
+            <SUFFIX/>
+            <KEY>83738</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Shelley</FIRST_NAME>
+            <LAST_NAME>Brown</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>268270</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Shelley Brown</OWNER>
+         <COMMENT>bumped, drew away, overtaken, gaveway</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052057059060059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Lahun</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-17</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.95</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>6000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>77</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Whitehall</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158439</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Karline</FIRST_NAME>
+            <LAST_NAME>Kingston</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>974302</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Don B. Danard</OWNER>
+         <COMMENT>closest pursuit, overtook, caught late</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.10</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.90</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051055060062062</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>The Italian Man</NAME>
+         <BREED>TB</BREED>
+         <REASON>Veterinarian</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LBG</CODE>
+               <NAME>LETHBRIDGE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+<RACE NUMBER="6">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>10000</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    6  6F Dirt CR: 71. Claiming Purse 10000. FOR FILLIES AND MARES THREE YEARS OLD  AND UPWARD WHICH HAVE NEVER WON TWO RACES. Three Year Olds, 122 lbs.; Older, 125 lbs. Non-winners Of A Race In 2023 Allowed 2 lbs. Claiming Price $6,000 (Lesser Claiming Races For $3,500 ($4,500) at Century Mile/Down s Or Less Not Considered In Eligibility). Alberta Bred Claiming Price $8,000.    </RACE_TEXT>
+   <AGE_RESTRICTIONS>3UF NW2LX</AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>71</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>5</STRT_DESC>
+   <POST_TIME>3:23</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>23.44</FRACTION_1>
+   <FRACTION_2>47.42</FRACTION_2>
+   <FRACTION_3>0.00</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>72.34</WIN_TIME>
+   <PACE_CALL1>61</PACE_CALL1>
+   <PACE_CALL2>46</PACE_CALL2>
+   <PACE_FINAL>64</PACE_FINAL>
+   <PAR_TIME>71.60</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>4391</SPLIT_1>
+      <SPLIT_2>1464</SPLIT_2>
+      <SPLIT_3>732</SPLIT_3>
+      <SPLIT_4>366</SPLIT_4>
+      <SPLIT_5>146</SPLIT_5>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>4619</POOL_TOTAL>
+      <WINNERS> 3-4</WINNERS>
+      <PAYOFF>34.80</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>2358</POOL_TOTAL>
+      <WINNERS> 3-4-6-5</WINNERS>
+      <PAYOFF>79.55</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>3165</POOL_TOTAL>
+      <WINNERS> 3-4-6</WINNERS>
+      <PAYOFF>68.75</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>10476.00</WPS_POOL>
+   <FOOTNOTES>SOCIAL CUES quickly went to the front, took pressure through the backstretch, lost a slim advantage in the far turn, asked to quicken then regained the lead, and held firm. GOLDIE SOCKS sat just off the pace early, prompted action while three to four wide, rallied between rivals in the final turn, and held for place. QUEEN RHONDA went four wide through the first turn, moved up while four to five wide to contest the front, rallied three wide off the final turn, and finished evenly. KEEPMEINPOWER broke awkwardly, tracked wide into the backstretch, and lacked a closing response. ANNA&apos;S IMAGE saved inside and tired early.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Anna&apos;s Image</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>3.85</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>6000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>2.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>52</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Dane</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Nelson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>156255</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Craig</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>Robert</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>278102</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Dialed In Racing Stable</OWNER>
+         <COMMENT>saved inside, tired early</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052061053059059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Social Cues</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTM</CODE>
+               <NAME>CENTURY MILE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-07-07</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>121</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>2.45</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>8000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>64</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Francisco</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Guerrero</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169832</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Craig</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>Robert</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>278102</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Indyrock Racing and Smith Greta</OWNER>
+         <COMMENT>led, took pressure, lost advantage, regained lead, held firm</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>B</CODE>
+               <DESCRIPTION>Bay</DESCRIPTION>
+            </COLOR>
+            <SIRE>Declassify</SIRE>
+            <DAM>Itsmy Zipcode</DAM>
+            <DAM_SIRE>City Zip</DAM_SIRE>
+            <BREEDER>Stone Ranches</BREEDER>
+            <BRED_LOCATION>
+               <CODE>AB</CODE>
+               <DESCRIPTION>Alberta</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>6.90</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.80</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.70</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051060062058059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Goldie Socks</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>4.55</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>8000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>63</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Whitehall</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158439</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Robert</FIRST_NAME>
+            <LAST_NAME>Kingston</LAST_NAME>
+            <MIDDLE_NAME>C</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>31517</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Willow Creek Farms</OWNER>
+         <COMMENT>stalked, prompted 3-4w, rallied between, held place</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>4.70</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050053052060060055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Keepmeinpower</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-24</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>3.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>8000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>1.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>57</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keihton</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Natera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>166302</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rick</FIRST_NAME>
+            <LAST_NAME>Hedge</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>37463</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Deitz Lloyd and Kerredge Farm</OWNER>
+         <COMMENT>broke awkwardly, tracked wide, lacked close</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050053053057054055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Queen Rhonda</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-30</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>2.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>6000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>0.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>62</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>N&apos;Rico</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Prescod</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171228</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ron</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <MIDDLE_NAME>K</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>13569</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Smith Linda Barker Carole Stone Tina and Stone Janet</OWNER>
+         <COMMENT>4w, bid 4-5w, rallied 3w, finished evenly</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.50</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052061058058057</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Family Is Gold</NAME>
+         <BREED>TB</BREED>
+         <REASON>Veterinarian</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LBG</CODE>
+               <NAME>LETHBRIDGE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-10-08</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Graceful Spirit</NAME>
+         <BREED>TB</BREED>
+         <REASON>Veterinarian</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-16</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+<RACE NUMBER="7">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Allowance Optional Claiming</TYPE>
+   <PURSE>19500</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    7  6F Dirt CR: 76. Allowance Optional Claiming Purse 19500. FOR FILLIES AND MARES THREE YEARS OLD  AND UPWARD WHICH HAVE NEVER WON TWO RACES OR OPTIONAL CLAIMING  $12,000 WHICH HAVE NEVER WON THREE RACES OR ALBERTA BREDS WHICH HAVE NEVER WON FOUR RACES. Three Year Olds, 122 lbs.; Older, 125 lbs. Non-winners Of A R ace In 2023 Allowed 2 lbs. Claiming Price $12,000. Alberta Bred Claiming Price $15,000.    </RACE_TEXT>
+   <AGE_RESTRICTIONS>3UF C</AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>76</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>4,5</STRT_DESC>
+   <POST_TIME>3:46</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>22.25</FRACTION_1>
+   <FRACTION_2>45.60</FRACTION_2>
+   <FRACTION_3>0.00</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>72.14</WIN_TIME>
+   <PACE_CALL1>109</PACE_CALL1>
+   <PACE_CALL2>82</PACE_CALL2>
+   <PACE_FINAL>67</PACE_FINAL>
+   <PAR_TIME>71.22</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>8562</SPLIT_1>
+      <SPLIT_2>2854</SPLIT_2>
+      <SPLIT_3>1427</SPLIT_3>
+      <SPLIT_4>713</SPLIT_4>
+      <SPLIT_5>285</SPLIT_5>
+      <SPLIT_6>88</SPLIT_6>
+      <SPLIT_7>88</SPLIT_7>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>5773</POOL_TOTAL>
+      <WINNERS> 2-5</WINNERS>
+      <PAYOFF>34.10</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>3486</POOL_TOTAL>
+      <WINNERS> 2-5-1-6</WINNERS>
+      <PAYOFF>297.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>4431</POOL_TOTAL>
+      <WINNERS> 2-5-1</WINNERS>
+      <PAYOFF>152.35</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>9013.00</WPS_POOL>
+   <FOOTNOTES>ECHO CREEK rated well off the pace inside, advanced quickly in the far turn, found clear running room inside then overtook the lead, and held under a late threat from MONOPOLIZE. MONOPOLIZE broke slow, took closer order in the far turn, shifted out to the two path at the head of the lane, surged late and missed. FASTESTGIRLINTOWN broke alertly then contested the early pace inside of WHERE&apos;S THE PUMPS, inherited the lead briefly, and flattened in the stretch. MISS MCBRIDE allowed to settle early, and bid belatedly. OLIVE&apos;S CANDY was outsprinted through the turn, chased three wide, and weakened late. NO MORE JO KING brushed early and never reached contention. WHERE&apos;S THE PUMPS contended the early pace outside of FASTESTGIRLINTOWN, and was done early.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Fastestgirlintown</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-16</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>7.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>15000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.4</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>59</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keishan</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Balgobin</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148582</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Gonzalo</FIRST_NAME>
+            <LAST_NAME>Anderson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>966144</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>C and H Duggan Farms Ltd</OWNER>
+         <COMMENT>alertly, contested pace, flattened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>4.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050053052060058059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Echo Creek</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-16</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.45</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>67</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Jose</FIRST_NAME>
+            <MIDDLE_NAME>Mariano</MIDDLE_NAME>
+            <LAST_NAME>Asencio</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158296</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jerri</FIRST_NAME>
+            <LAST_NAME>Robertson</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>41251</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Gerald Babchishin</OWNER>
+         <COMMENT>reserved, bid inside, held</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Iliad</SIRE>
+            <DAM>Smoke Em All</DAM>
+            <DAM_SIRE>Niigon</DAM_SIRE>
+            <BREEDER>Gerald Babchishin</BREEDER>
+            <BRED_LOCATION>
+               <CODE>AB</CODE>
+               <DESCRIPTION>Alberta</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>6.90</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.60</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.80</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052054060060057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Olive&apos;s Candy</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>ASD</CODE>
+               <NAME>ASSINIBOIA DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-20</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.95</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.9</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>56</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Trevor</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Simpson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>16075</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Tom</FIRST_NAME>
+            <LAST_NAME>Gardipy</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX>Jr</SUFFIX>
+            <KEY>9817</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Tom Gardipy, Jr.</OWNER>
+         <COMMENT>outsprinted, chased 3w, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051055057062064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>No More Jo King</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-17</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>11.35</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>15000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>7</POSITION>
+            <LENGTHS>8.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>7</POSITION>
+            <LENGTHS>10.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.9</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>51</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Enrique</FIRST_NAME>
+            <MIDDLE_NAME>Alonzo</MIDDLE_NAME>
+            <LAST_NAME>Gonzalez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148965</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jerri</FIRST_NAME>
+            <LAST_NAME>Robertson</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>41251</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>No Lucks Given Syndicate Ortiz Cooper and Robertson Jerri R</OWNER>
+         <COMMENT>brushed, no conention</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052059059059055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Monopolize</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-17</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>6.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>7</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>8.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>66</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>N&apos;Rico</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Prescod</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171228</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ron</FIRST_NAME>
+            <LAST_NAME>Grieves</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>41257</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Bar None Ranches Ltd.</OWNER>
+         <COMMENT>broke slow, shifted 2w, surged late, missed</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>5.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.50</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051059054057059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Miss McBride</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-17</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>3.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.6</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>56</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Francisco</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Guerrero</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169832</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Gonzalo</FIRST_NAME>
+            <LAST_NAME>Anderson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>966144</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Cates Crystal and Anderson Gonzalo</OWNER>
+         <COMMENT>settled, bid belatedly</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052060057055064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Where&apos;s the Pumps</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>ASD</CODE>
+               <NAME>ASSINIBOIA DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-06</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>6.15</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>7</POST_POS>
+         <CLAIM_PRICE>12000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>7</POSITION>
+            <LENGTHS>9.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>7</POSITION>
+            <LENGTHS>10.6</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>7</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>43</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Dane</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Nelson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>156255</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Karline</FIRST_NAME>
+            <LAST_NAME>Kingston</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>974302</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kane Kachur</OWNER>
+         <COMMENT>contended pace, done early</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052055057054058</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="8">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>15500</PURSE>
+   <RACE_TEXT>CENTURY DOWNS RACE    8  6F Dirt CR: 90. Claiming Purse 15500. FOR THREE YEAR OLDS AND UPWARD  THREE YEAR OLDS, 122 LBS.; OLDER, 125 LBS. Non-winners Of A Race In 2023 Allowed 2 lbs. Claiming Price $12,500 AB Bred Claiming Price $16,000.      </RACE_TEXT>
+   <AGE_RESTRICTIONS>3U   </AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>90</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Clear</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>4:16</POST_TIME>
+   <DTV>2</DTV>
+   <FRACTION_1>22.20</FRACTION_1>
+   <FRACTION_2>45.08</FRACTION_2>
+   <FRACTION_3>57.60</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>70.64</WIN_TIME>
+   <PACE_CALL1>111</PACE_CALL1>
+   <PACE_CALL2>93</PACE_CALL2>
+   <PACE_FINAL>87</PACE_FINAL>
+   <PAR_TIME>70.21</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>6805</SPLIT_1>
+      <SPLIT_2>2268</SPLIT_2>
+      <SPLIT_3>1134</SPLIT_3>
+      <SPLIT_4>567</SPLIT_4>
+      <SPLIT_5>227</SPLIT_5>
+      <SPLIT_6>88</SPLIT_6>
+      <SPLIT_7>88</SPLIT_7>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>1195</POOL_TOTAL>
+      <WINNERS> 3-2-1</WINNERS>
+      <PAYOFF>93.50</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Pick 4</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>2743</POOL_TOTAL>
+      <WINNERS> 3/5-3-2-1</WINNERS>
+      <PAYOFF>750.90</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Pick 5</WAGER_TYPE>
+      <NUM_TICKETS>0.2</NUM_TICKETS>
+      <POOL_TOTAL>4119</POOL_TOTAL>
+      <WINNERS> 2-3/5-3-2-1</WINNERS>
+      <PAYOFF>769.92</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>1849</POOL_TOTAL>
+      <WINNERS> 2-1</WINNERS>
+      <PAYOFF>148.40</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>8127</POOL_TOTAL>
+      <WINNERS> 1-8</WINNERS>
+      <PAYOFF>115.80</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="6">
+      <WAGER_TYPE>Super High Five Jackpot</WAGER_TYPE>
+      <NUM_TICKETS>0.2</NUM_TICKETS>
+      <POOL_TOTAL>1658</POOL_TOTAL>
+      <WINNERS> 1-8-7-5-4</WINNERS>
+      <PAYOFF>262.43</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="7">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>4453</POOL_TOTAL>
+      <WINNERS> 1-8-7-5</WINNERS>
+      <PAYOFF>1886.95</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="8">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>6914</POOL_TOTAL>
+      <WINNERS> 1-8-7</WINNERS>
+      <PAYOFF>569.25</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>40</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>12996.00</WPS_POOL>
+   <FOOTNOTES>MUCHO MAGIC raced five to six wide into the backstretch, angled in sharply to the three path at the head of the lane, grabbed the lead and won driving. ESTIFRAAD stalked four wide into the opening turn, took closer order while in the three path, inherited the front turning for home, and was outfinished. BON PRIX pressed the early pace while three wide, tracked the pace from the four path, cut the corner into the last turn, was outkicked and held on for show. BRODY&apos;S STREAK vied inside for the early lead, showed the way through the backstretch, drifted out badly handing over the advantage, then came back on but was unable to secure a top-three finish. BARE BACK JACK trailed the field while wide, lodged a mild bid and gave way. LIGHT FAST FEET vied between early, and was outrun. TRUMP UM offered little.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Mucho Magic</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-10</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>9.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>12500</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>87</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>N&apos;Rico</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Prescod</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171228</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ron</FIRST_NAME>
+            <LAST_NAME>Grieves</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>41257</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Terry Kwas</OWNER>
+         <COMMENT>5-6w, angled in sharply, won driving</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>CH</CODE>
+               <DESCRIPTION>Chestnut</DESCRIPTION>
+            </COLOR>
+            <SIRE>Mucho Macho Man</SIRE>
+            <DAM>Enchantable</DAM>
+            <DAM_SIRE>Canadian Frontier</DAM_SIRE>
+            <BREEDER>Barr Inman</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>21.20</WIN_PAYOFF>
+         <PLACE_PAYOFF>8.80</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.70</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050052056059056055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Trump Um</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>ASD</CODE>
+               <NAME>ASSINIBOIA DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-08-07</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>6</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>6.65</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>12500</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>7</POSITION>
+            <LENGTHS>30.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>7</POSITION>
+            <LENGTHS>39.4</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>7</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>0</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Whitehall</LAST_NAME>
+            <SUFFIX/>
+            <KEY>158439</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Rick</FIRST_NAME>
+            <LAST_NAME>Wise</LAST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>38304</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kirk Sutherland</OWNER>
+         <COMMENT>offered little</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049056050052059056057061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Bare Back Jack</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-30</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>6</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>1.25</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>16000</CLAIM_PRICE>
+         <START_POSITION>7</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>7</POSITION>
+            <LENGTHS>7.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>7</POSITION>
+            <LENGTHS>6.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.1</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>78</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Dane</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Nelson</LAST_NAME>
+            <SUFFIX/>
+            <KEY>156255</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Gonzalo</FIRST_NAME>
+            <LAST_NAME>Anderson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>966144</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Cates Crystal and Anderson Gonzalo</OWNER>
+         <COMMENT>trailed, mild bid, gave way</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049056050052059057062061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Brody&apos;s Streak</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>ASD</CODE>
+               <NAME>ASSINIBOIA DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-19</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>123</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>3.75</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>12500</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>1.9</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>82</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Rafael</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Zenteno Jr</LAST_NAME>
+            <SUFFIX/>
+            <KEY>148510</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Tom</FIRST_NAME>
+            <LAST_NAME>Gardipy</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX>Jr</SUFFIX>
+            <KEY>9817</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Tom Gardipy, Jr.</OWNER>
+         <COMMENT>vied inside, showed way, drifted out, came on</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050052052060059060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Light Fast Feet</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTM</CODE>
+               <NAME>CENTURY MILE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-08-26</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>28.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>22000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>10.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>11.6</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>61</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Da-Sean</FIRST_NAME>
+            <MIDDLE_NAME>Zavier</MIDDLE_NAME>
+            <LAST_NAME>Gaskin</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173136</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ron</FIRST_NAME>
+            <LAST_NAME>Grieves</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>41257</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Doug Oberg</OWNER>
+         <COMMENT>vied between, outrun</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052056055058055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Bon Prix</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-23</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>6</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>7.10</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>12500</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>0.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>83</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Linton</FIRST_NAME>
+            <MIDDLE_NAME>Leon</MIDDLE_NAME>
+            <LAST_NAME>Steadman</LAST_NAME>
+            <SUFFIX/>
+            <KEY>173311</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>James</FIRST_NAME>
+            <LAST_NAME>Wyness</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>40400</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>James Wyness</OWNER>
+         <COMMENT>pressed 3w, tracked 4w, cut corner, outkicked, held</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>7.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049056050053052053061064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Estifraad</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-30</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>125</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS/>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>6.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>8</PROGRAM_NUM>
+         <POST_POS>7</POST_POS>
+         <CLAIM_PRICE>12500</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>84</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Keihton</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Natera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>166302</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Carson</FIRST_NAME>
+            <LAST_NAME>Frey</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>163911</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Tornado Racing and Frey Racing Stable</OWNER>
+         <COMMENT>stalked 4w, bid 3w, outfinished</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>6.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>4.40</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051058057055064</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Borkan</NAME>
+         <BREED>TB</BREED>
+         <REASON>Veterinarian</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>CTD</CODE>
+               <NAME>CENTURY DOWNS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-09-30</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+</CHART>

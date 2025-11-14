@@ -1,0 +1,5490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CHART RACE_DATE="2023-05-05"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://info.trackmaster.com/xmlSchema/tchSchema.xsd">
+   <TRACK>
+      <CODE>SA</CODE>
+      <NAME>SANTA ANITA PARK</NAME>
+   </TRACK>
+<RACE NUMBER="1">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>34000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    1  1M Dirt CR: 79. Claiming Purse 34000. FOR FILLIES THREE YEARS OLD OR FILLIES AND MARES FOUR YEARS OLD AND UPWARD WHICH HAVE NEVER WON TWO RACES. Three Year Olds, 118 lbs.; Older, 126 lbs. Claiming Price $32,000. (Rail at 30 feet).      </RACE_TEXT>
+   <AGE_RESTRICTIONS>3UF C</AGE_RESTRICTIONS>
+   <DISTANCE>800</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>79</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>4</STRT_DESC>
+   <POST_TIME>1:02</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>23.28</FRACTION_1>
+   <FRACTION_2>47.49</FRACTION_2>
+   <FRACTION_3>72.48</FRACTION_3>
+   <FRACTION_4>85.66</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>99.42</WIN_TIME>
+   <PACE_CALL1>86</PACE_CALL1>
+   <PACE_CALL2>80</PACE_CALL2>
+   <PACE_FINAL>84</PACE_FINAL>
+   <PAR_TIME>100.59</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>20400</SPLIT_1>
+      <SPLIT_2>6800</SPLIT_2>
+      <SPLIT_3>4080</SPLIT_3>
+      <SPLIT_4>2040</SPLIT_4>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>24423</POOL_TOTAL>
+      <WINNERS> 6-4</WINNERS>
+      <PAYOFF>6.60</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>4121</POOL_TOTAL>
+      <WINNERS> 6-4-5-7</WINNERS>
+      <PAYOFF>2.60</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>9230</POOL_TOTAL>
+      <WINNERS> 6-4-5</WINNERS>
+      <PAYOFF>14.45</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>175</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>68440.00</WPS_POOL>
+   <FOOTNOTES>SWEET HEIDELBERG away quickly in the beginning, pressed three deep around the first turn then outside the leader on the backstretch, inched ahead at the quarter pole, put away the runner-up shortly after and powered away under hand urging. CLASSYMADEMOISELLE was antsy in the gate, stumbled at the start then went up to take control inside a pair of rivals, showed the way up the backstretch with SWEET HEIDELBERG alongside, dueled around the far turn but could not kick on with the winner past the quarter pole and churned on to secure second. MOVINGLIKEAWINNER pressed from between early, chased the top pair up the backstretch, dropped back to last on the far turn while along the fence, churned on through the lane and regained the show honors. BUSKER ALLIE was unhurried in the beginning and trailed three then two wide around the first turn, moved in then back out in the middle stages, rounded the far turn three wide, failed to summon a rally and lost the show.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Classymademoiselle</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-27</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>119</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>9.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>69</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Tiago</FIRST_NAME>
+            <MIDDLE_NAME>Josue</MIDDLE_NAME>
+            <LAST_NAME>Pereira</LAST_NAME>
+            <SUFFIX/>
+            <KEY>114312</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jorge</FIRST_NAME>
+            <LAST_NAME>Periban</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>18876</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Javier C. Perez</OWNER>
+         <COMMENT>antsy, stumbled, pace inside, held 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>2.60</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051054058055063</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Movinglikeawinner</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>DMR</CODE>
+               <NAME>DEL MAR</NAME>
+            </TRACK>
+            <RACE_DATE>2022-09-05</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>10</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>119</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>8.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>10.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>66</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Steve</FIRST_NAME>
+            <LAST_NAME>Knapp</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>190204</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Newfield Farm and Knapp Steve R</OWNER>
+         <COMMENT>pressed between, chased inside, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050052054062055062</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Sweet Heidelberg</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-09</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>0.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>84</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Diego</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Herrera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169295</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Lorenzo</FIRST_NAME>
+            <LAST_NAME>Ruiz</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>263087</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Lorenzo Ruiz</OWNER>
+         <COMMENT>away quickly, pressed 3deep, 2wide, hand urging</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Street Sense</SIRE>
+            <DAM>Roo&apos;s Valentine</DAM>
+            <DAM_SIRE>Vronsky</DAM_SIRE>
+            <BREEDER>Kretz Racing, LLC</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>5.80</WIN_PAYOFF>
+         <PLACE_PAYOFF>2.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051053056057062</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Busker Allie</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-19</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>119</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>7.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>11.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>64</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Abdul</FIRST_NAME>
+            <MIDDLE_NAME>M</MIDDLE_NAME>
+            <LAST_NAME>Alsagoor</LAST_NAME>
+            <SUFFIX/>
+            <KEY>168967</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Philip</FIRST_NAME>
+            <LAST_NAME>D&apos;Amato</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>277836</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Nicholas B. Alexander</OWNER>
+         <COMMENT>unhurried, 3-2wide, 3wide, no rally</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051055056058057</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Violet Storm</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-02-12</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Peppermint Flirt</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-01</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>9</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Slam Diego</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-01</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+<RACE NUMBER="2">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>22000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    2  6F Dirt CR: 81. Claiming Purse 22000. FOR FILLIES AND MARES FOUR YEARS OLD  AND UPWARD. Weight, 124 lbs. Non-winners Of A Race Since February 5 Allowed 2 lbs. Claiming Price $10,000 (Maiden And Claiming Races For $8,000 Or Less Not Considered In Eligibility And Allowances).      </RACE_TEXT>
+   <AGE_RESTRICTIONS>4UF  </AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>81</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>5</STRT_DESC>
+   <POST_TIME>1:34</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>22.07</FRACTION_1>
+   <FRACTION_2>45.17</FRACTION_2>
+   <FRACTION_3>57.85</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>71.40</WIN_TIME>
+   <PACE_CALL1>94</PACE_CALL1>
+   <PACE_CALL2>83</PACE_CALL2>
+   <PACE_FINAL>81</PACE_FINAL>
+   <PAR_TIME>71.41</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>13200</SPLIT_1>
+      <SPLIT_2>4400</SPLIT_2>
+      <SPLIT_3>2640</SPLIT_3>
+      <SPLIT_4>1320</SPLIT_4>
+      <SPLIT_5>500</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+      <SPLIT_7>500</SPLIT_7>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>17128</POOL_TOTAL>
+      <WINNERS> 6-7</WINNERS>
+      <PAYOFF>15.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>118500</POOL_TOTAL>
+      <WINNERS> 7-4</WINNERS>
+      <PAYOFF>9.90</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>50843</POOL_TOTAL>
+      <WINNERS> 7-4-3-5</WINNERS>
+      <PAYOFF>20.99</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Super High Five</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>22082</POOL_TOTAL>
+      <WINNERS> 7-4-3-5-2</WINNERS>
+      <PAYOFF>786.70</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>81252</POOL_TOTAL>
+      <WINNERS> 7-4-3</WINNERS>
+      <PAYOFF>24.75</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>70</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>185485.00</WPS_POOL>
+   <FOOTNOTES>RAIN DIVA sped clear from outside then crossed over, set all the pace to the stretch, spurted away in upper stretch and remained well clear under hand urging and being flagged with the whip. SAILING ALONG broke a step slow, raced at the back four then five wide on the turn, rallied for second but never threatened the winner. HILLSTONE MARTINI was closest in pursuit from the two path, lacked a bid when called upon and was beaten for second. DRIZELLA was off slow in the beginning, moved up into range outside rivals, rounded the bend four wide then spun three wide into the lane and failed to threaten. CROWN KITTEN stalked the pace from inside, asked right-handed nearing the stretch and weakened. TIZ A MASTER broke well then chased the pacesetter from off the rail, took the turn three wide and also weakened. RIGHTEOUSLY popped his head up to make contact with his own rider at the start, chased along the inside into the turn, bobbled slightly at the seven-sixteenths pole, remained inside to the stretch, moved out at the top of the lane and could not rally.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Righteously</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-17</RACE_DATE>
+            <RACE_NUMBER>2</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>10.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>8.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>7</POSITION>
+            <LENGTHS>22.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>7</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>31</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Hector</FIRST_NAME>
+            <MIDDLE_NAME>Isaac</MIDDLE_NAME>
+            <LAST_NAME>Berrios</LAST_NAME>
+            <SUFFIX/>
+            <KEY>125662</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jeff</FIRST_NAME>
+            <LAST_NAME>Mullins</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>3462</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>KW Racing LLC and Miller David J</OWNER>
+         <COMMENT>hit rider start, inside, tipped out, no rally</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051055059059057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Crown Kitten</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>GG</CODE>
+               <NAME>GOLDEN GATE FIELDS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-09</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>8</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>5.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>9.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>60</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Edgar</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Payeras</LAST_NAME>
+            <SUFFIX/>
+            <KEY>161943</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Genaro</FIRST_NAME>
+            <LAST_NAME>Vallejo</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>237158</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Blue Sky Training Center</OWNER>
+         <COMMENT>stalked inside, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049054050052059056063064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Hillstone Martini</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LRC</CODE>
+               <NAME>LOS ALAMITOS (THOROUGHBRED)</NAME>
+            </TRACK>
+            <RACE_DATE>2022-12-11</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>115</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>4.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>71</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Steve</FIRST_NAME>
+            <LAST_NAME>Knapp</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>190204</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Les Blake</OWNER>
+         <COMMENT>closest, 2wide, no bid, lost 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.40</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050052053054058064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Sailing Along</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-25</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>9.50</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>7</POSITION>
+            <LENGTHS>7.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>7</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>8.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>3.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>72</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Drayden</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Van Dyke</LAST_NAME>
+            <SUFFIX/>
+            <KEY>152588</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Reed</FIRST_NAME>
+            <LAST_NAME>Saldana</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>958826</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Michael Rosenmayer</OWNER>
+         <COMMENT>step slow, 4-5wide, rallied for 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>6.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051055062058064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Drizella</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LA</CODE>
+               <NAME>LOS ALAMITOS (QUARTER HORSE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-22</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>15.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>7</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>68</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Adrian</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Castellanos</LAST_NAME>
+            <SUFFIX/>
+            <KEY>172836</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Edwin</FIRST_NAME>
+            <LAST_NAME>Alvarez</LAST_NAME>
+            <MIDDLE_NAME>G</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>968717</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Alvarez Edwin G and Lopez Miguel</OWNER>
+         <COMMENT>off slow, chased 4-3wide, no threat</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051061060060059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Tiz a Master</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LA</CODE>
+               <NAME>LOS ALAMITOS (QUARTER HORSE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-08</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>7</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>20.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>7</POSITION>
+            <LENGTHS>10.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>16.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>43</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Cerapio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Figueroa</LAST_NAME>
+            <SUFFIX/>
+            <KEY>155390</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Genaro</FIRST_NAME>
+            <LAST_NAME>Vallejo</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>237158</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Greg L. Ruiz</OWNER>
+         <COMMENT>broke well, chased 3wide, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049055050051061054054058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Rain Diva</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-17</RACE_DATE>
+            <RACE_NUMBER>2</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>6</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>0.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>7</POST_POS>
+         <CLAIM_PRICE>10000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>81</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Edwin</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Maldonado</LAST_NAME>
+            <SUFFIX/>
+            <KEY>102369</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Andrew</FIRST_NAME>
+            <LAST_NAME>Harris</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>235488</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Killa 1 Racing Stable</OWNER>
+         <COMMENT>sped clear, inside, much the best</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Temple City</SIRE>
+            <DAM>Tappingintherain</DAM>
+            <DAM_SIRE>Tapit</DAM_SIRE>
+            <BREEDER>Al Kirkwood &amp; Saundra Kirkwood</BREEDER>
+            <BRED_LOCATION>
+               <CODE>CA</CODE>
+               <DESCRIPTION>California</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>3.60</WIN_PAYOFF>
+         <PLACE_PAYOFF>2.80</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049056050052056053063059</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="3">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Claiming</TYPE>
+   <PURSE>39000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    3  6F Dirt CR: 91. Claiming Purse 39000. FOR FILLIES AND MARES FOUR YEARS OLD  AND UPWARD. Weight, 124 lbs. Non-winners Of A Race Since March 5 Allowed 2 lbs. Claiming Price $32,000, For Each $2,000 To $28,000 2 lbs. (Rail at 30 feet).      </RACE_TEXT>
+   <AGE_RESTRICTIONS>4UF  </AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>91</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>1,5</STRT_DESC>
+   <POST_TIME>2:11</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>22.36</FRACTION_1>
+   <FRACTION_2>45.70</FRACTION_2>
+   <FRACTION_3>58.29</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>71.41</WIN_TIME>
+   <PACE_CALL1>82</PACE_CALL1>
+   <PACE_CALL2>72</PACE_CALL2>
+   <PACE_FINAL>80</PACE_FINAL>
+   <PAR_TIME>70.63</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>23400</SPLIT_1>
+      <SPLIT_2>7800</SPLIT_2>
+      <SPLIT_3>4680</SPLIT_3>
+      <SPLIT_4>2340</SPLIT_4>
+      <SPLIT_5>780</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>27737</POOL_TOTAL>
+      <WINNERS> 6-7-3</WINNERS>
+      <PAYOFF>6.65</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>15194</POOL_TOTAL>
+      <WINNERS> 7-3</WINNERS>
+      <PAYOFF>8.00</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>112037</POOL_TOTAL>
+      <WINNERS> 3-6</WINNERS>
+      <PAYOFF>6.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>46591</POOL_TOTAL>
+      <WINNERS> 3-6-4-1</WINNERS>
+      <PAYOFF>3.29</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>77292</POOL_TOTAL>
+      <WINNERS> 3-6-4</WINNERS>
+      <PAYOFF>9.10</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED>
+      <CLAIM NUMBER="1">
+      <HORSE>PROFESSORS&apos; PRIDE</HORSE>
+      <PRICE>32000</PRICE>
+         <OWNER>KCA Stables</OWNER>
+         <TRAINER>
+            <FIRST_NAME>Mark</FIRST_NAME>
+            <LAST_NAME>Glatt</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+         </TRAINER>
+      </CLAIM>
+      <CLAIM NUMBER="2">
+      <HORSE>YOUTEYOURHONOR</HORSE>
+      <PRICE>32000</PRICE>
+         <OWNER>Knapp Steve R and Monty Silverstone LLC</OWNER>
+         <TRAINER>
+            <FIRST_NAME>Steve</FIRST_NAME>
+            <LAST_NAME>Knapp</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+         </TRAINER>
+      </CLAIM>
+   </CLAIMED>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>70</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>198502.00</WPS_POOL>
+   <FOOTNOTES>YOUTEYOURHONOR broke well then ceded control to PROFESSORS&apos; PRIDE and moved to the outside, bid two wide around the turn, dueled down the lane while drifting out and dug in the final sixteenth to edge the runner-up. PROFESSORS&apos; PRIDE broke well and went up to take control early, cleared and crossed over, met the bid from YOUTEYOURHONOR on the turn and was asked at the quarter pole, dueled down the stretch while drifting out and yielded grudgingly. MISS FIA tracked three deep then off the rail, took the turn three wide then spun four wide into the stretch and gained the show. FLAT OUT JOY stumbled leaving the gate, moved into range up the backstretch, inched closer from inside on the turn but lacked room behind the leader midway around the bend, continued to give chase from the rail into the stretch, then steered out and was outfinished for third. ROCK THE BOURBON was off a bit slow, climbed on the backstretch while trailing the field, rounded the bend three wide and failed to menace. SPLICER broke a step slow, chased between foes then moved into the two path, lost ground through the turn and tired.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Flat Out Joy</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-01</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>7</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>10.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>68</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kyle</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Frey</LAST_NAME>
+            <SUFFIX/>
+            <KEY>142413</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Charles</FIRST_NAME>
+            <LAST_NAME>Treece</LAST_NAME>
+            <MIDDLE_NAME>S</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>11761</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Charles S. Treece</OWNER>
+         <COMMENT>stumbled, inside, lacked room 5/16, angled out, no bid</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049055050053052059055064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Splicer</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-01-20</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>7</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>113</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>37.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>30000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>10.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>15.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>29.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>16</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Librado</FIRST_NAME>
+            <LAST_NAME>Barocio</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>162008</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Melvin Simonovich</OWNER>
+         <COMMENT>step slow, chased between, 2wide, tired</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051060057061056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Youteyourhonor</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-18</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>0.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>80</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kent</FIRST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <LAST_NAME>Desormeaux</LAST_NAME>
+            <SUFFIX/>
+            <KEY>502</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Vladimir</FIRST_NAME>
+            <LAST_NAME>Cerin</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>298</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>EMT Stable LLC Mueller Martin and Scott William M</OWNER>
+         <COMMENT>stalked outside, bid outside, dueled/drifted str, dug in late</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Danzing Candy</SIRE>
+            <DAM>Melanistic</DAM>
+            <DAM_SIRE>Ministers Wild Cat</DAM_SIRE>
+            <BREEDER>Halo Farms</BREEDER>
+            <BRED_LOCATION>
+               <CODE>CA</CODE>
+               <DESCRIPTION>California</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>3.40</WIN_PAYOFF>
+         <PLACE_PAYOFF>2.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.10</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051060060054059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Miss Fia</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-26</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>115</WEIGHT>
+         <AGE>7</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>3.10</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>71</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Abdul</FIRST_NAME>
+            <MIDDLE_NAME>M</MIDDLE_NAME>
+            <LAST_NAME>Alsagoor</LAST_NAME>
+            <SUFFIX/>
+            <KEY>168967</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Anthony</FIRST_NAME>
+            <LAST_NAME>Saavedra</LAST_NAME>
+            <MIDDLE_NAME>K</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>23603</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Candice J Osborne</OWNER>
+         <COMMENT>tracked 3-4wide, gained 3rd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049055050052053056055059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Rock the Bourbon</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-02-11</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>17.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>10.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>11.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>8.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>8.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>63</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Adrian</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Castellanos</LAST_NAME>
+            <SUFFIX/>
+            <KEY>172836</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Vladimir</FIRST_NAME>
+            <LAST_NAME>Cerin</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>298</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Fritts Marie J Graves Stephanie and Seymour Lauri</OWNER>
+         <COMMENT>bit slow, climbed, 3wide, no menace</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051060061060059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Professors&apos; Pride</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-26</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>122</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.30</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>32000</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>79</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Edwin</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Maldonado</LAST_NAME>
+            <SUFFIX/>
+            <KEY>102369</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Eddie</FIRST_NAME>
+            <LAST_NAME>Truman</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>1902</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Academic Farms</OWNER>
+         <COMMENT>cleared, crossed over, met bid, dueled/drifted str, grudgingly</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.80</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051054056059063</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Too Much Heaven</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-01</RACE_DATE>
+            <RACE_NUMBER>3</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+<RACE NUMBER="4">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Starter Optional Claiming</TYPE>
+   <PURSE>36000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    4  7F Dirt CR: 90. Starter Optional Claiming Purse 36000. FOR THREE YEAR OLDS AND UPWARD WHICH HAVE STARTED FOR A CLAIMING PRICE OF $50,000 OR LESS AND WHICH HAVE NEVER WON TWO RACES OR CLAIMING  $50,000 AND WHICH HAVE NEVER WON TWO RACES. Three Year Olds, 118 lbs.; Older, 126 lbs. Claiming Price $50,000 (Horses  Entered For The Allowance Are Preferred).    </RACE_TEXT>
+   <AGE_RESTRICTIONS>3U  NW2L</AGE_RESTRICTIONS>
+   <DISTANCE>700</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>90</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>2</STRT_DESC>
+   <POST_TIME>2:44</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>22.75</FRACTION_1>
+   <FRACTION_2>45.96</FRACTION_2>
+   <FRACTION_3>71.15</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>84.11</WIN_TIME>
+   <PACE_CALL1>100</PACE_CALL1>
+   <PACE_CALL2>87</PACE_CALL2>
+   <PACE_FINAL>92</PACE_FINAL>
+   <PAR_TIME>83.42</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>21600</SPLIT_1>
+      <SPLIT_2>7200</SPLIT_2>
+      <SPLIT_3>4320</SPLIT_3>
+      <SPLIT_4>2160</SPLIT_4>
+      <SPLIT_5>720</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>20654</POOL_TOTAL>
+      <WINNERS> 7-3-2</WINNERS>
+      <PAYOFF>6.85</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>13534</POOL_TOTAL>
+      <WINNERS> 3-2</WINNERS>
+      <PAYOFF>15.00</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>109995</POOL_TOTAL>
+      <WINNERS> 2-3</WINNERS>
+      <PAYOFF>11.10</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>44006</POOL_TOTAL>
+      <WINNERS> 2-3-5-1</WINNERS>
+      <PAYOFF>14.96</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>72451</POOL_TOTAL>
+      <WINNERS> 2-3-5</WINNERS>
+      <PAYOFF>28.10</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>28</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>209596.00</WPS_POOL>
+   <FOOTNOTES>INDULGE stumbled badly leaving the gate, rated between rivals in a stalking position, entered the lane two to three wide, angled out into the clear in upper stretch, rallied four deep and proved best in the final sixteenth. DESERVEDLY showed the way up the backstretch, led along the rail moved out to the two path on the bend and was challenged by rivals on both sides, maintained command into the stretch, moved clear from those rivals with a furlong to go but was soon challenged by INDULGE, relinquished the lead with a sixteenth to and stayed on to secure second. QUICK BUCK broke in and bumped rival, raced up close outside the pacesetter, bid three deep on the turn, remained close through the final furlong but could not summon the needed late kick. TRUSTY RUSTY stalked the pace early on, launched a bid inside the leader around the bend, continued along the rail through the lane, then altered to the outside of DESERVEDLY at the sixteenth pole and could not summon the needed late response. BIG HAT WILLIE took a bump from outside at the start, stalked three deep then four wide into the stretch and finished evenly late. SPIRITIST tracked four deep in the early going, spun five wide into the lane and weakened.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Trusty Rusty</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-29</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>6.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>88</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Fresu</LAST_NAME>
+            <SUFFIX/>
+            <KEY>160598</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Doug</FIRST_NAME>
+            <LAST_NAME>O&apos;Neill</LAST_NAME>
+            <MIDDLE_NAME>F</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>6363</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Pappas Horse Racing Corp Westside Racing Stable and O&apos;Neill Doug F</OWNER>
+         <COMMENT>stalked inside, rail bid, altered 1/16, not enough</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051056061056063</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Indulge</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>GG</CODE>
+               <NAME>GOLDEN GATE FIELDS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-02</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>2.7</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>1.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>92</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Abel</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Cedillo</LAST_NAME>
+            <SUFFIX/>
+            <KEY>136123</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Richard</FIRST_NAME>
+            <LAST_NAME>Mandella</LAST_NAME>
+            <MIDDLE_NAME>E</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>1150</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Intrepid Thoroughbreds LLC</OWNER>
+         <COMMENT>stumbled badly, rated between, 2-3wide, 4wide rally, best late</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>B</CODE>
+               <DESCRIPTION>Bay</DESCRIPTION>
+            </COLOR>
+            <SIRE>Kantharos</SIRE>
+            <DAM>Tropic of Aquarius</DAM>
+            <DAM_SIRE>Ghostzapper</DAM_SIRE>
+            <BREEDER>Hedberg Hall, Inc.</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>7.20</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.60</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052060062054061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Deservedly</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-17</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>90</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kent</FIRST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <LAST_NAME>Desormeaux</LAST_NAME>
+            <SUFFIX/>
+            <KEY>502</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Mark</FIRST_NAME>
+            <LAST_NAME>Glatt</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>38601</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Red Baron&apos;s Barn LLC and Rancho Temescal LLC</OWNER>
+         <COMMENT>speed, inside-2wide, yielded 1/16</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.60</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051059058059059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Big Hat Willie</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-09</RACE_DATE>
+            <RACE_NUMBER>10</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>3.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>2.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>88</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Geovanni</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Franco</LAST_NAME>
+            <SUFFIX/>
+            <KEY>135108</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Peter</FIRST_NAME>
+            <LAST_NAME>Miller</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>1257</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Altamira Racing Stable and Kagele Tom</OWNER>
+         <COMMENT>bumped start, stalked 3deep, 4wide, evenly late</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052055059054058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Quick Buck</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>DMR</CODE>
+               <NAME>DEL MAR</NAME>
+            </TRACK>
+            <RACE_DATE>2022-09-03</RACE_DATE>
+            <RACE_NUMBER>2</RACE_NUMBER>
+            <OFL_FINISH>12</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>119</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.30</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>50000</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>89</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Mark</FIRST_NAME>
+            <LAST_NAME>Glatt</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>38601</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Red Baron&apos;s Barn LLC and Rancho Temescal LLC</OWNER>
+         <COMMENT>broke in, bumped, bid 3deep, no final kick</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.40</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051052058057062</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Spiritist</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-09</RACE_DATE>
+            <RACE_NUMBER>10</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>12.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>2.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>2.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>11.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>70</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Ricardo</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Gonzalez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>150645</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Kristin</FIRST_NAME>
+            <LAST_NAME>Mulhall</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>224590</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>47 Roses LLC</OWNER>
+         <COMMENT>tracked 4deep, 5wide, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051056057056059</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="5">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Allowance Optional Claiming</TYPE>
+   <PURSE>63000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    5  1M Dirt CR: 100. Allowance Optional Claiming Purse 63000. FOR CALIFORNIA BRED OR CALIFORNIA SIRED THREE YEAR OLDS AND UPWARD WHICH HAVE NEVER WON $15,000 ONCE OTHER THAN MAIDEN, CLAIMING OR  STARTER OR WHICH HAVE NEVER WON TWO RACES OR CLAIMING PRICE $40,000. Three Year Olds, 120 lbs.; Older, 126 lbs. Non-winner s Of A Race Other Than Claiming, Or Starter At A Mile Or Over Allowed 2 lbs. Claiming Price $40,000 (Non-Starters For A Claiming Price Of $16,000 Or Less In Their Last 3 Starts Preferred)(Horses Entered For The Allowance Are Preferred). (Rail at 30 feet).    </RACE_TEXT>
+   <AGE_RESTRICTIONS>3U SNW1$X</AGE_RESTRICTIONS>
+   <DISTANCE>800</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>100</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>3:19</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>23.19</FRACTION_1>
+   <FRACTION_2>47.50</FRACTION_2>
+   <FRACTION_3>71.67</FRACTION_3>
+   <FRACTION_4>84.19</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>96.87</WIN_TIME>
+   <PACE_CALL1>86</PACE_CALL1>
+   <PACE_CALL2>91</PACE_CALL2>
+   <PACE_FINAL>109</PACE_FINAL>
+   <PAR_TIME>95.64</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>37800</SPLIT_1>
+      <SPLIT_2>12600</SPLIT_2>
+      <SPLIT_3>7560</SPLIT_3>
+      <SPLIT_4>3780</SPLIT_4>
+      <SPLIT_5>1260</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>25489</POOL_TOTAL>
+      <WINNERS> 3-2-2</WINNERS>
+      <PAYOFF>25.30</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Pick 4</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>98280</POOL_TOTAL>
+      <WINNERS> 7-3/7-2-2</WINNERS>
+      <PAYOFF>73.00</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Pick 5</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>206448</POOL_TOTAL>
+      <WINNERS> 6-7-3/7-2-2</WINNERS>
+      <PAYOFF>266.15</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>15820</POOL_TOTAL>
+      <WINNERS> 2-2</WINNERS>
+      <PAYOFF>34.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>156777</POOL_TOTAL>
+      <WINNERS> 2-1</WINNERS>
+      <PAYOFF>24.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="6">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>48067</POOL_TOTAL>
+      <WINNERS> 2-1-6-3</WINNERS>
+      <PAYOFF>14.40</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="7">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>88834</POOL_TOTAL>
+      <WINNERS> 2-1-6</WINNERS>
+      <PAYOFF>28.85</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>175</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>282828.00</WPS_POOL>
+   <FOOTNOTES>CLOUSEAU set the pace inside TALKLESSWORKMORE for six furlongs, shook free at the top of the lane and drew away in the furlong grounds. OUBABE stalked the pace from inside then two wide, continued in the two path around the far turn, angled in at the three-sixteenths pole and finished willingly for second best. TALKLESSWORKMORE pressed the pace from outside to the top of the stretch, could not stay with the winner at the top of the lane and flattened to third. SHORTMAN stalked three wide around the clubhouse turn, moved up outside the top pair leaving the backstretch, asked three deep on the far turn but weakened in the lane. WORSE READ SANCHEZ got put in tight between rivals and had to take back briefly early, chased along the inside then two wide, saved ground while starting to weaken on the far turn and had little left for the drive. J T&apos;S WATCH tracked four wide on the clubhouse turn, took the second turn three wide and came up empty.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Oubabe</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-18</RACE_DATE>
+            <RACE_NUMBER>11</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>H</CODE>
+            <DESCRIPTION>Horse</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>3.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>3.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>104</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Joe</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Bravo</LAST_NAME>
+            <SUFFIX/>
+            <KEY>214</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>John</FIRST_NAME>
+            <LAST_NAME>Sadler</LAST_NAME>
+            <MIDDLE_NAME>W</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>1626</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Cicero Farms LLC</OWNER>
+         <COMMENT>stalked inside-2wide, angled in 3/16 best</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>4.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051058053061056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Clouseau</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-08</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>C</CODE>
+            <DESCRIPTION>Colt</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>5.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>109</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Geovanni</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Franco</LAST_NAME>
+            <SUFFIX/>
+            <KEY>135108</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ian</FIRST_NAME>
+            <LAST_NAME>Kruljac</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>954913</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>ISK Racing Stable Inc Hames Doug Lawless Rebekah Lawless Tom D Lewkowitz Frank a</OWNER>
+         <COMMENT>set pressured pace inside, shook free</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>B</CODE>
+               <DESCRIPTION>Bay</DESCRIPTION>
+            </COLOR>
+            <SIRE>Distorted Humor</SIRE>
+            <DAM>English Garden</DAM>
+            <DAM_SIRE>Bernardini</DAM_SIRE>
+            <BREEDER>PT Syndicate #1 LLC</BREEDER>
+            <BRED_LOCATION>
+               <CODE>CA</CODE>
+               <DESCRIPTION>California</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>13.20</WIN_PAYOFF>
+         <PLACE_PAYOFF>5.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051060061061057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Shortman</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-07</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>H</CODE>
+            <DESCRIPTION>Horse</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>2.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>9.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>94</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Hector</FIRST_NAME>
+            <MIDDLE_NAME>Isaac</MIDDLE_NAME>
+            <LAST_NAME>Berrios</LAST_NAME>
+            <SUFFIX/>
+            <KEY>125662</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Salvador</FIRST_NAME>
+            <LAST_NAME>Naranjo</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>944684</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Zepeda Racing Inc</OWNER>
+         <COMMENT>stalked 3wide, 3deep 2nd, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051061062058057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Worse Read Sanchez</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-07</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>6.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>2.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>17.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>81</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Mario</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Gutierrez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>122587</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Doug</FIRST_NAME>
+            <LAST_NAME>O&apos;Neill</LAST_NAME>
+            <MIDDLE_NAME>F</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>6363</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Reddam Racing LLC</OWNER>
+         <COMMENT>tight early, chased inside-2wide, inside, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051055061056062</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>J T&apos;s Watch</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>GG</CODE>
+               <NAME>GOLDEN GATE FIELDS</NAME>
+            </TRACK>
+            <RACE_DATE>2023-01-02</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>29.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>40000</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>4.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>4.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>11.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>24.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>69</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kyle</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Frey</LAST_NAME>
+            <SUFFIX/>
+            <KEY>142413</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jeff</FIRST_NAME>
+            <LAST_NAME>Bonde</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>2161</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Chris Gounalakis</OWNER>
+         <COMMENT>tracked 4wide, 3wide, empty</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051052057058056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Talklessworkmore</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-07</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>100</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Ricardo</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Gonzalez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>150645</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <LAST_NAME>Garcia</LAST_NAME>
+            <MIDDLE_NAME>C</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>958040</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Ruis Racing LLC</OWNER>
+         <COMMENT>pressed outside, flattened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.80</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051058060056055</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="6">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Maiden Special Weight</TYPE>
+   <PURSE>61000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    6  6F Dirt CR: 91. Maiden Special Weight Purse 61000. FOR MAIDENS, THREE, FOUR, AND FIVE YEARS OLD. Three Year Olds, 118 lbs.; Older, 126 lbs. Cal-Bred or Cal-Sired horses Get a Five (5) Pound Weight Allowance.      </RACE_TEXT>
+   <AGE_RESTRICTIONS>35   </AGE_RESTRICTIONS>
+   <DISTANCE>600</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>91</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>Poor</STRT_DESC>
+   <POST_TIME>3:52</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>22.30</FRACTION_1>
+   <FRACTION_2>45.17</FRACTION_2>
+   <FRACTION_3>57.39</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>70.07</WIN_TIME>
+   <PACE_CALL1>85</PACE_CALL1>
+   <PACE_CALL2>83</PACE_CALL2>
+   <PACE_FINAL>98</PACE_FINAL>
+   <PAR_TIME>70.64</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>36600</SPLIT_1>
+      <SPLIT_2>12200</SPLIT_2>
+      <SPLIT_3>7320</SPLIT_3>
+      <SPLIT_4>3660</SPLIT_4>
+      <SPLIT_5>1220</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+      <SPLIT_7>500</SPLIT_7>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>23210</POOL_TOTAL>
+      <WINNERS> 2-2-8</WINNERS>
+      <PAYOFF>84.15</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>19834</POOL_TOTAL>
+      <WINNERS> 2-8</WINNERS>
+      <PAYOFF>75.60</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>132576</POOL_TOTAL>
+      <WINNERS> 8-9</WINNERS>
+      <PAYOFF>18.30</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>41484</POOL_TOTAL>
+      <WINNERS> 8-9-7-4</WINNERS>
+      <PAYOFF>37.77</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Super High Five</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>4413</POOL_TOTAL>
+      <WINNERS> 8-9-7-4-3</WINNERS>
+      <PAYOFF>1228.80</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="6">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>74070</POOL_TOTAL>
+      <WINNERS> 8-9-7</WINNERS>
+      <PAYOFF>49.30</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>70</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>257153.00</WPS_POOL>
+   <FOOTNOTES>DEL MAR JERRY dueled for command inside MYSTIFICICATION, battled around the turn and into the stretch, dug in late under left and right handed urging and inched clear in the final sixteenth. MYSTIFICATION dueled outside DEL MAR JERRY up the backstretch, around the turn and into the stretch, battled to the sixteenth pole then yielded to the winner while clearly second best. MOHAWK SUN took a bump from inside early then stalked the top pair early, rounded the bend two wide hen came three wide into the stretch, drifted to the rail in the lane and held the show. SIR ATTICUS bucked then duck in and took hold in the beginning, chased four wide into the turn, moved and around the bend and came seven wide into the stretch, kept on through the lane and earned a minor award. CAPTAIN CHOOCHIES hit the gate then came in at the start, got blocked behind SIR ATTICUS shortly after, went two wide into the turn, spun four wide into the lane and failed to threaten. STAVROS lost footing then got brushed in the beginning, got bothered by SIR ATTICUS shifting out soon after, tracked along the rail into the turn, tipped out leaving the turn and weakened in the stretch. EMERALD UNION broke in and bumped rival at the start, got forced out into rival shortly after, lost path and had to steady up the backstretch, chased three wide into the turn, moved out and came six wide into the lane and weakened.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Captain Choochies</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>21.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>7</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>7</POSITION>
+            <LENGTHS>7.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>7.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>7.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>82</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Diego</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Herrera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169295</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>George</FIRST_NAME>
+            <LAST_NAME>Papaprodromou</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>233841</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Kretz Racing LLC</OWNER>
+         <COMMENT>hit gate/came in start, blocked early, 2-4wide, no threat</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051057057062056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Sir Atticus</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>H</CODE>
+            <DESCRIPTION>Horse</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>4.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>7</POSITION>
+            <LENGTHS>7.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>6.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>86</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Mike</FIRST_NAME>
+            <MIDDLE_NAME>E</MIDDLE_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <SUFFIX/>
+            <KEY>1770</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>John</FIRST_NAME>
+            <LAST_NAME>Shirreffs</LAST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>38392</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Jerome S. Moss</OWNER>
+         <COMMENT>bucked/ducked/took hold early, 4-7wide, kept on</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051059057062061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Stavros</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>1.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>7.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>13.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>68</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Abel</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Cedillo</LAST_NAME>
+            <SUFFIX/>
+            <KEY>136123</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Bob</FIRST_NAME>
+            <LAST_NAME>Baffert</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>83</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>SF Racing LLC Starlight Racing Madaket Stables LLC Masterson Robert E Stonestree</OWNER>
+         <COMMENT>lost footing/brushed, bothered early, inside, tipped out,weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051052062060058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Emerald Union</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>23.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>7</POSITION>
+            <LENGTHS>9.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>7</POSITION>
+            <LENGTHS>19.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>7</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>56</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Joe</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Bravo</LAST_NAME>
+            <SUFFIX/>
+            <KEY>214</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>John</FIRST_NAME>
+            <LAST_NAME>Shirreffs</LAST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>38392</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Moss Jerome S and Moss Tina</OWNER>
+         <COMMENT>broke in, bumped 2x, steadied early, 3-6wide, weakend</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052055055058061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Mohawk Sun</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>119</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>H</CODE>
+            <DESCRIPTION>Horse</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>8.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>1.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>88</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Karen</FIRST_NAME>
+            <LAST_NAME>Headley</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>947429</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Marsha Naify</OWNER>
+         <COMMENT>bumped early, stalked top pair, 2-3wide, drifted in str, held 3rd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>4.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051053058059056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Del Mar Jerry</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>120</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>5.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>8</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>98</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kent</FIRST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <LAST_NAME>Desormeaux</LAST_NAME>
+            <SUFFIX/>
+            <KEY>502</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Michael</FIRST_NAME>
+            <LAST_NAME>McCarthy</LAST_NAME>
+            <MIDDLE_NAME>W</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>252990</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Cannon Thoroughbreds LLC and Savio Thoroughbreds</OWNER>
+         <COMMENT>dueled outside, drew clear late</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>B</CODE>
+               <DESCRIPTION>Bay</DESCRIPTION>
+            </COLOR>
+            <SIRE>Mastery</SIRE>
+            <DAM>Xtra Spice</DAM>
+            <DAM_SIRE>Quality Road</DAM_SIRE>
+            <BREEDER>Kinsman Farm</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>12.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>4.80</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.40</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051061062062057</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Mystification</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-18</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>C</CODE>
+            <DESCRIPTION>Colt</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.30</DOLLAR_ODDS>
+         <PROGRAM_NUM>9</PROGRAM_NUM>
+         <POST_POS>7</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>96</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Fresu</LAST_NAME>
+            <SUFFIX/>
+            <KEY>160598</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Doug</FIRST_NAME>
+            <LAST_NAME>O&apos;Neill</LAST_NAME>
+            <MIDDLE_NAME>F</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>6363</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Roadrunner Racing West Coast Stables LLC and Evenson Barbara</OWNER>
+         <COMMENT>dueled outside, 2nd best</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051052060058060</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Truehood</NAME>
+         <BREED>TB</BREED>
+         <REASON>Veterinarian</REASON>
+         <LAST_PP/>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Midnight Fury</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2022-02-11</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+<RACE NUMBER="7">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Starter Allowance</TYPE>
+   <PURSE>38000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    7  6 1/2F Dirt CR: 101. Starter Allowance Purse 38000. FOR THREE YEAR OLDS AND UPWARD WHICH HAVE STARTED FOR A CLAIMING PRICE OF $50,000 OR LESS AND WHICH HAVE NEVER WON THREE RACES. Three Year Olds, 118 lbs.; Older, 126 lbs. (Rail at 30 feet).      </RACE_TEXT>
+   <AGE_RESTRICTIONS>3U  NW3L</AGE_RESTRICTIONS>
+   <DISTANCE>650</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>101</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>4:23</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>21.86</FRACTION_1>
+   <FRACTION_2>45.05</FRACTION_2>
+   <FRACTION_3>69.78</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>76.37</WIN_TIME>
+   <PACE_CALL1>101</PACE_CALL1>
+   <PACE_CALL2>84</PACE_CALL2>
+   <PACE_FINAL>103</PACE_FINAL>
+   <PAR_TIME>76.58</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>22800</SPLIT_1>
+      <SPLIT_2>7600</SPLIT_2>
+      <SPLIT_3>4560</SPLIT_3>
+      <SPLIT_4>2280</SPLIT_4>
+      <SPLIT_5>760</SPLIT_5>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>28896</POOL_TOTAL>
+      <WINNERS> 2-8-3</WINNERS>
+      <PAYOFF>54.45</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>19425</POOL_TOTAL>
+      <WINNERS> 8-3</WINNERS>
+      <PAYOFF>70.80</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>70751</POOL_TOTAL>
+      <WINNERS> 3-8</WINNERS>
+      <PAYOFF>14.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>27042</POOL_TOTAL>
+      <WINNERS> 3-8-2-4</WINNERS>
+      <PAYOFF>3.63</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>53775</POOL_TOTAL>
+      <WINNERS> 3-8-2</WINNERS>
+      <PAYOFF>9.85</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>78</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>158491.00</WPS_POOL>
+   <FOOTNOTES>WYFIRE stalked the pace up the backstretch, bid inside into the turn, took over at the three-eighths and cleared around the turn, opened up under right and left -handed urging and held safely to the wire. KANT BEAT THE ROCK stalked widest up the backstretch, bid four deep early on the turn but could not keep up with WYFIRE around the bend, kept to task through the lane and finished a clear second. DONCIC broke inward at the start, chased on the inside then moved off the rail, went two wide into the turn, steered out and entered the stretch five wide, came in upper stretch and lacked a rally. LAW ABIDING stalked outside a rival, put in a mild bid three deep on the turn but quickly lost touch with the winner on the bend and tired. MARKS HIP sped clear early to establish the front, was challenged from both sides into the turn, lost command at the three-eighths pole, dropped back on the turn, eased in the lane and walked off.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Doncic</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-31</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>H</CODE>
+            <DESCRIPTION>Horse</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>0.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>7.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>11.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>78</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kent</FIRST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <LAST_NAME>Desormeaux</LAST_NAME>
+            <SUFFIX/>
+            <KEY>502</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Vladimir</FIRST_NAME>
+            <LAST_NAME>Cerin</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>298</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Peerenboom Racing Stables LLC Wilson Holly and Wilson David</OWNER>
+         <COMMENT>broke inward, 2-5wide, came in upper, no rally</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.10</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051060060062058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Wyfire</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-27</RACE_DATE>
+            <RACE_NUMBER>4</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>119</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>1.70</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>103</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Mark</FIRST_NAME>
+            <LAST_NAME>Glatt</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>38601</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Branch William A Buster Jr William C and Cohen Mark</OWNER>
+         <COMMENT>stalked inside, cleared turn, held safely</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Dominus</SIRE>
+            <DAM>Summertime</DAM>
+            <DAM_SIRE>Siberian Summer</DAM_SIRE>
+            <BREEDER>Richard Wira &amp; Yvette Wira</BREEDER>
+            <BRED_LOCATION>
+               <CODE>KY</CODE>
+               <DESCRIPTION>Kentucky</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>5.40</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.10</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052057061058058</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Law Abiding</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-31</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>H</CODE>
+            <DESCRIPTION>Horse</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>8.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>13.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>28.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>44</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Mario</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Gutierrez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>122587</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>George</FIRST_NAME>
+            <LAST_NAME>Papaprodromou</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>233841</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>California Racing Partners Ciaglia Racing LLC John Ford Racing Inc Drenk Robert</OWNER>
+         <COMMENT>stalked, bid 3deep, tired</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051060056058060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Marks Hip</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-09</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>8</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>C</CODE>
+            <DESCRIPTION>Colt</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>8.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>19.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>45.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>10</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Edwin</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Maldonado</LAST_NAME>
+            <SUFFIX/>
+            <KEY>102369</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Steve</FIRST_NAME>
+            <LAST_NAME>Knapp</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>190204</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Les Blake</OWNER>
+         <COMMENT>speed, overtaken 3/8, folded, eased str, walked</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052053055056055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Kant Beat the Rock</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-02</RACE_DATE>
+            <RACE_NUMBER>2</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>G</CODE>
+            <DESCRIPTION>Gelding</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>10.40</DOLLAR_ODDS>
+         <PROGRAM_NUM>8</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>2.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>98</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Edgar</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Payeras</LAST_NAME>
+            <SUFFIX/>
+            <KEY>161943</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Lorenzo</FIRST_NAME>
+            <LAST_NAME>Ruiz</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>263087</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Lorenzo Ruiz</OWNER>
+         <COMMENT>stalked widest, bid 4deep,clear 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>8.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>2.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052054055058060</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Crew Dragon</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-23</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Thunderheart</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-21</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Westward Look</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-27</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Inch</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-31</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+<RACE NUMBER="8">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Allowance Optional Claiming</TYPE>
+   <PURSE>63000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    8  1M Dirt CR: 88. Allowance Optional Claiming Purse 63000. FOR CALIFORNIA BRED OR CALIFORNIA SIRED FILLIES AND MARES THREE YEARS OLD  AND UPWARD WHICH HAVE NEVER WON $15,000 ONCE OTHER THAN MAIDEN, CLAIMING OR  STARTER OR WHICH HAVE NEVER WON TWO RACES OR CLAIMING PRICE $40,000. Three Year Olds, 120 lbs.; Older, 126 lbs. Non-winners Of A Race Other Than Claiming, Or Starter At A Mile Or Over Allowed 2 lbs. Claiming Price $40,000 (Non-Starters For A Claiming Price Of $16,000 Or Less In Their Last 3 Starts Preferred)(Horses Entered For The Allowance Are Preferred). .  </RACE_TEXT>
+   <AGE_RESTRICTIONS>3UFSNW1$X</AGE_RESTRICTIONS>
+   <DISTANCE>800</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>88</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>4,6</STRT_DESC>
+   <POST_TIME>4:54</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>22.67</FRACTION_1>
+   <FRACTION_2>46.80</FRACTION_2>
+   <FRACTION_3>71.82</FRACTION_3>
+   <FRACTION_4>85.25</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>99.20</WIN_TIME>
+   <PACE_CALL1>100</PACE_CALL1>
+   <PACE_CALL2>89</PACE_CALL2>
+   <PACE_FINAL>86</PACE_FINAL>
+   <PAR_TIME>99.72</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>37800</SPLIT_1>
+      <SPLIT_2>12600</SPLIT_2>
+      <SPLIT_3>7560</SPLIT_3>
+      <SPLIT_4>3780</SPLIT_4>
+      <SPLIT_5>1260</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+      <SPLIT_7>500</SPLIT_7>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>21881</POOL_TOTAL>
+      <WINNERS> 8-3-5</WINNERS>
+      <PAYOFF>29.15</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>16606</POOL_TOTAL>
+      <WINNERS> 3-5</WINNERS>
+      <PAYOFF>34.40</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>125645</POOL_TOTAL>
+      <WINNERS> 5-3</WINNERS>
+      <PAYOFF>27.90</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>63194</POOL_TOTAL>
+      <WINNERS> 5-3-1-7</WINNERS>
+      <PAYOFF>61.04</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Super High Five</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>10513</POOL_TOTAL>
+      <WINNERS> 5-3-1-7-2</WINNERS>
+      <PAYOFF>2005.50</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="6">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>92825</POOL_TOTAL>
+      <WINNERS> 5-3-1</WINNERS>
+      <PAYOFF>70.75</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>175</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>222440.00</WPS_POOL>
+   <FOOTNOTES>STARSHIP DEFIANT stalked two wide early, began to pull on the backstretch and went up to take the lead outside a pair of rivals, dueled around the far turn and into the stretch, put away inner rival approaching the eighth pole and held safely in the end. TIZZY TWISTER tracked two to three wide through both turns, moved out in the lane, rallied and got up for second. ACT OF SERENDIPITY sent for the lead from inside and dueled into the first turn, cleared into the backstretch, lost command approaching the half-mile pole, chased the leaders leaving the backstretch and round the far turn, kept on through the lane and got edged for second. RACE JUDICATA dueled outside a rival into the first turn, ceded command around the bend, moved up to vie between rivals approaching the half-mile pole, dueled inside STARSHPI DEFIANT into and around the far turn, fought to upper stretch, then weakened in the final furlong. SENSIBLE MOVE chased from inside, coaxed along to move closer in the middle stages, lacked room past the seven-sixteenths pole, angled out then back in on the far turn, steered out into the lane and lacked a rally. ROSE HARBOR was off slow to start, tracked three deep or four wide on the first turn, moved up alongside the top trio in the middle stages, dropped back three wide on the far turn and came up empty. POINT AND SHOOT stumbled leaving the gate, went five wide on the first turn, remained off the rail trailing far behind and never got involved.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Act of Serendipity</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-08</RACE_DATE>
+            <RACE_NUMBER>12</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>f</EQUIP>
+         <DOLLAR_ODDS>10.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>1</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>40000</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>0.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>2.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>83</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Hector</FIRST_NAME>
+            <MIDDLE_NAME>Isaac</MIDDLE_NAME>
+            <LAST_NAME>Berrios</LAST_NAME>
+            <SUFFIX/>
+            <KEY>125662</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Genaro</FIRST_NAME>
+            <LAST_NAME>Vallejo</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>237158</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Rancho San Roberto, Inc. and Fessler, Roger</OWNER>
+         <COMMENT>sent, dueled inside, chased, edged 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>5.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051059054058063</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Sensible Move</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-09</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>4.10</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>3.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>73</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Tiago</FIRST_NAME>
+            <MIDDLE_NAME>Josue</MIDDLE_NAME>
+            <LAST_NAME>Pereira</LAST_NAME>
+            <SUFFIX/>
+            <KEY>114312</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Dean</FIRST_NAME>
+            <LAST_NAME>Pederson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>28179</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Harris Farms, Inc.</OWNER>
+         <COMMENT>chased inside, lacked room 7/16, angled out/in, tipped out,no bid</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051057062055061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Tizzy Twister</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-25</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>1</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>117</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>12.30</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>83</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Armando</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Aguilar</LAST_NAME>
+            <SUFFIX/>
+            <KEY>171997</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Hector</FIRST_NAME>
+            <LAST_NAME>Palma</LAST_NAME>
+            <MIDDLE_NAME>O</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>1392</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Royalty Stable</OWNER>
+         <COMMENT>tracked 2-3wide, moved out, rallied for 2nd</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>7.60</PLACE_PAYOFF>
+         <SHOW_PAYOFF>5.80</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051058061061061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Rose Harbor</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-17</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>1.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>7</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>6.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>1.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>6</POSITION>
+            <LENGTHS>6.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>11.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>22.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>48</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Mike</FIRST_NAME>
+            <MIDDLE_NAME>E</MIDDLE_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <SUFFIX/>
+            <KEY>1770</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ryan</FIRST_NAME>
+            <LAST_NAME>Hanson</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>214647</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Calmont Thoroughbreds LLC</OWNER>
+         <COMMENT>off slow, tracked 4wide, 3wide, empty</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051056055062062</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Starship Defiant</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-27</RACE_DATE>
+            <RACE_NUMBER>5</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>2.90</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>86</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kent</FIRST_NAME>
+            <MIDDLE_NAME>J</MIDDLE_NAME>
+            <LAST_NAME>Desormeaux</LAST_NAME>
+            <SUFFIX/>
+            <KEY>502</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Robert</FIRST_NAME>
+            <LAST_NAME>Hess</LAST_NAME>
+            <MIDDLE_NAME>B</MIDDLE_NAME>
+            <SUFFIX>Jr</SUFFIX>
+            <KEY>804</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>4004 Biscayne LLC Avansino James Buckendorf Larry S Coffman Eric Kilgore Tom Med</OWNER>
+         <COMMENT>stalked 2wide, pulled, dueled outside, cleared 1/8, held</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Empire Way</SIRE>
+            <DAM>Bossy Belle</DAM>
+            <DAM_SIRE>Street Boss</DAM_SIRE>
+            <BREEDER>Terry C. Lovingier</BREEDER>
+            <BRED_LOCATION>
+               <CODE>CA</CODE>
+               <DESCRIPTION>California</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>7.80</WIN_PAYOFF>
+         <PLACE_PAYOFF>3.40</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.20</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050051059059055063</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Point and Shoot</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-31</RACE_DATE>
+            <RACE_NUMBER>8</RACE_NUMBER>
+            <OFL_FINISH>6</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>120</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>16.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>7</POSITION>
+            <LENGTHS>16.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>7</POSITION>
+            <LENGTHS>15.2</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>7</POSITION>
+            <LENGTHS>18.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>7</POSITION>
+            <LENGTHS>17.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>7</POSITION>
+            <LENGTHS>30.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>7</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>35</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Joe</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Bravo</LAST_NAME>
+            <SUFFIX/>
+            <KEY>214</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ian</FIRST_NAME>
+            <LAST_NAME>Kruljac</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>954913</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>ISK Racing Stable Inc Hames Doug Lawless Rebekah Lawless Tom D Lewkowitz Frank L</OWNER>
+         <COMMENT>stumbled, 5wide, 3-4wide, never involved</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051055053061056</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Race Judicata</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>DMR</CODE>
+               <NAME>DEL MAR</NAME>
+            </TRACK>
+            <RACE_DATE>2022-07-29</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>7</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>124</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>7</PROGRAM_NUM>
+         <POST_POS>7</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>5.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>77</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Jessica</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Pyfer</LAST_NAME>
+            <SUFFIX/>
+            <KEY>168728</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Philip</FIRST_NAME>
+            <LAST_NAME>D&apos;Amato</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>277836</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Old Bones Racing Stable LLC</OWNER>
+         <COMMENT>duel outside, ceded, stalked, dueled inside, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052055054063060</AXCISKEY>
+      </ENTRY>
+</RACE>
+<RACE NUMBER="9">
+   <BREED>TB</BREED>
+   <CARD_ID>D</CARD_ID>
+   <TYPE>Maiden Special Weight</TYPE>
+   <PURSE>61000</PURSE>
+   <RACE_TEXT>SANTA ANITA PARK RACE    9  6 1/2F Dirt CR: 79. Maiden Special Weight Purse 61000. FOR CALIFORNIA BRED OR CALIFORNIA SIRED MAIDENS, FILLIES AND MARES THREE, FOUR, AND FIVE YEARS OLD. Three Year Olds, 118 lbs.; Older, 126 lbs. (Non-Starters For A Claiming Price Of $40,000 Or Less In Their Last Starts Preferred). (Rail at 30 feet).      </RACE_TEXT>
+   <AGE_RESTRICTIONS>35FS </AGE_RESTRICTIONS>
+   <DISTANCE>650</DISTANCE>
+   <DIST_UNIT>F</DIST_UNIT>
+   <ABOUT_DIST_FLAG/>
+   <COURSE_ID>D</COURSE_ID>
+   <COURSE_DESC>Dirt</COURSE_DESC>
+   <SURFACE>D</SURFACE>
+   <CLASS_RATING>79</CLASS_RATING>
+   <TRK_COND>FT</TRK_COND>
+   <WEATHER>Cloudy</WEATHER>
+   <STRT_DESC>Good</STRT_DESC>
+   <POST_TIME>5:26</POST_TIME>
+   <DTV>7</DTV>
+   <FRACTION_1>21.75</FRACTION_1>
+   <FRACTION_2>44.95</FRACTION_2>
+   <FRACTION_3>71.96</FRACTION_3>
+   <FRACTION_4>0.00</FRACTION_4>
+   <FRACTION_5>0.00</FRACTION_5>
+   <WIN_TIME>79.22</WIN_TIME>
+   <PACE_CALL1>105</PACE_CALL1>
+   <PACE_CALL2>86</PACE_CALL2>
+   <PACE_FINAL>67</PACE_FINAL>
+   <PAR_TIME>78.35</PAR_TIME>
+   <EARNING_SPLITS>
+      <SPLIT_1>36600</SPLIT_1>
+      <SPLIT_2>12200</SPLIT_2>
+      <SPLIT_3>7320</SPLIT_3>
+      <SPLIT_4>3660</SPLIT_4>
+      <SPLIT_5>1220</SPLIT_5>
+      <SPLIT_6>500</SPLIT_6>
+      <SPLIT_7>500</SPLIT_7>
+      <SPLIT_8>500</SPLIT_8>
+      <SPLIT_9>500</SPLIT_9>
+   </EARNING_SPLITS>
+   <EXOTIC_WAGERS>
+   <WAGER NUMBER="1">
+      <WAGER_TYPE>Pick 3</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>66332</POOL_TOTAL>
+      <WINNERS> 3-5-6</WINNERS>
+      <PAYOFF>211.65</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="2">
+      <WAGER_TYPE>Pick 4</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>241027</POOL_TOTAL>
+      <WINNERS> 8-3-5-6</WINNERS>
+      <PAYOFF>1308.70</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="3">
+      <WAGER_TYPE>Pick 5</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>210711</POOL_TOTAL>
+      <WINNERS> 2-8-3-5-6</WINNERS>
+      <PAYOFF>10050.90</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="4">
+      <WAGER_TYPE>Pick 6 Jackpot</WAGER_TYPE>
+      <NUM_TICKETS>0.2</NUM_TICKETS>
+      <POOL_TOTAL>45376</POOL_TOTAL>
+      <WINNERS> 2-2-8-3-5-6</WINNERS>
+      <PAYOFF>312392.08</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="5">
+      <WAGER_TYPE>Daily Double</WAGER_TYPE>
+      <NUM_TICKETS>2</NUM_TICKETS>
+      <POOL_TOTAL>74065</POOL_TOTAL>
+      <WINNERS> 5-6</WINNERS>
+      <PAYOFF>266.20</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="6">
+      <WAGER_TYPE>Exacta</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>211726</POOL_TOTAL>
+      <WINNERS> 6-2</WINNERS>
+      <PAYOFF>142.30</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="7">
+      <WAGER_TYPE>Superfecta</WAGER_TYPE>
+      <NUM_TICKETS>0.1</NUM_TICKETS>
+      <POOL_TOTAL>85994</POOL_TOTAL>
+      <WINNERS> 6-2-4-5</WINNERS>
+      <PAYOFF>356.44</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="8">
+      <WAGER_TYPE>Super High Five</WAGER_TYPE>
+      <NUM_TICKETS>1</NUM_TICKETS>
+      <POOL_TOTAL>11480</POOL_TOTAL>
+      <WINNERS> 6-2-4-5-3</WINNERS>
+      <PAYOFF>8754.60</PAYOFF>
+   </WAGER>
+   <WAGER NUMBER="9">
+      <WAGER_TYPE>Trifecta</WAGER_TYPE>
+      <NUM_TICKETS>0.5</NUM_TICKETS>
+      <POOL_TOTAL>112515</POOL_TOTAL>
+      <WINNERS> 6-2-4</WINNERS>
+      <PAYOFF>438.20</PAYOFF>
+   </WAGER>
+   </EXOTIC_WAGERS>
+   <CLAIMED/>
+   <VOIDED_CLAIMS/>
+   <WIND_DIRECTION/>
+   <WIND_SPEED/>
+   <RUNUPDIST>78</RUNUPDIST>
+   <RAILDIST>0</RAILDIST>
+   <SEALED>N</SEALED>
+   <WPS_POOL>257120.00</WPS_POOL>
+   <FOOTNOTES>ROUBAIX was a bit erratic early, dropped back and was taken out wide into the clear, chased five wide into the turn, angled down to the two path around the bend, steered back out into the stretch, flew late and and inhaled the runner-up to win going away. ORGANIC was off a bit slow in the beginning then went up vie inside rivals, inched ahead to take control and set the pace under pressure, moved clear around the turn, opened up in upper stretch, started to weaken in the final sixteenth and got run down by the winner. GOLDEN MICROPHONE vied for the lead then pressed between rivals up the backstretch, remained alongside the leader into the turn, lost touch past the five-sixteenths pole, chased two wide into the lane and kept on for a clear third. ANNIE&apos;S HOPE chased along the inside into the turn, exited the bend two wide, steadied in upper stretch and churned on to round out the superfecta. SMOOVE AS SILK came away a bit slow, raced near the back two wide around the bend and improved position through the lane. SQUARE FUN showed brief speed four deep then dropped back to chase out of range into the turn, angled from the four path down to the inside around the bend, tipped out in upper stretch and flattened. MAGIC GAME sat off the pace, drifted out on the turn and in upper stretch, eased in the furlong grounds and walked off. BEAUTIFUL WORLD was off slow and broke out, trailed up the backstretch well off the rail, took the turn four then three wide and failed to make an impact. SIT LOOK AND HOPE vied three deep then pressed the pace up the backstretch, failed to keep up with inside pair into the turn, dropped back around the bend three to four wide and tired.</FOOTNOTES>
+      <ENTRY>
+         <NAME>Organic</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>DMR</CODE>
+               <NAME>DEL MAR</NAME>
+            </TRACK>
+            <RACE_DATE>2022-08-13</RACE_DATE>
+            <RACE_NUMBER>2</RACE_NUMBER>
+            <OFL_FINISH>4</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>2.60</DOLLAR_ODDS>
+         <PROGRAM_NUM>2</PROGRAM_NUM>
+         <POST_POS>1</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>7</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>2</POSITION>
+            <LENGTHS>1.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>2</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>64</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Joe</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Bravo</LAST_NAME>
+            <SUFFIX/>
+            <KEY>214</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Neil</FIRST_NAME>
+            <LAST_NAME>Drysdale</LAST_NAME>
+            <MIDDLE_NAME>D</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>489</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Richard Barton</OWNER>
+         <COMMENT>bit slow, pace inside, kicked clear, weakened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>5.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>3.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051052059062055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Smoove as Silk</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-02-17</RACE_DATE>
+            <RACE_NUMBER>1</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>16.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>3</PROGRAM_NUM>
+         <POST_POS>2</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>8</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>8</POSITION>
+            <LENGTHS>8.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>8</POSITION>
+            <LENGTHS>13.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>6</POSITION>
+            <LENGTHS>11.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>5</POSITION>
+            <LENGTHS>8.8</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>5</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>50</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Mario</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Gutierrez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>122587</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Edward</FIRST_NAME>
+            <LAST_NAME>Freeman</LAST_NAME>
+            <MIDDLE_NAME>R</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>21586</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Reddam Racing LLC</OWNER>
+         <COMMENT>bit slow, 2wide, improved</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051058060057055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Golden Microphone</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>4.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>4</PROGRAM_NUM>
+         <POST_POS>3</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>1</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>2</POSITION>
+            <LENGTHS>0.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>2</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>3</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>3</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>59</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Kyle</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Frey</LAST_NAME>
+            <SUFFIX/>
+            <KEY>142413</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Jonathan</FIRST_NAME>
+            <LAST_NAME>Wong</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>952853</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Tommy Town Thoroughbreds LLC</OWNER>
+         <COMMENT>pressed between, chased, kept on</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>4.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050052052058054060</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Annie&apos;s Hope</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-19</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>7</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>5.00</DOLLAR_ODDS>
+         <PROGRAM_NUM>5</PROGRAM_NUM>
+         <POST_POS>4</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>6</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>5</POSITION>
+            <LENGTHS>3.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>5</POSITION>
+            <LENGTHS>4.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>5</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>4</POSITION>
+            <LENGTHS>7.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>4</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>52</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Antonio</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Fresu</LAST_NAME>
+            <SUFFIX/>
+            <KEY>160598</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Carla</FIRST_NAME>
+            <LAST_NAME>Gaines</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>2185</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Williamson Racing LLC</OWNER>
+         <COMMENT>chased inside-2wide, steadied upper, churned on</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050053052053057064</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Roubaix</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>TUP</CODE>
+               <NAME>TURF PARADISE</NAME>
+            </TRACK>
+            <RACE_DATE>2023-03-19</RACE_DATE>
+            <RACE_NUMBER>2</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>28.50</DOLLAR_ODDS>
+         <PROGRAM_NUM>6</PROGRAM_NUM>
+         <POST_POS>5</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>3</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>7</POSITION>
+            <LENGTHS>6.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>7</POSITION>
+            <LENGTHS>8.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>3</POSITION>
+            <LENGTHS>5.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>1</POSITION>
+            <LENGTHS>0.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>1</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>67</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Tiago</FIRST_NAME>
+            <MIDDLE_NAME>Josue</MIDDLE_NAME>
+            <LAST_NAME>Pereira</LAST_NAME>
+            <SUFFIX/>
+            <KEY>114312</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Paula</FIRST_NAME>
+            <LAST_NAME>Capestro</LAST_NAME>
+            <MIDDLE_NAME>S</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>126922</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Paula S. Capestro</OWNER>
+         <COMMENT>bit erratic, angled in/out turn, inhaled foe</COMMENT>
+         <WINNERS_DETAILS>
+            <COLOR>
+               <CODE>DK B/</CODE>
+               <DESCRIPTION>Dark Bay or Brown</DESCRIPTION>
+            </COLOR>
+            <SIRE>Twirling Candy</SIRE>
+            <DAM>Sweet Esprit</DAM>
+            <DAM_SIRE>Speightstown</DAM_SIRE>
+            <BREEDER>Premier Thoroughbreds LLC</BREEDER>
+            <BRED_LOCATION>
+               <CODE>CA</CODE>
+               <DESCRIPTION>California</DESCRIPTION>
+            </BRED_LOCATION>
+         </WINNERS_DETAILS>
+         <WIN_PAYOFF>59.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>19.20</PLACE_PAYOFF>
+         <SHOW_PAYOFF>9.60</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050052055059056059</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Sit Look and Hope</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP/>
+         <WEIGHT>118</WEIGHT>
+         <AGE>3</AGE>
+         <SEX>
+            <CODE>F</CODE>
+            <DESCRIPTION>Filly</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>12.80</DOLLAR_ODDS>
+         <PROGRAM_NUM>8</PROGRAM_NUM>
+         <POST_POS>6</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>4</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>3</POSITION>
+            <LENGTHS>0.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>4</POSITION>
+            <LENGTHS>4.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>8</POSITION>
+            <LENGTHS>20.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>9</POSITION>
+            <LENGTHS>35.5</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>9</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>0</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Ricardo</FIRST_NAME>
+            <MIDDLE_NAME/>
+            <LAST_NAME>Gonzalez</LAST_NAME>
+            <SUFFIX/>
+            <KEY>150645</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Peter</FIRST_NAME>
+            <LAST_NAME>Miller</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>1257</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Altamira Racing Stable Kagele Tom Nentwig Michael and Shaw Kenneth A</OWNER>
+         <COMMENT>pressed 3deep, dropped back turn, tired</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>050049050051052061060061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Magic Game</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-07</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>2</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP/>
+         <DOLLAR_ODDS>2.50</DOLLAR_ODDS>
+         <PROGRAM_NUM>9</PROGRAM_NUM>
+         <POST_POS>7</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>5</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>6</POSITION>
+            <LENGTHS>3.6</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>6</POSITION>
+            <LENGTHS>7.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>7</POSITION>
+            <LENGTHS>17.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>7</POSITION>
+            <LENGTHS>32.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>7</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>1</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Hector</FIRST_NAME>
+            <MIDDLE_NAME>Isaac</MIDDLE_NAME>
+            <LAST_NAME>Berrios</LAST_NAME>
+            <SUFFIX/>
+            <KEY>125662</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>J</FIRST_NAME>
+            <LAST_NAME>Kruljac</LAST_NAME>
+            <MIDDLE_NAME>Eric</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>1032</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Grenier Dennis Grenier Norine and Kruljac J Eric</OWNER>
+         <COMMENT>off pace, drifted out turn and str, tired, eased</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051061059060061</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Square Fun</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-07</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>5</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>4</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>b</EQUIP>
+         <DOLLAR_ODDS>10.20</DOLLAR_ODDS>
+         <PROGRAM_NUM>10</PROGRAM_NUM>
+         <POST_POS>8</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>2</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>4</POSITION>
+            <LENGTHS>2.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>3</POSITION>
+            <LENGTHS>3.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>4</POSITION>
+            <LENGTHS>6.5</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>6</POSITION>
+            <LENGTHS>9.3</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>6</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>49</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Edwin</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Maldonado</LAST_NAME>
+            <SUFFIX/>
+            <KEY>102369</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Doug</FIRST_NAME>
+            <LAST_NAME>O&apos;Neill</LAST_NAME>
+            <MIDDLE_NAME>F</MIDDLE_NAME>
+            <SUFFIX/>
+            <KEY>6363</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>James F Cahill</OWNER>
+         <COMMENT>brief speed 4deep, chased, angled in turn, flattened</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049058050051056056059055</AXCISKEY>
+      </ENTRY>
+      <ENTRY>
+         <NAME>Beautiful World</NAME>
+         <DH_DQ_FLAGS/>
+         <BREED>TB</BREED>
+         <LAST_PP>
+            <TRACK>
+               <CODE>LRC</CODE>
+               <NAME>LOS ALAMITOS (THOROUGHBRED)</NAME>
+            </TRACK>
+            <RACE_DATE>2021-09-25</RACE_DATE>
+            <RACE_NUMBER>9</RACE_NUMBER>
+            <OFL_FINISH>9</OFL_FINISH>
+         </LAST_PP>
+         <WEIGHT>126</WEIGHT>
+         <AGE>5</AGE>
+         <SEX>
+            <CODE>M</CODE>
+            <DESCRIPTION>Mare</DESCRIPTION>
+         </SEX>
+         <MEDS>L</MEDS>
+         <EQUIP>bf</EQUIP>
+         <DOLLAR_ODDS>62.50</DOLLAR_ODDS>
+         <PROGRAM_NUM>11</PROGRAM_NUM>
+         <POST_POS>9</POST_POS>
+         <CLAIM_PRICE>0</CLAIM_PRICE>
+         <START_POSITION>9</START_POSITION>
+         <POINT_OF_CALL WHICH="1">
+            <POSITION>9</POSITION>
+            <LENGTHS>10.1</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="2">
+            <POSITION>9</POSITION>
+            <LENGTHS>18.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="3">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="4">
+            <POSITION>0</POSITION>
+            <LENGTHS>0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="5">
+            <POSITION>9</POSITION>
+            <LENGTHS>25.0</LENGTHS>
+         </POINT_OF_CALL>
+         <POINT_OF_CALL WHICH="FINAL">
+            <POSITION>8</POSITION>
+            <LENGTHS>33.0</LENGTHS>
+         </POINT_OF_CALL>
+         <OFFICIAL_FIN>8</OFFICIAL_FIN>
+         <FINISH_TIME>0.000</FINISH_TIME>
+         <SPEED_RATING>0</SPEED_RATING>
+         <JOCKEY>
+            <FIRST_NAME>Diego</FIRST_NAME>
+            <MIDDLE_NAME>A</MIDDLE_NAME>
+            <LAST_NAME>Herrera</LAST_NAME>
+            <SUFFIX/>
+            <KEY>169295</KEY>
+            <TYPE>E</TYPE>
+         </JOCKEY>
+         <TRAINER>
+            <FIRST_NAME>Ricky</FIRST_NAME>
+            <LAST_NAME>Agarie</LAST_NAME>
+            <MIDDLE_NAME/>
+            <SUFFIX/>
+            <KEY>952435</KEY>
+            <TYPE>E</TYPE>
+         </TRAINER>
+         <OWNER>Cashline Racing Stables Inc</OWNER>
+         <COMMENT>off slow/broke out, 4-3wide, no impact</COMMENT>
+         <WINNERS_DETAILS/>
+         <WIN_PAYOFF>0.00</WIN_PAYOFF>
+         <PLACE_PAYOFF>0.00</PLACE_PAYOFF>
+         <SHOW_PAYOFF>0.00</SHOW_PAYOFF>
+         <SHOW_PAYOFF2>0.00</SHOW_PAYOFF2>
+         <AXCISKEY>049057050052055058060063</AXCISKEY>
+      </ENTRY>
+      <SCRATCH>
+         <NAME>Ms Moab</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>GG</CODE>
+               <NAME>GOLDEN GATE FIELDS</NAME>
+            </TRACK>
+            <RACE_DATE>2022-05-28</RACE_DATE>
+            <RACE_NUMBER>6</RACE_NUMBER>
+            <OFL_FINISH>3</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+      <SCRATCH>
+         <NAME>Warrior Lady</NAME>
+         <BREED>TB</BREED>
+         <REASON>Trainer</REASON>
+         <LAST_PP>
+            <TRACK>
+               <CODE>SA</CODE>
+               <NAME>SANTA ANITA PARK</NAME>
+            </TRACK>
+            <RACE_DATE>2023-04-07</RACE_DATE>
+            <RACE_NUMBER>7</RACE_NUMBER>
+            <OFL_FINISH>9</OFL_FINISH>
+         </LAST_PP>
+      </SCRATCH>
+</RACE>
+</CHART>
