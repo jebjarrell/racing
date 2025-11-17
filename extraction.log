@@ -1,0 +1,138 @@
+2025-11-14 09:12:27,902 - INFO - Testing extraction on: 2023 PPs/SIMD20230101AQU_USA.xml
+2025-11-14 09:12:28,125 - INFO - Extraction results:
+2025-11-14 09:12:28,125 - INFO -   Horses found: 69
+2025-11-14 09:12:28,125 - INFO -   Trainers found: 41
+2025-11-14 09:12:28,125 - INFO -   Owners found: 51
+2025-11-14 09:12:28,125 - INFO - 
+Sample horse data:
+2025-11-14 09:12:28,125 - INFO -   registration_number: 18009698
+2025-11-14 09:12:28,125 - INFO -   horse_name: Igottahaveit
+2025-11-14 09:12:28,125 - INFO -   foaling_date: 2018-02-06
+2025-11-14 09:12:28,125 - INFO -   year_of_birth: 2018
+2025-11-14 09:12:28,125 - INFO -   foaling_area: NY
+2025-11-14 09:12:28,125 - INFO -   breed_type: TB
+2025-11-14 09:12:28,125 - INFO -   color_code: CH
+2025-11-14 09:12:28,125 - INFO -   sex_code: G
+2025-11-14 09:12:28,125 - INFO -   breeder_name: E. Siobhan McCormack, Gregory A. Byrnes
+2025-11-14 09:12:28,125 - INFO -   sire_registration_number: 09015548
+2025-11-14 09:12:28,125 - INFO -   dam_registration_number: 08000931
+2025-11-14 09:12:28,125 - INFO - 
+Sample trainer data:
+2025-11-14 09:12:28,125 - INFO -   external_party_id: 494
+2025-11-14 09:12:28,125 - INFO -   first_name: Bob
+2025-11-14 09:12:28,125 - INFO -   middle_name: G.
+2025-11-14 09:12:28,127 - INFO -   last_name: Dunham
+2025-11-14 09:12:28,127 - INFO -   type_source: TE
+2025-11-14 09:12:28,127 - INFO - 
+Sample owner data:
+2025-11-14 09:12:28,127 - INFO -   external_party_id: 2116693
+2025-11-14 09:12:28,127 - INFO -   first_name: None
+2025-11-14 09:12:28,127 - INFO -   middle_name: None
+2025-11-14 09:12:28,127 - INFO -   last_name: McCormack, E. Siobhan and Byrnes, Gregory A.
+2025-11-14 09:12:28,127 - INFO -   type_source: O6
+2025-11-14 09:12:28,127 - INFO - 
+Testing database insertion...
+2025-11-14 09:12:28,133 - INFO - Inserted 69 horses
+2025-11-14 09:12:28,137 - INFO - Inserted 41 trainers
+2025-11-14 09:12:28,141 - INFO - Inserted 51 owners
+2025-11-14 09:12:28,145 - INFO - Database verification:
+2025-11-14 09:12:28,145 - INFO -   Horses in DB: 69
+2025-11-14 09:12:28,145 - INFO -   Trainers in DB: 41
+2025-11-14 09:12:28,145 - INFO -   Owners in DB: 51
+2025-11-14 09:12:28,145 - INFO - 
+Sample database record:
+2025-11-14 09:12:28,145 - INFO -   registration_number: 18009698
+2025-11-14 09:12:28,145 - INFO -   horse_name: Igottahaveit
+2025-11-14 09:12:28,145 - INFO -   foaling_date: 2018-02-06
+2025-11-14 09:12:28,145 - INFO -   year_of_birth: 2018
+2025-11-14 09:12:28,145 - INFO -   foaling_area: NY
+2025-11-14 09:12:28,145 - INFO -   breed_type: TB
+2025-11-14 09:12:28,145 - INFO -   color_code: CH
+2025-11-14 09:12:28,145 - INFO -   sex_code: G
+2025-11-14 09:12:28,145 - INFO -   breeder_name: E. Siobhan McCormack, Gregory A. Byrnes
+2025-11-14 09:12:28,145 - INFO -   sire_registration_number: 09015548
+2025-11-14 09:12:28,145 - INFO -   dam_registration_number: 08000931
+2025-11-14 09:12:28,145 - INFO -   created_at: 2025-11-14 14:12:28
+2025-11-14 09:12:28,145 - INFO -   updated_at: 2025-11-14 14:12:28
+2025-11-14 09:13:53,210 - INFO - Starting horse data extraction from 2023 PPs
+2025-11-14 09:13:53,210 - INFO - Using 45 workers with high-memory optimization
+2025-11-14 09:14:06,355 - INFO - Found 5925 XML files to process
+2025-11-14 09:14:07,257 - ERROR - Error processing file ('2023 PPs\\SIMD20230101AQU_USA.xml.zip', '__MACOSX/._SIMD20230101AQU_USA.xml'): 'utf-8' codec can't decode byte 0x80 in position 37: invalid start byte
+2025-11-14 09:14:22,870 - INFO - Performing batch database insert...
+2025-11-14 09:14:56,407 - INFO - Processed 100 files. Horses: 6776, Trainers: 2043, Owners: 3984
+2025-11-14 09:15:32,070 - INFO - Processed 200 files. Horses: 13663, Trainers: 2828, Owners: 6737
+2025-11-14 09:16:05,312 - INFO - Processed 300 files. Horses: 18424, Trainers: 3163, Owners: 8357
+2025-11-14 09:16:40,338 - INFO - Processed 400 files. Horses: 21596, Trainers: 3329, Owners: 9448
+2025-11-14 09:17:14,847 - INFO - Processed 500 files. Horses: 23921, Trainers: 3516, Owners: 10197
+2025-11-14 09:17:49,091 - INFO - Processed 600 files. Horses: 25527, Trainers: 3618, Owners: 10757
+2025-11-14 09:18:23,750 - INFO - Processed 700 files. Horses: 26963, Trainers: 3715, Owners: 11252
+2025-11-14 09:18:58,140 - INFO - Processed 800 files. Horses: 28655, Trainers: 3998, Owners: 11873
+2025-11-14 09:19:30,722 - INFO - Processed 900 files. Horses: 30059, Trainers: 4102, Owners: 12473
+2025-11-14 09:20:05,297 - INFO - Processed 1000 files. Horses: 31840, Trainers: 4273, Owners: 13109
+2025-11-14 09:20:38,877 - INFO - Processed 1100 files. Horses: 33133, Trainers: 4365, Owners: 13617
+2025-11-14 09:21:14,650 - INFO - Processed 1200 files. Horses: 34361, Trainers: 4478, Owners: 14119
+2025-11-14 09:21:50,407 - INFO - Processed 1300 files. Horses: 36011, Trainers: 4652, Owners: 14745
+2025-11-14 09:22:18,973 - INFO - Processed 1400 files. Horses: 37393, Trainers: 4765, Owners: 15180
+2025-11-14 09:22:40,343 - INFO - Processed 1500 files. Horses: 38956, Trainers: 4945, Owners: 15857
+2025-11-14 09:23:11,152 - INFO - Processed 1600 files. Horses: 40318, Trainers: 5073, Owners: 16417
+2025-11-14 09:23:40,274 - INFO - Processed 1700 files. Horses: 41919, Trainers: 5235, Owners: 17068
+2025-11-14 09:24:09,342 - INFO - Processed 1800 files. Horses: 43312, Trainers: 5398, Owners: 17731
+2025-11-14 09:24:34,697 - INFO - Processed 1900 files. Horses: 45135, Trainers: 5580, Owners: 18496
+2025-11-14 09:25:03,812 - INFO - Processed 2000 files. Horses: 46415, Trainers: 5676, Owners: 19012
+2025-11-14 09:25:31,993 - INFO - Processed 2100 files. Horses: 47896, Trainers: 5786, Owners: 19594
+2025-11-14 09:26:02,617 - INFO - Processed 2200 files. Horses: 49313, Trainers: 5872, Owners: 20115
+2025-11-14 09:26:27,682 - INFO - Processed 2300 files. Horses: 50620, Trainers: 5962, Owners: 20609
+2025-11-14 09:26:52,916 - INFO - Processed 2400 files. Horses: 51691, Trainers: 6042, Owners: 21007
+2025-11-14 09:27:21,852 - INFO - Processed 2500 files. Horses: 52572, Trainers: 6115, Owners: 21371
+2025-11-14 09:27:53,104 - INFO - Processed 2600 files. Horses: 53597, Trainers: 6217, Owners: 21802
+2025-11-14 09:28:17,700 - INFO - Processed 2700 files. Horses: 54468, Trainers: 6302, Owners: 22172
+2025-11-14 09:28:46,666 - INFO - Processed 2800 files. Horses: 55752, Trainers: 6425, Owners: 22725
+2025-11-14 09:29:18,038 - INFO - Processed 2900 files. Horses: 56616, Trainers: 6501, Owners: 23045
+2025-11-14 09:29:46,947 - INFO - Processed 3000 files. Horses: 57250, Trainers: 6533, Owners: 23289
+2025-11-14 09:30:12,821 - INFO - Processed 3100 files. Horses: 57824, Trainers: 6577, Owners: 23505
+2025-11-14 09:30:42,446 - INFO - Processed 3200 files. Horses: 58406, Trainers: 6623, Owners: 23761
+2025-11-14 09:31:11,693 - INFO - Processed 3300 files. Horses: 59056, Trainers: 6669, Owners: 23993
+2025-11-14 09:31:38,525 - INFO - Processed 3400 files. Horses: 59729, Trainers: 6701, Owners: 24247
+2025-11-14 09:32:03,681 - INFO - Processed 3500 files. Horses: 60337, Trainers: 6739, Owners: 24470
+2025-11-14 09:32:32,913 - INFO - Processed 3600 files. Horses: 61065, Trainers: 6767, Owners: 24737
+2025-11-14 09:33:01,921 - INFO - Processed 3700 files. Horses: 61641, Trainers: 6789, Owners: 24924
+2025-11-14 09:33:30,509 - INFO - Processed 3800 files. Horses: 62164, Trainers: 6818, Owners: 25110
+2025-11-14 09:33:56,291 - INFO - Processed 3900 files. Horses: 62891, Trainers: 6874, Owners: 25333
+2025-11-14 09:34:24,544 - INFO - Processed 4000 files. Horses: 63398, Trainers: 6910, Owners: 25511
+2025-11-14 09:34:52,056 - INFO - Processed 4100 files. Horses: 63894, Trainers: 6934, Owners: 25703
+2025-11-14 09:35:20,365 - INFO - Processed 4200 files. Horses: 64375, Trainers: 6959, Owners: 25903
+2025-11-14 09:35:47,305 - INFO - Processed 4300 files. Horses: 64938, Trainers: 6982, Owners: 26098
+2025-11-14 09:36:17,572 - INFO - Processed 4400 files. Horses: 65444, Trainers: 7011, Owners: 26290
+2025-11-14 09:36:48,599 - INFO - Processed 4500 files. Horses: 65946, Trainers: 7055, Owners: 26481
+2025-11-14 09:37:18,398 - INFO - Processed 4600 files. Horses: 66466, Trainers: 7084, Owners: 26641
+2025-11-14 09:37:45,775 - INFO - Processed 4700 files. Horses: 66871, Trainers: 7115, Owners: 26817
+2025-11-14 09:38:15,053 - INFO - Processed 4800 files. Horses: 67475, Trainers: 7162, Owners: 27038
+2025-11-14 09:38:45,236 - INFO - Processed 4900 files. Horses: 67944, Trainers: 7184, Owners: 27226
+2025-11-14 09:39:14,159 - INFO - Processed 5000 files. Horses: 68576, Trainers: 7211, Owners: 27449
+2025-11-14 09:39:40,026 - INFO - Processed 5100 files. Horses: 69119, Trainers: 7230, Owners: 27600
+2025-11-14 09:40:08,482 - INFO - Processed 5200 files. Horses: 69659, Trainers: 7251, Owners: 27758
+2025-11-14 09:40:40,168 - INFO - Processed 5300 files. Horses: 70180, Trainers: 7285, Owners: 27896
+2025-11-14 09:41:10,506 - INFO - Processed 5400 files. Horses: 70705, Trainers: 7302, Owners: 28066
+2025-11-14 09:41:39,631 - INFO - Processed 5500 files. Horses: 71276, Trainers: 7327, Owners: 28245
+2025-11-14 09:42:10,107 - INFO - Processed 5600 files. Horses: 71868, Trainers: 7353, Owners: 28422
+2025-11-14 09:42:38,122 - INFO - Processed 5700 files. Horses: 72377, Trainers: 7369, Owners: 28614
+2025-11-14 09:43:09,499 - INFO - Processed 5800 files. Horses: 72912, Trainers: 7386, Owners: 28792
+2025-11-14 09:43:30,182 - INFO - Processed 5900 files. Horses: 73532, Trainers: 7430, Owners: 28955
+2025-11-14 09:43:33,432 - INFO - Inserted 73941 horses
+2025-11-14 09:43:33,681 - INFO - Inserted 7435 trainers
+2025-11-14 09:43:35,134 - INFO - Inserted 29070 owners
+2025-11-14 09:43:35,563 - INFO - ============================================================
+2025-11-14 09:43:35,563 - INFO - EXTRACTION COMPLETE
+2025-11-14 09:43:35,563 - INFO - ============================================================
+2025-11-14 09:43:35,563 - INFO - Files processed: 5924
+2025-11-14 09:43:35,563 - INFO - Horses extracted: 73941
+2025-11-14 09:43:35,563 - INFO - Trainers extracted: 7435
+2025-11-14 09:43:35,563 - INFO - Owners extracted: 29070
+2025-11-14 09:43:35,564 - INFO - Errors: 1
+2025-11-14 09:43:35,564 - INFO - Duration: 1782.35 seconds
+2025-11-14 09:43:35,564 - INFO - Files per second: 3.32
+2025-11-14 09:43:35,564 - INFO - ============================================================
+2025-11-14 16:40:21,845 - INFO - Starting horse data extraction from 2023 PPs
+2025-11-14 16:40:21,845 - INFO - Using 45 workers with high-memory optimization
+2025-11-14 16:40:22,275 - INFO - Found 5925 XML files to process
+2025-11-14 16:40:22,455 - ERROR - Error processing file ('2023 PPs\\SIMD20230101AQU_USA.xml.zip', '__MACOSX/._SIMD20230101AQU_USA.xml'): 'utf-8' codec can't decode byte 0x80 in position 37: invalid start byte
