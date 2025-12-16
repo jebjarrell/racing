@@ -401,5 +401,312 @@ class RacingDataStandardizer:
         medication_list = self.standardize_equipment(horse_data.get('medication'))
         features['medication_codes'] = medication_list
         features['has_lasix'] = 'LASIX' in medication_list or 'LASIX' in equipment_list
-        
+
         return features
+
+    # =========================================================================
+    # SPEED, PACE, AND CLASS CALCULATION METHODS
+    # Added for Phase 2: Feature Engineering
+    # =========================================================================
+
+    def calculate_speed_figure(
+        self,
+        final_time: Optional[float],
+        distance_yards: int,
+        track_variant: float = 0.0,
+        par_time: Optional[float] = None
+    ) -> Optional[int]:
+        """
+        Calculate a speed figure from final time.
+
+        Uses a simplified Beyer-style calculation:
+        Speed Figure = Base + (Par - Actual) * Scale + Track Variant
+
+        Args:
+            final_time: Final time in seconds
+            distance_yards: Race distance in yards
+            track_variant: Track speed adjustment (positive = fast track)
+            par_time: Optional par time for the distance/class
+
+        Returns:
+            Speed figure (typically 50-120 range) or None if insufficient data
+        """
+        if final_time is None or final_time <= 0:
+            return None
+
+        if distance_yards <= 0:
+            return None
+
+        # Use default par times by distance if not provided
+        # These are approximate par times for average claiming races
+        default_pars = {
+            880: 50.0,    # 4 furlongs
+            1100: 63.0,   # 5 furlongs
+            1320: 76.0,   # 6 furlongs
+            1430: 83.0,   # 6.5 furlongs
+            1540: 90.0,   # 7 furlongs
+            1650: 97.0,   # 7.5 furlongs
+            1760: 103.0,  # 1 mile
+            1870: 110.0,  # 1 1/16 miles
+            1980: 118.0,  # 1 1/8 miles
+        }
+
+        if par_time is None:
+            # Find closest par time
+            closest_dist = min(default_pars.keys(), key=lambda x: abs(x - distance_yards))
+            par_time = default_pars[closest_dist]
+
+            # Adjust for distance difference
+            dist_ratio = distance_yards / closest_dist
+            par_time = par_time * dist_ratio
+
+        # Base figure (average horse runs par time = 80)
+        base_figure = 80
+
+        # Scale: Each second off par = approximately 10 points per mile
+        # Adjust scale by distance (shorter = more weight per second)
+        scale_factor = 1760 / distance_yards * 10
+
+        # Calculate raw figure
+        time_diff = par_time - final_time  # Positive = faster than par
+        raw_figure = base_figure + (time_diff * scale_factor) + track_variant
+
+        # Clamp to reasonable range
+        return max(0, min(130, int(round(raw_figure))))
+
+    def calculate_pace_figure(
+        self,
+        fraction_times: List[Optional[float]],
+        distance_yards: int
+    ) -> Dict[str, any]:
+        """
+        Calculate pace figures from fractional times.
+
+        Returns early pace (E1, E2) and late pace (LP) figures.
+
+        Args:
+            fraction_times: List of fractional times [1/4, 1/2, 3/4, final, etc.]
+            distance_yards: Race distance in yards
+
+        Returns:
+            Dict with pace figures and style classification
+        """
+        result = {
+            'early_pace_figure': None,
+            'late_pace_figure': None,
+            'pace_style': 'UNKNOWN',
+            'first_call_time': None,
+            'second_call_time': None,
+        }
+
+        # Filter out None values
+        valid_times = [t for t in fraction_times if t is not None and t > 0]
+
+        if len(valid_times) < 2:
+            return result
+
+        # Assign times based on position
+        if len(valid_times) >= 1:
+            result['first_call_time'] = valid_times[0]
+        if len(valid_times) >= 2:
+            result['second_call_time'] = valid_times[1]
+
+        # Calculate early pace from first two fractions
+        # Approximate par for first half-mile: 46 seconds
+        first_half_par = 46.0
+        first_half_time = valid_times[1] if len(valid_times) >= 2 else valid_times[0] * 2
+
+        early_diff = first_half_par - first_half_time
+        result['early_pace_figure'] = int(round(80 + early_diff * 5))
+
+        # Calculate late pace from final fraction
+        if len(valid_times) >= 3:
+            final_time = valid_times[-1]
+            second_to_last = valid_times[-2]
+            final_fraction = final_time - second_to_last
+
+            # Par for final quarter: approximately 25 seconds
+            final_par = 25.0
+            late_diff = final_par - final_fraction
+            result['late_pace_figure'] = int(round(80 + late_diff * 5))
+
+        # Classify pace style based on relative figures
+        if result['early_pace_figure'] and result['late_pace_figure']:
+            early = result['early_pace_figure']
+            late = result['late_pace_figure']
+
+            if early >= late + 10:
+                result['pace_style'] = 'E'  # Front-runner
+            elif early >= late + 3:
+                result['pace_style'] = 'EP'  # Early presser
+            elif late >= early + 10:
+                result['pace_style'] = 'C'  # Closer
+            elif late >= early + 3:
+                result['pace_style'] = 'S'  # Stalker
+            else:
+                result['pace_style'] = 'P'  # Presser
+        elif result['early_pace_figure']:
+            if result['early_pace_figure'] >= 90:
+                result['pace_style'] = 'E'
+            elif result['early_pace_figure'] >= 80:
+                result['pace_style'] = 'EP'
+            else:
+                result['pace_style'] = 'P'
+
+        return result
+
+    def calculate_class_rating(
+        self,
+        purse: Optional[float],
+        race_type_code: str,
+        class_level: int,
+        field_quality: float = 80.0
+    ) -> float:
+        """
+        Calculate a class rating incorporating purse, race type, and field.
+
+        Args:
+            purse: Purse amount in USD
+            race_type_code: Standardized race type code
+            class_level: Race class level (1-10)
+            field_quality: Average speed figure of field
+
+        Returns:
+            Class rating (typically 50-120 range)
+        """
+        # Base rating from class level
+        # Class 1 (maiden) = 60, Class 10 (G1) = 110
+        base_rating = 55 + (class_level * 5)
+
+        # Purse adjustment
+        # $25k = neutral, each $25k above = +2 points
+        purse_adjustment = 0.0
+        if purse:
+            purse_diff = (purse - 25000) / 25000
+            purse_adjustment = purse_diff * 2
+            # Cap adjustment
+            purse_adjustment = max(-10, min(20, purse_adjustment))
+
+        # Field quality adjustment
+        # Average field (80) = neutral
+        field_adjustment = (field_quality - 80) * 0.3
+
+        final_rating = base_rating + purse_adjustment + field_adjustment
+
+        return max(40, min(130, final_rating))
+
+    def calculate_earnings_per_start(
+        self,
+        total_earnings: float,
+        total_starts: int
+    ) -> float:
+        """
+        Calculate average earnings per start.
+
+        Args:
+            total_earnings: Total career earnings
+            total_starts: Total career starts
+
+        Returns:
+            Earnings per start
+        """
+        if total_starts <= 0:
+            return 0.0
+        return total_earnings / total_starts
+
+    def standardize_odds(
+        self,
+        odds_value: Optional[str],
+        odds_format: str = 'american'
+    ) -> Optional[float]:
+        """
+        Convert odds to decimal format.
+
+        Supports American (+150, -110), fractional (3/1), and decimal (4.0).
+
+        Args:
+            odds_value: Odds value as string
+            odds_format: Format hint ('american', 'fractional', 'decimal')
+
+        Returns:
+            Decimal odds (e.g., 4.0 means $4 return on $1 bet) or None
+        """
+        if not odds_value:
+            return None
+
+        odds_str = str(odds_value).strip()
+
+        try:
+            # Try to detect format
+            if '/' in odds_str:
+                # Fractional: 3/1 -> 4.0
+                parts = odds_str.split('/')
+                if len(parts) == 2:
+                    num = float(parts[0])
+                    denom = float(parts[1])
+                    if denom > 0:
+                        return (num / denom) + 1
+
+            elif odds_str.startswith('+') or odds_str.startswith('-'):
+                # American odds
+                american = float(odds_str)
+                if american > 0:
+                    return (american / 100) + 1
+                else:
+                    return (100 / abs(american)) + 1
+
+            else:
+                # Try decimal or fractional without slash
+                value = float(odds_str)
+
+                if value < 1:
+                    # Probably fractional without denominator (0.5 = 1/2)
+                    return value + 1
+                elif value < 50:
+                    # Likely already decimal
+                    return value
+                else:
+                    # Likely American positive
+                    return (value / 100) + 1
+
+        except (ValueError, ZeroDivisionError):
+            return None
+
+        return None
+
+    def calculate_implied_probability(self, decimal_odds: float) -> float:
+        """
+        Convert decimal odds to implied probability.
+
+        Args:
+            decimal_odds: Decimal odds (e.g., 4.0)
+
+        Returns:
+            Implied probability (0 to 1)
+        """
+        if decimal_odds <= 0:
+            return 0.0
+        return 1.0 / decimal_odds
+
+    def normalize_field_probabilities(
+        self,
+        probabilities: List[float]
+    ) -> List[float]:
+        """
+        Normalize probabilities to sum to 1.0 (softmax-style).
+
+        Used to ensure race probabilities form valid distribution.
+
+        Args:
+            probabilities: List of raw probabilities
+
+        Returns:
+            Normalized probabilities summing to 1.0
+        """
+        total = sum(probabilities)
+        if total <= 0:
+            # Equal probabilities
+            n = len(probabilities)
+            return [1.0 / n] * n if n > 0 else []
+
+        return [p / total for p in probabilities]
