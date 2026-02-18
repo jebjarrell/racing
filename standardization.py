@@ -102,34 +102,38 @@ class RacingDataStandardizer:
             }
         
         cleaned = raw_value.strip().upper()
-        
-        # Check for exact matches first (avoid partial matches)
+
+        # Handle compound types first (most specific first)
+        # Must check these before individual keyword matching
+        if 'MAIDEN CLAIMING' in cleaned or 'MAIDEN CLM' in cleaned:
+            return {
+                'race_type_code': 'CLAIMING',  # Use CLAIMING code per standardization
+                'race_type_description': raw_value.strip(),
+                'class_level': 1,  # Maiden races are lowest class
+                'purse_category': 'MAIDEN'
+            }
+
+        # Check for exact matches in race type hierarchy
         words = cleaned.split()
         for code, level in self.race_type_hierarchy.items():
-            if code in words or (len(code) > 2 and code in cleaned):
+            # Only match if code appears as a complete word, not as substring
+            if code in words:
                 return {
                     'race_type_code': code,
                     'race_type_description': raw_value.strip(),
                     'class_level': level,
                     'purse_category': self._get_purse_category(level)
                 }
-        
+
         # Fallback to keyword matching (order matters - most specific first)
-        if any(word in cleaned for word in ['MAIDEN CLAIMING']):
+        if 'MAIDEN' in cleaned or 'MSW' in cleaned:
             return {
                 'race_type_code': 'MAIDEN',
                 'race_type_description': raw_value.strip(),
                 'class_level': 1,
                 'purse_category': 'MAIDEN'
             }
-        elif any(word in cleaned for word in ['MAIDEN', 'MSW']):
-            return {
-                'race_type_code': 'MAIDEN',
-                'race_type_description': raw_value.strip(),
-                'class_level': 1,
-                'purse_category': 'MAIDEN'
-            }
-        elif any(word in cleaned for word in ['CLAIMING', 'CLM']):
+        elif 'CLAIMING' in cleaned or 'CLM' in cleaned:
             return {
                 'race_type_code': 'CLAIMING',
                 'race_type_description': raw_value.strip(),
@@ -292,13 +296,18 @@ class RacingDataStandardizer:
         return self.track_conditions.get(cleaned, 'OTHER')
     
     def parse_distance(self, distance_value: Optional[str], unit: Optional[str] = None) -> Optional[int]:
-        """Convert distance to yards for standardization"""
+        """Convert distance to yards for standardization
+
+        Equibase XML uses "hundredths" encoding for distances:
+        - Furlongs: 600 = 6.00F, 550 = 5.50F, 1430 = 14.30F (divide by 100)
+        - Miles: 2400 = 1.5M (divide by 1600 to get miles, as 1 mile = 1600 in their encoding)
+        """
         if not distance_value:
             return None
-        
+
         try:
             distance = float(str(distance_value).strip())
-            
+
             # Determine unit from context if not provided
             if not unit:
                 if distance < 20:  # Likely furlongs
@@ -307,30 +316,41 @@ class RacingDataStandardizer:
                     unit = 'Y'
                 else:  # Likely miles
                     unit = 'M'
-            
+
             unit = str(unit).upper() if unit else 'F'
-            
+
             # Convert to yards
             if unit in ['F', 'FURLONG', 'FURLONGS']:
-                # Handle cases where distance is given as 600 meaning 6 furlongs
-                if distance >= 100 and distance % 100 == 0:
+                # Equibase encodes furlongs in "hundredths" format
+                # E.g., 600 = 6.00 furlongs, 550 = 5.50 furlongs
+                if distance >= 100:
+                    # Divide by 100 to get actual furlongs
                     furlongs = distance / 100
                     return int(furlongs * 220)  # Convert furlongs to yards
                 else:
+                    # Small values (< 100) are already in furlongs
                     return int(distance * 220)  # 1 furlong = 220 yards
+
             elif unit in ['M', 'MILE', 'MILES']:
-                return int(distance * 1760)  # 1 mile = 1760 yards
+                # Equibase encodes miles in a special format where 1 mile = 1600
+                # E.g., 2400 = 1.5 miles (2400/1600 = 1.5)
+                if distance >= 100:
+                    # Divide by 1600 to get actual miles
+                    miles = distance / 1600
+                    return int(miles * 1760)  # Convert miles to yards
+                else:
+                    # Small values (< 100) are already in miles
+                    return int(distance * 1760)  # 1 mile = 1760 yards
+
             elif unit in ['Y', 'YARD', 'YARDS']:
                 return int(distance)
             else:
-                # For raw distance numbers, make reasonable assumptions
+                # For raw distance numbers without explicit unit, make reasonable assumptions
                 if distance < 20:  # Likely furlongs (most common)
                     return int(distance * 220)
-                elif distance >= 100 and distance <= 1000:  # Likely represents furlongs * 100
-                    # Values like 600 in XML typically means 6 furlongs, not 600 yards
-                    # Convert by dividing by 100 to get furlong count
+                elif distance >= 100 and distance <= 1000:  # Likely represents furlongs in hundredths
                     furlongs = distance / 100
-                    return int(furlongs * 220)  # Convert furlongs to yards
+                    return int(furlongs * 220)
                 elif distance > 1000:  # Likely already in yards or feet
                     if distance > 5000:  # Definitely feet
                         return int(distance / 3)  # Convert feet to yards
@@ -338,7 +358,7 @@ class RacingDataStandardizer:
                         return int(distance)  # Assume yards
                 else:  # Could be furlongs
                     return int(distance * 220)
-                
+
         except (ValueError, TypeError):
             return None
     

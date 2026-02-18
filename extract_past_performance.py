@@ -242,23 +242,33 @@ class PastPerformanceExtractor:
             root = ET.fromstring(xml_content)
             
             # Extract track code and date from filename
-            # Filename pattern: SIMD20230101AQU_USA.xml
-            base_filename = os.path.basename(filename).replace('.xml', '')
-            if ':' in base_filename:  # Handle zip files
+            # Filename pattern: SIMD20230101AQU_USA.xml or SIMD20230101GP_USA.xml
+            # Format: SIMD (4 chars) + YYYYMMDD (8 chars) + TRACK (2-3 chars) + _USA (optional)
+            base_filename = os.path.basename(filename).replace('.xml', '').replace('.zip', '')
+            if ':' in base_filename:  # Handle zip files like "path.zip:SIMD20230101AQU_USA.xml"
                 base_filename = base_filename.split(':')[-1]
-                
-            if '_' in base_filename:
-                parts = base_filename.split('_')
-                track_code = parts[1][:3] if len(parts) > 1 else 'UNK'
-                date_str = parts[0][4:12] if len(parts[0]) >= 12 else None
-            else:
-                # For files like SIMD20230101AQU_USA, extract from position
-                if len(base_filename) >= 15:
-                    date_str = base_filename[4:12]  # positions 4-11 for YYYYMMDD
-                    track_code = base_filename[12:15]  # positions 12-14 for track code
+
+            # Extract date and track code from standardized format
+            # Format: SIMD[YYYYMMDD][TRACK]_USA
+            # Position 0-3: SIMD
+            # Position 4-11: YYYYMMDD (date)
+            # Position 12+: Track code (2-3 letters) ending with '_' or end of string
+            if len(base_filename) >= 14:
+                date_str = base_filename[4:12]  # positions 4-11 for YYYYMMDD
+
+                # Track code is everything after position 12 up to '_' or end of string
+                track_part = base_filename[12:]
+                if '_' in track_part:
+                    track_code = track_part.split('_')[0]  # Take part before '_'
                 else:
-                    track_code = 'UNK'
-                    date_str = None
+                    track_code = track_part  # No underscore, use whole remaining part
+
+                # Ensure track code is uppercase and 2-4 characters
+                track_code = track_code.upper()[:4] if track_code else 'UNK'
+            else:
+                # Fallback for non-standard filenames
+                track_code = 'UNK'
+                date_str = None
             
             if date_str:
                 try:
