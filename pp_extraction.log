@@ -704,3 +704,144 @@ Sample entry record:
 2025-11-14 16:51:52,421 - WARNING - Could not find registration number for horse: B C Glory Days
 2025-11-14 16:51:52,421 - ERROR - Error looking up registration number for Bourbon's Hope: no such table: horses_master
 2025-11-14 16:51:52,421 - WARNING - Could not find registration number for horse: Bourbon's Hope
+2025-12-16 09:17:51,363 - INFO - Starting Past Performance extraction from 2023 PPs
+2025-12-16 09:17:51,369 - INFO - Using 45 workers with standardization
+2025-12-16 09:17:51,593 - INFO - Found 5924 Past Performance XML files to process
+2025-12-16 09:18:09,247 - INFO - Processed 100 files. Races: 197, Entries: 1761
+2025-12-16 09:18:20,313 - INFO - Processed 200 files. Races: 358, Entries: 3271
+2025-12-16 09:18:28,006 - INFO - Performing batch database insert...
+2025-12-16 09:18:28,121 - INFO - Inserted 500 races
+2025-12-16 09:18:28,953 - INFO - Inserted 4604 entries
+2025-12-16 09:18:29,178 - INFO - Inserted 882 equipment records
+2025-12-16 09:18:32,035 - INFO - Processed 300 files. Races: 485, Entries: 4475
+2025-12-16 09:18:42,952 - INFO - Processed 400 files. Races: 628, Entries: 5804
+2025-12-16 09:18:54,936 - INFO - Processed 500 files. Races: 767, Entries: 7082
+2025-12-16 09:19:07,691 - INFO - Processed 600 files. Races: 876, Entries: 8135
+2025-12-16 09:19:16,140 - INFO - Performing batch database insert...
+2025-12-16 09:19:16,237 - INFO - Inserted 505 races
+2025-12-16 09:19:17,014 - INFO - Inserted 4749 entries
+2025-12-16 09:19:17,280 - INFO - Inserted 1059 equipment records
+2025-12-16 09:19:22,474 - INFO - Processed 700 files. Races: 1006, Entries: 9283
+2025-12-16 09:19:33,952 - INFO - Processed 800 files. Races: 1151, Entries: 10666
+2025-12-16 09:19:45,233 - INFO - Processed 900 files. Races: 1270, Entries: 11787
+2025-12-16 09:19:57,445 - INFO - Processed 1000 files. Races: 1409, Entries: 13058
+2025-12-16 09:20:02,124 - INFO - Performing batch database insert...
+2025-12-16 09:20:02,329 - INFO - Inserted 504 races
+2025-12-16 09:20:03,329 - INFO - Inserted 4818 entries
+2025-12-16 09:20:03,561 - INFO - Inserted 924 equipment records
+2025-12-16 09:20:10,651 - INFO - Processed 1100 files. Races: 1525, Entries: 14191
+2025-12-16 09:20:21,600 - INFO - Processed 1200 files. Races: 1660, Entries: 15417
+2025-12-16 09:20:33,420 - INFO - Processed 1300 files. Races: 1806, Entries: 16757
+2025-12-16 09:20:46,143 - INFO - Processed 1400 files. Races: 1941, Entries: 18138
+2025-12-16 09:20:46,811 - INFO - Performing batch database insert...
+2025-12-16 09:20:46,918 - INFO - Inserted 501 races
+2025-12-16 09:20:48,078 - INFO - Inserted 4798 entries
+2025-12-16 09:20:48,211 - INFO - Inserted 760 equipment records
+2025-12-16 09:20:57,644 - INFO - Processed 1500 files. Races: 2072, Entries: 19428
+2025-12-16 09:21:08,405 - INFO - Processed 1600 files. Races: 2192, Entries: 20560
+2025-12-16 09:21:19,051 - INFO - Processed 1700 files. Races: 2339, Entries: 21914
+2025-12-16 09:21:30,485 - INFO - Processed 1800 files. Races: 2458, Entries: 23023
+2025-12-16 09:21:31,818 - INFO - Performing batch database insert...
+2025-12-16 09:21:31,922 - INFO - Inserted 501 races
+2025-12-16 09:21:32,936 - INFO - Inserted 4805 entries
+2025-12-16 09:21:33,062 - INFO - Inserted 757 equipment records
+2025-12-16 09:21:41,652 - INFO - Processed 1900 files. Races: 2581, Entries: 24172
+2025-12-16 09:21:51,844 - INFO - Processed 2000 files. Races: 2718, Entries: 25388
+2025-12-16 09:22:01,513 - INFO - Processed 2100 files. Races: 2895, Entries: 26948
+2025-12-16 09:22:10,786 - INFO - Performing batch database insert...
+2025-12-16 09:22:10,967 - INFO - Inserted 507 races
+2025-12-16 09:22:12,251 - INFO - Inserted 4615 entries
+2025-12-16 09:22:12,376 - INFO - Inserted 588 equipment records
+2025-12-16 09:22:13,117 - INFO - Processed 2200 files. Races: 3009, Entries: 27983
+2025-12-16 09:22:22,776 - INFO - Processed 2300 files. Races: 3129, Entries: 28989
+2025-12-16 09:22:31,503 - INFO - Processed 2400 files. Races: 3289, Entries: 30393
+2025-12-16 09:22:42,121 - INFO - Processed 2500 files. Races: 3405, Entries: 31365
+2025-12-16 09:22:49,869 - INFO - Performing batch database insert...
+2025-12-16 09:22:50,030 - INFO - Inserted 500 races
+2025-12-16 09:22:51,473 - INFO - Inserted 4251 entries
+2025-12-16 09:22:51,578 - INFO - Inserted 589 equipment records
+2025-12-16 09:22:54,733 - INFO - Processed 2600 files. Races: 3545, Entries: 32573
+2025-12-16 09:23:05,493 - INFO - Processed 2700 files. Races: 3665, Entries: 33588
+2025-12-16 09:23:16,843 - INFO - Processed 2800 files. Races: 3791, Entries: 34687
+2025-12-16 09:23:28,351 - INFO - Processed 2900 files. Races: 3925, Entries: 35865
+2025-12-16 09:23:35,291 - INFO - Performing batch database insert...
+2025-12-16 09:23:35,420 - INFO - Inserted 500 races
+2025-12-16 09:23:36,482 - INFO - Inserted 4428 entries
+2025-12-16 09:23:36,609 - INFO - Inserted 598 equipment records
+2025-12-16 09:23:39,207 - INFO - Processed 3000 files. Races: 4054, Entries: 37009
+2025-12-16 09:23:49,227 - INFO - Processed 3100 files. Races: 4211, Entries: 38300
+2025-12-16 09:23:59,816 - INFO - Processed 3200 files. Races: 4339, Entries: 39395
+2025-12-16 09:24:10,299 - INFO - Processed 3300 files. Races: 4462, Entries: 40432
+2025-12-16 09:24:14,571 - INFO - Performing batch database insert...
+2025-12-16 09:24:14,765 - INFO - Inserted 501 races
+2025-12-16 09:24:16,064 - INFO - Inserted 4288 entries
+2025-12-16 09:24:16,091 - INFO - Inserted 536 equipment records
+2025-12-16 09:24:20,665 - INFO - Processed 3400 files. Races: 4590, Entries: 41554
+2025-12-16 09:24:31,576 - INFO - Processed 3500 files. Races: 4722, Entries: 42732
+2025-12-16 09:24:42,846 - INFO - Processed 3600 files. Races: 4862, Entries: 43962
+2025-12-16 09:24:53,369 - INFO - Processed 3700 files. Races: 4998, Entries: 45041
+2025-12-16 09:24:56,897 - INFO - Performing batch database insert...
+2025-12-16 09:24:57,121 - INFO - Inserted 508 races
+2025-12-16 09:24:58,446 - INFO - Inserted 4403 entries
+2025-12-16 09:24:58,592 - INFO - Inserted 539 equipment records
+2025-12-16 09:25:04,574 - INFO - Processed 3800 files. Races: 5123, Entries: 46091
+2025-12-16 09:25:15,516 - INFO - Processed 3900 files. Races: 5271, Entries: 47305
+2025-12-16 09:25:25,335 - INFO - Processed 4000 files. Races: 5409, Entries: 48407
+2025-12-16 09:25:36,844 - INFO - Processed 4100 files. Races: 5529, Entries: 49477
+2025-12-16 09:25:38,299 - INFO - Performing batch database insert...
+2025-12-16 09:25:38,475 - INFO - Inserted 501 races
+2025-12-16 09:25:39,320 - INFO - Inserted 4272 entries
+2025-12-16 09:25:39,421 - INFO - Inserted 642 equipment records
+2025-12-16 09:25:47,006 - INFO - Processed 4200 files. Races: 5655, Entries: 50530
+2025-12-16 09:25:58,704 - INFO - Processed 4300 files. Races: 5805, Entries: 51824
+2025-12-16 09:26:09,390 - INFO - Processed 4400 files. Races: 5969, Entries: 53308
+2025-12-16 09:26:15,172 - INFO - Performing batch database insert...
+2025-12-16 09:26:15,283 - INFO - Inserted 506 races
+2025-12-16 09:26:16,522 - INFO - Inserted 4400 entries
+2025-12-16 09:26:16,728 - INFO - Inserted 547 equipment records
+2025-12-16 09:26:21,832 - INFO - Processed 4500 files. Races: 6122, Entries: 54618
+2025-12-16 09:26:33,433 - INFO - Processed 4600 files. Races: 6301, Entries: 56308
+2025-12-16 09:26:44,936 - INFO - Processed 4700 files. Races: 6434, Entries: 57507
+2025-12-16 09:26:56,309 - INFO - Performing batch database insert...
+2025-12-16 09:26:56,508 - INFO - Inserted 507 races
+2025-12-16 09:26:57,475 - INFO - Processed 4800 files. Races: 6590, Entries: 58888
+2025-12-16 09:26:58,012 - INFO - Inserted 4832 entries
+2025-12-16 09:26:58,148 - INFO - Inserted 599 equipment records
+2025-12-16 09:27:09,696 - INFO - Processed 4900 files. Races: 6751, Entries: 60453
+2025-12-16 09:27:21,629 - INFO - Processed 5000 files. Races: 6921, Entries: 62029
+2025-12-16 09:27:33,401 - INFO - Processed 5100 files. Races: 7058, Entries: 63313
+2025-12-16 09:27:38,083 - INFO - Performing batch database insert...
+2025-12-16 09:27:38,266 - INFO - Inserted 511 races
+2025-12-16 09:27:39,231 - INFO - Inserted 4816 entries
+2025-12-16 09:27:39,548 - INFO - Inserted 648 equipment records
+2025-12-16 09:27:44,332 - INFO - Processed 5200 files. Races: 7171, Entries: 64397
+2025-12-16 09:27:57,048 - INFO - Processed 5300 files. Races: 7333, Entries: 65895
+2025-12-16 09:28:10,443 - INFO - Processed 5400 files. Races: 7496, Entries: 67484
+2025-12-16 09:28:18,500 - INFO - Performing batch database insert...
+2025-12-16 09:28:18,658 - INFO - Inserted 512 races
+2025-12-16 09:28:19,662 - INFO - Inserted 4958 entries
+2025-12-16 09:28:19,805 - INFO - Inserted 774 equipment records
+2025-12-16 09:28:25,495 - INFO - Processed 5500 files. Races: 7692, Entries: 69355
+2025-12-16 09:28:38,029 - INFO - Processed 5600 files. Races: 7861, Entries: 70917
+2025-12-16 09:28:50,371 - INFO - Processed 5700 files. Races: 8037, Entries: 72454
+2025-12-16 09:28:56,789 - INFO - Performing batch database insert...
+2025-12-16 09:28:56,995 - INFO - Inserted 508 races
+2025-12-16 09:28:58,101 - INFO - Inserted 4739 entries
+2025-12-16 09:28:58,291 - INFO - Inserted 855 equipment records
+2025-12-16 09:29:04,555 - INFO - Processed 5800 files. Races: 8210, Entries: 74094
+2025-12-16 09:29:15,037 - INFO - Processed 5900 files. Races: 8421, Entries: 76152
+2025-12-16 09:29:15,348 - INFO - Final batch database insert...
+2025-12-16 09:29:15,362 - INFO - Inserted 232 races
+2025-12-16 09:29:15,472 - INFO - Inserted 2262 entries
+2025-12-16 09:29:15,484 - INFO - Inserted 452 equipment records
+2025-12-16 09:29:15,539 - INFO - ============================================================
+2025-12-16 09:29:15,539 - INFO - PAST PERFORMANCE EXTRACTION COMPLETE
+2025-12-16 09:29:15,539 - INFO - ============================================================
+2025-12-16 09:29:15,540 - INFO - Files processed: 5924
+2025-12-16 09:29:15,540 - INFO - Races extracted: 8443
+2025-12-16 09:29:15,540 - INFO - Entries extracted: 76361
+2025-12-16 09:29:15,540 - INFO - Equipment records: 551520
+2025-12-16 09:29:15,541 - INFO - Errors: 0
+2025-12-16 09:29:15,541 - INFO - Duration: 684.18 seconds
+2025-12-16 09:29:15,541 - INFO - Files per second: 8.66
+2025-12-16 09:29:15,541 - INFO - ============================================================

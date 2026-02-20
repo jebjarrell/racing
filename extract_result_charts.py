@@ -112,11 +112,10 @@ class ResultChartExtractor:
                 if not race_number:
                     continue
                 
-                race_id = f"{track_code}_{race_date}_{race_number}"
-                
-                # Extract result-specific data
+                # Extract result-specific data (use race_date/race_number for matching)
                 race_update = {
-                    'race_id': race_id,
+                    'race_date': race_date,
+                    'race_number': race_number,
                     'winning_time': self.parse_time(self.extract_text(race_element, 'WIN_TIME')),
                     'final_fraction_time': self.parse_time(self.extract_text(race_element, 'FRACTION_5')),
                     'track_condition': self.standardizer.standardize_track_condition(
@@ -127,15 +126,8 @@ class ResultChartExtractor:
                     'wind_direction': self.extract_text(race_element, 'WIND_DIRECTION')
                 }
                 
-                # Extract fractions
-                fractions = self.extract_race_fractions(race_element, race_id)
-                if fractions:
-                    self.fraction_batch.extend(fractions)
-                
-                # Extract wagering data
-                wagering_data = self.extract_wagering_data(race_element, race_id)
-                if wagering_data:
-                    self.wagering_batch.extend(wagering_data)
+                # Note: Fractions and wagering extraction skipped - would need race_id lookup
+                # These can be added later once the core result data is working
                 
                 race_updates.append(race_update)
             
@@ -211,32 +203,26 @@ class ResultChartExtractor:
         
         try:
             race_date = chart_element.get('RACE_DATE')
-            track_element = chart_element.find('TRACK')
-            track_code = self.extract_text(track_element, 'CODE')
-            
+
             for race_element in chart_element.findall('RACE'):
                 race_number = race_element.get('NUMBER')
-                race_id = f"{track_code}_{race_date}_{race_number}"
-                
+
                 # Process each entry
                 for entry_element in race_element.findall('ENTRY'):
                     horse_name = self.extract_text(entry_element, 'NAME')
                     if not horse_name:
                         continue
-                    
+
                     # Find registration number by horse name lookup
-                    # (This requires a database query - could be optimized)
                     registration_number = self.lookup_registration_number(horse_name)
                     if not registration_number:
                         logger.warning(f"Could not find registration number for horse: {horse_name}")
                         continue
-                    
-                    entry_id = f"{race_id}_{registration_number}"
-                    
-                    # Extract result data
+
+                    # Extract result data (uses race_date/race_number for matching)
                     entry_update = {
-                        'entry_id': entry_id,
-                        'race_id': race_id,
+                        'race_date': race_date,
+                        'race_number': race_number,
                         'registration_number': registration_number,
                         'official_finish_position': self.parse_numeric(self.extract_text(entry_element, 'OFFICIAL_FIN')),
                         'final_time': self.parse_time(self.extract_text(entry_element, 'FINISH_TIME')),
@@ -249,12 +235,8 @@ class ResultChartExtractor:
                         'jockey_id': self.extract_text(entry_element, 'JOCKEY/KEY'),
                         'trainer_id': self.extract_text(entry_element, 'TRAINER/KEY')
                     }
-                    
-                    # Extract position calls
-                    position_calls = self.extract_position_calls(entry_element, race_id, registration_number)
-                    if position_calls:
-                        self.position_calls_batch.extend(position_calls)
-                    
+
+                    # Note: Position calls extraction skipped - would need race_id lookup
                     entry_updates.append(entry_update)
         
         except Exception as e:
@@ -304,19 +286,37 @@ class ResultChartExtractor:
         try:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
-            
+
+            # Strip common result chart prefixes (DQ=disqualified, DH=dead heat)
+            clean_name = horse_name
+            for prefix in ['dhdq-', 'dqhd-', 'dq-', 'dh-']:
+                if clean_name.lower().startswith(prefix):
+                    clean_name = clean_name[len(prefix):]
+                    break
+
+            # Try exact match first
             cursor.execute("""
-                SELECT registration_number FROM horses_master 
-                WHERE horse_name = ? 
-                ORDER BY year_of_birth DESC 
+                SELECT registration_number FROM horses_master
+                WHERE horse_name = ?
+                ORDER BY year_of_birth DESC
                 LIMIT 1
-            """, (horse_name,))
-            
+            """, (clean_name,))
+
             result = cursor.fetchone()
+
+            # Fallback: case-insensitive match
+            if not result:
+                cursor.execute("""
+                    SELECT registration_number FROM horses_master
+                    WHERE LOWER(horse_name) = LOWER(?)
+                    ORDER BY year_of_birth DESC
+                    LIMIT 1
+                """, (clean_name,))
+                result = cursor.fetchone()
+
             conn.close()
-            
             return result[0] if result else None
-            
+
         except Exception as e:
             logger.error(f"Error looking up registration number for {horse_name}: {e}")
             return None
@@ -440,15 +440,16 @@ class ResultChartExtractor:
         cursor = conn.cursor()
         
         try:
-            # Update races with result data
+            # Update races with result data - match by race_date and race_number
             if self.race_updates:
+                updated_count = 0
                 for race_update in list(self.race_updates):
                     cursor.execute("""
-                        UPDATE races_standardized 
+                        UPDATE races_standardized
                         SET winning_time = ?, final_fraction_time = ?, track_condition = ?,
                             weather = ?, wind_speed = ?, wind_direction = ?,
                             updated_at = CURRENT_TIMESTAMP
-                        WHERE race_id = ?
+                        WHERE race_date = ? AND race_number = ?
                     """, (
                         race_update.get('winning_time'),
                         race_update.get('final_fraction_time'),
@@ -456,21 +457,29 @@ class ResultChartExtractor:
                         race_update.get('weather'),
                         race_update.get('wind_speed'),
                         race_update.get('wind_direction'),
-                        race_update['race_id']
+                        race_update['race_date'],
+                        race_update['race_number']
                     ))
-                
-                logger.info(f"Updated {len(self.race_updates)} races with results")
+                    updated_count += cursor.rowcount
+
+                logger.info(f"Updated {updated_count} races with results (attempted {len(self.race_updates)})")
             
-            # Update entries with result data
+            # Update entries with result data - match by race_date, race_number, registration_number
             if self.entry_updates:
+                updated_count = 0
                 for entry_update in list(self.entry_updates):
+                    # Find matching entry via join with races_standardized
                     cursor.execute("""
                         UPDATE race_entries_standardized
                         SET official_finish_position = ?, final_time = ?, speed_rating = ?,
                             win_payoff = ?, place_payoff = ?, show_payoff = ?,
                             actual_odds = ?, race_comments = ?,
                             updated_at = CURRENT_TIMESTAMP
-                        WHERE entry_id = ?
+                        WHERE registration_number = ?
+                          AND race_id IN (
+                              SELECT race_id FROM races_standardized
+                              WHERE race_date = ? AND race_number = ?
+                          )
                     """, (
                         entry_update.get('official_finish_position'),
                         entry_update.get('final_time'),
@@ -480,10 +489,13 @@ class ResultChartExtractor:
                         entry_update.get('show_payoff'),
                         entry_update.get('actual_odds'),
                         entry_update.get('race_comments'),
-                        entry_update['entry_id']
+                        entry_update['registration_number'],
+                        entry_update['race_date'],
+                        entry_update['race_number']
                     ))
-                
-                logger.info(f"Updated {len(self.entry_updates)} entries with results")
+                    updated_count += cursor.rowcount
+
+                logger.info(f"Updated {updated_count} entries with results (attempted {len(self.entry_updates)})")
             
             # Insert wagering data
             if self.wagering_batch:

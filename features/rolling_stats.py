@@ -27,6 +27,30 @@ import sqlite3
 logger = logging.getLogger(__name__)
 
 
+def parse_fractional_odds(odds_str) -> float:
+    """Parse fractional odds string to decimal odds."""
+    if odds_str is None or odds_str == '':
+        return 0.0
+    if isinstance(odds_str, (int, float)):
+        return float(odds_str)
+    odds_str = str(odds_str).strip().upper()
+    if odds_str in ('EVEN', 'EVS', 'EV'):
+        return 1.0
+    if '/' in odds_str:
+        try:
+            parts = odds_str.split('/')
+            if len(parts) == 2:
+                num, denom = float(parts[0]), float(parts[1])
+                if denom != 0:
+                    return num / denom
+        except (ValueError, ZeroDivisionError):
+            pass
+    try:
+        return float(odds_str)
+    except ValueError:
+        return 0.0
+
+
 @dataclass
 class RollingStats:
     """Container for rolling statistics."""
@@ -236,12 +260,15 @@ class RollingStatsCalculator:
                 if finish == 1:
                     total_payout += 2.0 * (odds + 1)  # Decimal odds payout
 
-            ml = row['morning_line_odds']
-            if ml is not None and ml > 0:
+            ml = parse_fractional_odds(row['morning_line_odds'])
+            if ml > 0:
                 ml_list.append(ml)
 
             # Surface splits
-            surface = row.get('course_type_code', 'UNKNOWN')
+            try:
+                surface = row['course_type_code'] or 'UNKNOWN'
+            except (KeyError, IndexError):
+                surface = 'UNKNOWN'
             if surface == 'DIRT':
                 stats.dirt_starts += 1
                 if finish == 1:

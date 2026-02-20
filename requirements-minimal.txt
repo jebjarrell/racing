@@ -1,0 +1,14 @@
+# Minimal requirements for running the horse racing model
+# Python 3.10+ required
+
+# Core dependencies only
+numpy>=1.24.0,<2.0  # Must use NumPy 1.x for compatibility
+pandas>=2.0.0,<2.2
+lightgbm>=4.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+lxml>=4.9.0
+pyyaml>=6.0
+matplotlib>=3.7.0  # For evaluation plots
+tqdm>=4.65.0  # Progress bars
+tabulate>=0.9.0  # Results display

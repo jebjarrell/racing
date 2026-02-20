@@ -34,6 +34,58 @@ from .track_bias import TrackBiasCalculator, PostPositionBias, SpeedBias
 logger = logging.getLogger(__name__)
 
 
+def parse_fractional_odds(odds_str: Any) -> float:
+    """
+    Parse fractional odds string to decimal odds.
+
+    Examples:
+        '5/1' -> 5.0
+        '9/2' -> 4.5
+        '7/5' -> 1.4
+        '1/2' -> 0.5
+        'EVEN' or '1/1' -> 1.0
+        5.0 -> 5.0 (already numeric)
+        None or '' -> 0.0
+
+    Args:
+        odds_str: Fractional odds string like '5/1' or numeric value
+
+    Returns:
+        Decimal odds as float
+    """
+    if odds_str is None or odds_str == '':
+        return 0.0
+
+    # If already numeric, return as float
+    if isinstance(odds_str, (int, float)):
+        return float(odds_str)
+
+    # Convert to string and clean
+    odds_str = str(odds_str).strip().upper()
+
+    # Handle EVEN odds
+    if odds_str in ('EVEN', 'EVS', 'EV'):
+        return 1.0
+
+    # Try to parse as fractional odds (e.g., '5/1', '9/2')
+    if '/' in odds_str:
+        try:
+            parts = odds_str.split('/')
+            if len(parts) == 2:
+                numerator = float(parts[0])
+                denominator = float(parts[1])
+                if denominator != 0:
+                    return numerator / denominator
+        except (ValueError, ZeroDivisionError):
+            pass
+
+    # Try to parse as simple float
+    try:
+        return float(odds_str)
+    except ValueError:
+        return 0.0
+
+
 @dataclass
 class RaceContext:
     """Container for race-level context."""
@@ -70,7 +122,7 @@ class RaceContext:
             distance_yards=distance,
             class_level=row['class_level'] or 3,
             purse_usd=float(row['purse_usd'] or 0),
-            field_size=row.get('field_size', 0) or 0,
+            field_size=row['field_size'] if 'field_size' in row.keys() else 0,
             track_condition=row['track_condition'] or 'UNKNOWN',
             distance_bucket=bucket
         )
@@ -106,7 +158,7 @@ class EntryContext:
             trainer_id=row['trainer_id'] or '',
             jockey_id=row['jockey_id'] or '',
             post_position=row['post_position'] or 0,
-            morning_line_odds=float(row['morning_line_odds'] or 0),
+            morning_line_odds=parse_fractional_odds(row['morning_line_odds']),
             age_at_race=row['age_at_race'] or 0,
             weight_lbs=row['weight_lbs'] or 0,
             has_blinkers=bool(row['has_blinkers']),
