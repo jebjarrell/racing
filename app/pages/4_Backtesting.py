@@ -1,6 +1,5 @@
 """Backtesting - Simulate betting strategies on historical data."""
 
-import json
 import pickle
 import sys
 from collections import defaultdict
@@ -48,7 +47,7 @@ with st.sidebar:
     if strategy_name == "Flat Bet":
         bet_amount = st.number_input("Bet amount ($)", value=2.0, min_value=1.0, max_value=100.0, step=1.0)
         min_prob = st.slider("Min probability", 0.0, 0.50, 0.0, 0.01)
-        max_odds = st.slider("Max odds", 2.0, 50.0, 999.0, 1.0)
+        max_odds = st.slider("Max odds", 2.0, 50.0, 50.0, 1.0)
     elif strategy_name == "Kelly Criterion":
         kelly_fraction = st.slider("Kelly fraction", 0.05, 0.50, 0.25, 0.05)
         min_edge = st.slider("Min edge", 0.0, 0.30, 0.05, 0.01)

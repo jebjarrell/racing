@@ -139,15 +139,6 @@ def roc_curve_chart(fpr, tpr, auc_score: float) -> go.Figure:
     return fig
 
 
-def predictions_table_colors(prob):
-    """Return a color intensity based on probability value."""
-    if prob >= 0.20:
-        return "background-color: rgba(22, 163, 74, 0.3)"
-    elif prob >= 0.12:
-        return "background-color: rgba(37, 99, 235, 0.2)"
-    return ""
-
-
 def bet_distribution_chart(bet_amounts: list, ev_values: list) -> go.Figure:
     """Histograms of bet sizes and EV values side by side."""
     fig = make_subplots(rows=1, cols=2, subplot_titles=("Bet Sizes", "Expected Value"))

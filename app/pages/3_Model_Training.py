@@ -132,7 +132,7 @@ if st.button("Start Training", type="primary"):
         y_test = test_df["is_winner"]
 
         # Step 5: Train model
-        with st.status("Step 4: Training LightGBM model...", expanded=True) as status:
+        with st.status("Step 5: Training LightGBM model...", expanded=True) as status:
             params = {
                 "n_estimators": n_estimators,
                 "learning_rate": learning_rate,
@@ -147,7 +147,7 @@ if st.button("Start Training", type="primary"):
             status.update(label="Model trained", state="complete")
 
         # Step 6: Calibrate
-        with st.status("Step 5: Calibrating probabilities...", expanded=True) as status:
+        with st.status("Step 6: Calibrating probabilities...", expanded=True) as status:
             raw_val_probs = model.predict_raw(X_val)
             val_field_sizes = val_df["field_size"].fillna(8).values if "field_size" in val_df.columns else np.full(len(val_df), 8)
 
@@ -156,7 +156,7 @@ if st.button("Start Training", type="primary"):
             status.update(label="Calibration fitted", state="complete")
 
         # Step 7: Evaluate
-        with st.status("Step 6: Evaluating on test set...", expanded=True) as status:
+        with st.status("Step 7: Evaluating on test set...", expanded=True) as status:
             raw_test_probs = model.predict_raw(X_test)
             test_field_sizes = test_df["field_size"].fillna(8).values if "field_size" in test_df.columns else np.full(len(test_df), 8)
             calibrated_probs = calibrator.calibrate(raw_test_probs, test_field_sizes)
@@ -170,7 +170,7 @@ if st.button("Start Training", type="primary"):
             status.update(label=f"Evaluation: AUC={roc_auc:.4f}, Brier={brier:.4f}", state="complete")
 
         # Step 8: Save
-        with st.status("Step 7: Saving model artifacts...", expanded=True) as status:
+        with st.status("Step 8: Saving model artifacts...", expanded=True) as status:
             save_dir = Path("artifacts/models") / version_name
             save_dir.mkdir(parents=True, exist_ok=True)
 

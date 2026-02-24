@@ -134,35 +134,40 @@ else:
     else:
         selected_table = st.selectbox("Table", tables, index=0)
 
-        # Row count
-        count = conn.execute(f'SELECT COUNT(*) FROM "{selected_table}"').fetchone()[0]
+        # Validate table name against known tables
+        if selected_table not in tables:
+            st.error("Invalid table selection.")
+            conn.close()
+            st.stop()
+
+        # Row count - table name validated above
+        quoted_table = f'"{selected_table}"'
+        count = conn.execute(f"SELECT COUNT(*) FROM {quoted_table}").fetchone()[0]
         st.caption(f"**{count:,}** rows in `{selected_table}`")
 
         # Filters for race-related tables
         filter_clause = ""
         filter_params = []
 
-        if selected_table in ("races_standardized", "race_entries_standardized"):
+        if selected_table == "races_standardized":
             fc1, fc2, fc3 = st.columns(3)
             with fc1:
-                date_col = "race_date" if selected_table == "races_standardized" else None
-                if date_col:
-                    try:
-                        min_date = conn.execute(f"SELECT MIN({date_col}) FROM {selected_table}").fetchone()[0]
-                        max_date = conn.execute(f"SELECT MAX({date_col}) FROM {selected_table}").fetchone()[0]
-                        if min_date and max_date:
-                            from datetime import date as dt_date
-                            start_filter = st.date_input("From", value=dt_date.fromisoformat(min_date))
-                            end_filter = st.date_input("To", value=dt_date.fromisoformat(max_date))
-                            filter_clause = f"WHERE {date_col} BETWEEN ? AND ?"
-                            filter_params = [str(start_filter), str(end_filter)]
-                    except Exception:
-                        pass
+                try:
+                    from datetime import date as dt_date
+                    min_date = conn.execute(f"SELECT MIN(race_date) FROM {quoted_table}").fetchone()[0]
+                    max_date = conn.execute(f"SELECT MAX(race_date) FROM {quoted_table}").fetchone()[0]
+                    if min_date and max_date:
+                        start_filter = st.date_input("From", value=dt_date.fromisoformat(min_date))
+                        end_filter = st.date_input("To", value=dt_date.fromisoformat(max_date))
+                        filter_clause = "WHERE race_date BETWEEN ? AND ?"
+                        filter_params = [str(start_filter), str(end_filter)]
+                except Exception:
+                    pass
 
         # Query with limit
         limit = st.number_input("Max rows to display", value=100, min_value=10, max_value=5000, step=100)
 
-        query = f'SELECT * FROM "{selected_table}" {filter_clause} LIMIT ?'
+        query = f"SELECT * FROM {quoted_table} {filter_clause} LIMIT ?"
         filter_params.append(limit)
 
         try:

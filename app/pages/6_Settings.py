@@ -8,7 +8,7 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from app.components.sidebar import render_sidebar
+from app.components.sidebar import render_sidebar, load_config
 
 render_sidebar()
 
@@ -16,16 +16,6 @@ st.title("Settings")
 st.markdown("---")
 
 CONFIG_PATH = "config/config.yaml"
-
-
-def load_config() -> dict:
-    """Load current configuration."""
-    try:
-        with open(CONFIG_PATH) as f:
-            return yaml.safe_load(f)
-    except Exception as e:
-        st.error(f"Failed to load config: {e}")
-        return {}
 
 
 def save_config(config: dict):

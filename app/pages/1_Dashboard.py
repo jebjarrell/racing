@@ -100,25 +100,30 @@ def get_top_performers(db_path: str, entity: str = "trainer", limit: int = 10) -
     if not os.path.exists(db_path):
         return pd.DataFrame()
 
-    id_col = "trainer_id" if entity == "trainer" else "jockey_id"
+    allowed = {"trainer": "trainer_id", "jockey": "jockey_id"}
+    if entity not in allowed:
+        return pd.DataFrame()
+    id_col = allowed[entity]
+
     conn = sqlite3.connect(db_path)
     try:
-        df = pd.read_sql_query(f"""
+        query = f"""
             SELECT
-                {id_col} AS id,
+                "{id_col}" AS id,
                 COUNT(*) AS starts,
                 SUM(CASE WHEN official_finish_position = 1 THEN 1 ELSE 0 END) AS wins,
                 ROUND(100.0 * SUM(CASE WHEN official_finish_position = 1 THEN 1 ELSE 0 END) / COUNT(*), 1) AS win_pct
             FROM race_entries_standardized
-            WHERE {id_col} IS NOT NULL
-              AND {id_col} != ''
+            WHERE "{id_col}" IS NOT NULL
+              AND "{id_col}" != ''
               AND scratched = 0
               AND official_finish_position IS NOT NULL
-            GROUP BY {id_col}
+            GROUP BY "{id_col}"
             HAVING starts >= 20
             ORDER BY win_pct DESC
             LIMIT ?
-        """, conn, params=[limit])
+        """
+        df = pd.read_sql_query(query, conn, params=[limit])
         return df
     except Exception:
         return pd.DataFrame()
