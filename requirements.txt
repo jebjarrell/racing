@@ -23,6 +23,7 @@ pyyaml>=6.0  # YAML configuration files
 # Visualization (for evaluation plots)
 matplotlib>=3.7.0
 seaborn>=0.12.0
+plotly>=5.18.0  # Interactive charts for Streamlit dashboard
 
 # API/Dashboard (for future live betting)
 fastapi>=0.100.0
