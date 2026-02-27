@@ -10,7 +10,6 @@ Usage:
 import argparse
 import json
 import logging
-import pickle
 import sys
 from datetime import date, timedelta
 from pathlib import Path
@@ -46,8 +45,7 @@ def load_model(model_dir: str):
     model = RacingLightGBM.load(str(model_path / 'model.pkl'))
 
     # Load calibrator
-    with open(model_path / 'calibrator.pkl', 'rb') as f:
-        calibrator = pickle.load(f)
+    calibrator = FieldSizeCalibrator.load(str(model_path / 'calibrator.pkl'))
 
     feature_columns = metadata.get('feature_columns', [])
 

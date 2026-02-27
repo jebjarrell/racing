@@ -11,6 +11,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from app.components.sidebar import render_sidebar, get_available_models, load_config
+from app.components.tooltips import METRICS, BETTING
 
 render_sidebar()
 
@@ -55,7 +56,7 @@ def get_db_stats(db_path: str) -> dict:
         # DB file size
         stats["db_size_mb"] = os.path.getsize(db_path) / (1024 * 1024)
 
-    except Exception as e:
+    except sqlite3.Error as e:
         stats["error"] = str(e)
     finally:
         conn.close()
@@ -88,7 +89,7 @@ def get_recent_races(db_path: str, limit: int = 20) -> pd.DataFrame:
             LIMIT ?
         """, conn, params=[limit])
         return df
-    except Exception:
+    except sqlite3.Error:
         return pd.DataFrame()
     finally:
         conn.close()
@@ -125,7 +126,7 @@ def get_top_performers(db_path: str, entity: str = "trainer", limit: int = 10) -
         """
         df = pd.read_sql_query(query, conn, params=[limit])
         return df
-    except Exception:
+    except sqlite3.Error:
         return pd.DataFrame()
     finally:
         conn.close()
@@ -161,10 +162,10 @@ if models:
         metrics = m.get("metrics", {})
         with st.expander(f"**{m['version']}** -- AUC {metrics.get('roc_auc', 0):.3f} | ECE {metrics.get('ece', 0):.4f}", expanded=(m == models[0])):
             mc1, mc2, mc3, mc4 = st.columns(4)
-            mc1.metric("ROC-AUC", f"{metrics.get('roc_auc', 0):.4f}")
-            mc2.metric("Brier Score", f"{metrics.get('brier_score', 0):.4f}")
-            mc3.metric("ECE", f"{metrics.get('ece', 0):.4f}")
-            mc4.metric("Log Loss", f"{metrics.get('log_loss', 0):.4f}")
+            mc1.metric("ROC-AUC", f"{metrics.get('roc_auc', 0):.4f}", help=METRICS["roc_auc"])
+            mc2.metric("Brier Score", f"{metrics.get('brier_score', 0):.4f}", help=METRICS["brier_score"])
+            mc3.metric("ECE", f"{metrics.get('ece', 0):.4f}", help=METRICS["ece"])
+            mc4.metric("Log Loss", f"{metrics.get('log_loss', 0):.4f}", help=METRICS["log_loss"])
 
             st.caption(f"Trained: {m.get('timestamp', 'unknown')}")
             st.caption(f"Features: {len(m.get('feature_columns', []))}")
@@ -192,18 +193,18 @@ if config:
     with cc1:
         st.markdown("**Betting Parameters**")
         betting = config.get("betting", {})
-        st.text(f"  Kelly fraction:    {betting.get('fractional_kelly', 0.25)}")
-        st.text(f"  Min EV threshold:  {betting.get('min_ev_threshold', 0.08)}")
-        st.text(f"  Min probability:   {betting.get('min_probability', 0.08)}")
-        st.text(f"  Min overlay:       {betting.get('min_overlay', 1.20)}")
-        st.text(f"  Max odds:          {betting.get('max_odds', 15.0)}")
+        st.metric("Kelly fraction", betting.get("fractional_kelly", 0.25), help=BETTING["fractional_kelly"])
+        st.metric("Min EV threshold", f"{betting.get('min_ev_threshold', 0.08):.0%}", help=BETTING["min_ev_threshold"])
+        st.metric("Min probability", f"{betting.get('min_probability', 0.08):.0%}", help=BETTING["min_prob"])
+        st.metric("Min overlay", f"{betting.get('min_overlay', 1.20):.2f}x", help=BETTING["min_overlay"])
+        st.metric("Max odds", f"{betting.get('max_odds', 15.0):.0f}:1", help=BETTING["max_odds"])
 
     with cc2:
         st.markdown("**Bankroll**")
         bankroll = config.get("bankroll", {})
-        st.text(f"  Initial:           ${bankroll.get('initial', 2000):,.0f}")
-        st.text(f"  Reduce at:         -{bankroll.get('reduce_stakes_threshold', 0.20):.0%} drawdown")
-        st.text(f"  Pause at:          -{bankroll.get('pause_threshold', 0.30):.0%} drawdown")
+        st.metric("Initial", f"${bankroll.get('initial', 2000):,.0f}")
+        st.metric("Reduce stakes at", f"-{bankroll.get('reduce_stakes_threshold', 0.20):.0%} drawdown", help="Bankroll drawdown threshold that triggers a 50% reduction in bet sizes to protect capital.")
+        st.metric("Pause betting at", f"-{bankroll.get('pause_threshold', 0.30):.0%} drawdown", help="Bankroll drawdown threshold that pauses all betting until the model is re-evaluated.")
 
 # --- Recent Races ---
 st.markdown("---")

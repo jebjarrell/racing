@@ -118,71 +118,66 @@ st.subheader("Database Browser")
 if not os.path.exists(DB_PATH):
     st.warning(f"Database `{DB_PATH}` not found.")
 else:
-    conn = sqlite3.connect(DB_PATH)
+    with sqlite3.connect(DB_PATH) as conn:
+        # Get table list
+        tables = [
+            row[0]
+            for row in conn.execute(
+                "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
+            ).fetchall()
+        ]
 
-    # Get table list
-    tables = [
-        row[0]
-        for row in conn.execute(
-            "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
-        ).fetchall()
-    ]
+        if not tables:
+            st.info("Database has no tables.")
+        else:
+            selected_table = st.selectbox("Table", tables, index=0)
 
-    if not tables:
-        st.info("Database has no tables.")
-        conn.close()
-    else:
-        selected_table = st.selectbox("Table", tables, index=0)
+            # Validate table name against known tables
+            if selected_table not in tables:
+                st.error("Invalid table selection.")
+                st.stop()
 
-        # Validate table name against known tables
-        if selected_table not in tables:
-            st.error("Invalid table selection.")
-            conn.close()
-            st.stop()
+            # Row count - table name validated above
+            quoted_table = f'"{selected_table}"'
+            count = conn.execute(f"SELECT COUNT(*) FROM {quoted_table}").fetchone()[0]
+            st.caption(f"**{count:,}** rows in `{selected_table}`")
 
-        # Row count - table name validated above
-        quoted_table = f'"{selected_table}"'
-        count = conn.execute(f"SELECT COUNT(*) FROM {quoted_table}").fetchone()[0]
-        st.caption(f"**{count:,}** rows in `{selected_table}`")
+            # Filters for race-related tables
+            filter_clause = ""
+            filter_params = []
 
-        # Filters for race-related tables
-        filter_clause = ""
-        filter_params = []
+            if selected_table == "races_standardized":
+                fc1, fc2, fc3 = st.columns(3)
+                with fc1:
+                    try:
+                        from datetime import date as dt_date
+                        min_date = conn.execute(f"SELECT MIN(race_date) FROM {quoted_table}").fetchone()[0]
+                        max_date = conn.execute(f"SELECT MAX(race_date) FROM {quoted_table}").fetchone()[0]
+                        if min_date and max_date:
+                            start_filter = st.date_input("From", value=dt_date.fromisoformat(min_date))
+                            end_filter = st.date_input("To", value=dt_date.fromisoformat(max_date))
+                            filter_clause = "WHERE race_date BETWEEN ? AND ?"
+                            filter_params = [str(start_filter), str(end_filter)]
+                    except (sqlite3.Error, ValueError):
+                        pass
 
-        if selected_table == "races_standardized":
-            fc1, fc2, fc3 = st.columns(3)
-            with fc1:
-                try:
-                    from datetime import date as dt_date
-                    min_date = conn.execute(f"SELECT MIN(race_date) FROM {quoted_table}").fetchone()[0]
-                    max_date = conn.execute(f"SELECT MAX(race_date) FROM {quoted_table}").fetchone()[0]
-                    if min_date and max_date:
-                        start_filter = st.date_input("From", value=dt_date.fromisoformat(min_date))
-                        end_filter = st.date_input("To", value=dt_date.fromisoformat(max_date))
-                        filter_clause = "WHERE race_date BETWEEN ? AND ?"
-                        filter_params = [str(start_filter), str(end_filter)]
-                except Exception:
-                    pass
+            # Query with limit
+            limit = st.number_input("Max rows to display", value=100, min_value=10, max_value=5000, step=100)
 
-        # Query with limit
-        limit = st.number_input("Max rows to display", value=100, min_value=10, max_value=5000, step=100)
+            query = f"SELECT * FROM {quoted_table} {filter_clause} LIMIT ?"
+            filter_params.append(limit)
 
-        query = f"SELECT * FROM {quoted_table} {filter_clause} LIMIT ?"
-        filter_params.append(limit)
+            try:
+                df = pd.read_sql_query(query, conn, params=filter_params)
+                st.dataframe(df, use_container_width=True, hide_index=True)
 
-        try:
-            df = pd.read_sql_query(query, conn, params=filter_params)
-            st.dataframe(df, use_container_width=True, hide_index=True)
-
-            # CSV download
-            csv = df.to_csv(index=False)
-            st.download_button(
-                "Download as CSV",
-                csv,
-                file_name=f"{selected_table}.csv",
-                mime="text/csv",
-            )
-        except Exception as e:
-            st.error(f"Query error: {e}")
-
-        conn.close()
+                # CSV download
+                csv = df.to_csv(index=False)
+                st.download_button(
+                    "Download as CSV",
+                    csv,
+                    file_name=f"{selected_table}.csv",
+                    mime="text/csv",
+                )
+            except sqlite3.Error as e:
+                st.error(f"Query error: {e}")

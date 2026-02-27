@@ -1,11 +1,11 @@
 """Backtesting - Simulate betting strategies on historical data."""
 
-import pickle
 import sys
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import streamlit as st
 
@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from app.components.sidebar import render_sidebar, get_available_models, load_config
 from app.components.charts import bankroll_curve, daily_pnl_chart, bet_distribution_chart
+from app.components.tooltips import BETTING, STRATEGIES
 
 render_sidebar()
 
@@ -34,38 +35,44 @@ with st.sidebar:
     # Model selection
     model_versions = [m["version"] for m in models]
     selected_version = st.selectbox("Model Version", model_versions)
-    selected_model_info = next(m for m in models if m["version"] == selected_version)
+    selected_model_info = next((m for m in models if m["version"] == selected_version), None)
+    if selected_model_info is None:
+        st.error(f"Model version '{selected_version}' not found.")
+        st.stop()
 
     # Strategy selection
     strategy_name = st.selectbox(
         "Strategy",
         ["Flat Bet", "Kelly Criterion", "Value Betting", "Top Pick", "Momentum", "Morning Favorite"],
+        help=STRATEGIES.get("Flat Bet"),
     )
+    if strategy_name in STRATEGIES:
+        st.caption(STRATEGIES[strategy_name])
 
     # Strategy-specific parameters
     st.markdown("**Strategy Parameters**")
     if strategy_name == "Flat Bet":
         bet_amount = st.number_input("Bet amount ($)", value=2.0, min_value=1.0, max_value=100.0, step=1.0)
-        min_prob = st.slider("Min probability", 0.0, 0.50, 0.0, 0.01)
-        max_odds = st.slider("Max odds", 2.0, 50.0, 50.0, 1.0)
+        min_prob = st.slider("Min probability", 0.0, 0.50, 0.0, 0.01, help=BETTING["min_prob"])
+        max_odds = st.slider("Max odds", 2.0, 50.0, 50.0, 1.0, help=BETTING["max_odds"])
     elif strategy_name == "Kelly Criterion":
-        kelly_fraction = st.slider("Kelly fraction", 0.05, 0.50, 0.25, 0.05)
-        min_edge = st.slider("Min edge", 0.0, 0.30, 0.05, 0.01)
-        max_bet_frac = st.slider("Max bet % of bankroll", 0.01, 0.20, 0.10, 0.01)
+        kelly_fraction = st.slider("Kelly fraction", 0.05, 0.50, 0.25, 0.05, help=BETTING["kelly_fraction"])
+        min_edge = st.slider("Min edge", 0.0, 0.30, 0.05, 0.01, help=BETTING["min_edge"])
+        max_bet_frac = st.slider("Max bet % of bankroll", 0.01, 0.20, 0.10, 0.01, help=BETTING["max_bet_fraction"])
     elif strategy_name == "Value Betting":
-        vb_bet_fraction = st.slider("Bet fraction", 0.005, 0.10, 0.02, 0.005)
-        vb_min_edge = st.slider("Min edge", 0.0, 0.30, 0.10, 0.01)
-        vb_min_prob = st.slider("Min probability", 0.0, 0.30, 0.05, 0.01)
-        vb_max_prob = st.slider("Max probability", 0.20, 1.0, 0.50, 0.05)
+        vb_bet_fraction = st.slider("Bet fraction", 0.005, 0.10, 0.02, 0.005, help=BETTING["bet_fraction"])
+        vb_min_edge = st.slider("Min edge", 0.0, 0.30, 0.10, 0.01, help=BETTING["min_edge"])
+        vb_min_prob = st.slider("Min probability", 0.0, 0.30, 0.05, 0.01, help=BETTING["min_prob"])
+        vb_max_prob = st.slider("Max probability", 0.20, 1.0, 0.50, 0.05, help="Upper probability cutoff. Filters out heavy favorites where the market is already efficient and edges are small.")
     elif strategy_name == "Top Pick":
         tp_bet_amount = st.number_input("Bet amount ($)", value=2.0, min_value=1.0, max_value=100.0, step=1.0, key="tp_bet")
-        tp_min_prob = st.slider("Min probability", 0.0, 0.50, 0.15, 0.01, key="tp_prob")
+        tp_min_prob = st.slider("Min probability", 0.0, 0.50, 0.15, 0.01, key="tp_prob", help=BETTING["min_prob"])
     elif strategy_name == "Momentum":
-        mom_base = st.slider("Base fraction", 0.005, 0.10, 0.02, 0.005)
-        mom_mult = st.slider("Momentum multiplier", 1.0, 5.0, 2.0, 0.5)
+        mom_base = st.slider("Base fraction", 0.005, 0.10, 0.02, 0.005, help=BETTING["bet_fraction"])
+        mom_mult = st.slider("Momentum multiplier", 1.0, 5.0, 2.0, 0.5, help=BETTING["momentum_multiplier"])
     elif strategy_name == "Morning Favorite":
-        mf_min_edge = st.slider("Min edge", 0.0, 0.30, 0.10, 0.01, key="mf_edge")
-        mf_bet_frac = st.slider("Bet fraction", 0.005, 0.10, 0.03, 0.005, key="mf_frac")
+        mf_min_edge = st.slider("Min edge", 0.0, 0.30, 0.10, 0.01, key="mf_edge", help=BETTING["min_edge"])
+        mf_bet_frac = st.slider("Bet fraction", 0.005, 0.10, 0.03, 0.005, key="mf_frac", help=BETTING["bet_fraction"])
 
     # Date range
     st.markdown("**Date Range**")
@@ -113,13 +120,12 @@ run_compare = col_compare.button("Compare All Strategies")
 def load_model_and_backtester():
     """Load model, calibrator, and create backtester."""
     from models.lightgbm_model import RacingLightGBM
+    from models.calibration import FieldSizeCalibrator
     from backtesting import Backtester
 
     model_path = Path(selected_model_info["path"])
     model = RacingLightGBM.load(str(model_path / "model.pkl"))
-
-    with open(model_path / "calibrator.pkl", "rb") as f:
-        calibrator = pickle.load(f)
+    calibrator = FieldSizeCalibrator.load(str(model_path / "calibrator.pkl"))
 
     feature_columns = selected_model_info.get("feature_columns", [])
 
@@ -136,12 +142,12 @@ def display_results(results):
     """Display backtest results with charts."""
     # Summary metrics
     mc1, mc2, mc3, mc4, mc5, mc6 = st.columns(6)
-    mc1.metric("ROI", f"{results.roi:+.2%}")
+    mc1.metric("ROI", f"{results.roi:+.2%}", help=BETTING["roi"])
     mc2.metric("Profit", f"${results.profit:+,.2f}")
     mc3.metric("Total Bets", f"{results.total_bets:,}")
-    mc4.metric("Win Rate", f"{results.win_rate:.1%}")
-    mc5.metric("Avg Odds", f"{results.avg_odds_bet:.1f}")
-    mc6.metric("Max Drawdown", f"{results.max_drawdown:.1%}")
+    mc4.metric("Win Rate", f"{results.win_rate:.1%}", help=BETTING["win_rate"])
+    mc5.metric("Avg Odds", f"{results.avg_odds_bet:.1f}", help=BETTING["avg_odds"])
+    mc6.metric("Max Drawdown", f"{results.max_drawdown:.1%}", help=BETTING["max_drawdown"])
 
     # Bankroll curve
     if results.bankroll_history:

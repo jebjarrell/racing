@@ -17,7 +17,7 @@ def get_available_models(artifacts_dir: str = "artifacts/models") -> list:
         return models
 
     for version_dir in sorted(artifacts_path.iterdir(), reverse=True):
-        if version_dir.is_dir() and (version_dir / "metadata.json").exists():
+        if version_dir.is_dir() and (version_dir / "metadata.json").exists() and (version_dir / "model.pkl").exists():
             try:
                 with open(version_dir / "metadata.json") as f:
                     metadata = json.load(f)
@@ -38,7 +38,7 @@ def load_config(config_path: str = "config/config.yaml") -> dict:
     try:
         with open(config_path) as f:
             return yaml.safe_load(f)
-    except Exception:
+    except (FileNotFoundError, yaml.YAMLError):
         return {}
 
 
@@ -63,13 +63,15 @@ def render_sidebar():
                 except ValueError:
                     pass
 
+            from app.components.tooltips import METRICS
+
             col1, col2 = st.columns(2)
-            col1.metric("AUC", f"{metrics.get('roc_auc', 0):.3f}")
-            col2.metric("ECE", f"{metrics.get('ece', 0):.4f}")
+            col1.metric("AUC", f"{metrics.get('roc_auc', 0):.3f}", help=METRICS["roc_auc"])
+            col2.metric("ECE", f"{metrics.get('ece', 0):.4f}", help=METRICS["ece"])
 
             brier = metrics.get("brier_score", 0)
-            col1.metric("Brier", f"{brier:.4f}")
-            col2.metric("Log Loss", f"{metrics.get('log_loss', 0):.3f}")
+            col1.metric("Brier", f"{brier:.4f}", help=METRICS["brier_score"])
+            col2.metric("Log Loss", f"{metrics.get('log_loss', 0):.3f}", help=METRICS["log_loss"])
 
             # Alert: calibration drift
             ece = metrics.get("ece", 0)

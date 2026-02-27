@@ -2,7 +2,6 @@
 
 import json
 import os
-import pickle
 import sqlite3
 import sys
 from datetime import date
@@ -16,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from app.components.sidebar import render_sidebar, get_available_models, load_config
 from app.components.charts import feature_importance_chart
+from app.components.tooltips import BETTING
 
 render_sidebar()
 
@@ -42,80 +42,82 @@ if not os.path.exists(DB_PATH):
 # --- Model Selection ---
 model_versions = [m["version"] for m in models]
 selected_version = st.selectbox("Model Version", model_versions)
-selected_model_info = next(m for m in models if m["version"] == selected_version)
+selected_model_info = next((m for m in models if m["version"] == selected_version), None)
+if selected_model_info is None:
+    st.error(f"Model version '{selected_version}' not found.")
+    st.stop()
 
 
 @st.cache_resource
 def load_model(model_path: str):
     """Load model and calibrator."""
     from models.lightgbm_model import RacingLightGBM
+    from models.calibration import FieldSizeCalibrator
 
     model = RacingLightGBM.load(os.path.join(model_path, "model.pkl"))
-    with open(os.path.join(model_path, "calibrator.pkl"), "rb") as f:
-        calibrator = pickle.load(f)
+    calibrator = FieldSizeCalibrator.load(os.path.join(model_path, "calibrator.pkl"))
     return model, calibrator
 
 
 # --- Race Selection ---
 st.subheader("Select Race")
 
-conn = sqlite3.connect(DB_PATH)
+with sqlite3.connect(DB_PATH) as conn:
+    # Get available dates
+    dates_df = pd.read_sql_query(
+        "SELECT DISTINCT race_date FROM races_standardized ORDER BY race_date DESC LIMIT 365",
+        conn,
+    )
+    available_dates = dates_df["race_date"].tolist()
 
-# Get available dates
-dates_df = pd.read_sql_query(
-    "SELECT DISTINCT race_date FROM races_standardized ORDER BY race_date DESC LIMIT 365",
-    conn,
-)
-available_dates = dates_df["race_date"].tolist()
-
-if not available_dates:
-    st.info("No races in database.")
-    conn.close()
-    st.stop()
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    selected_date = st.selectbox("Race Date", available_dates)
-
-# Get tracks for selected date
-tracks_df = pd.read_sql_query(
-    "SELECT DISTINCT track_code FROM races_standardized WHERE race_date = ? ORDER BY track_code",
-    conn,
-    params=[selected_date],
-)
-
-with col2:
-    selected_track = st.selectbox("Track", tracks_df["track_code"].tolist())
-
-# Get race numbers for selected date + track
-races_df = pd.read_sql_query(
-    "SELECT race_number, race_id, course_type_code, distance_yards, race_type_code, class_level, purse_usd "
-    "FROM races_standardized WHERE race_date = ? AND track_code = ? ORDER BY race_number",
-    conn,
-    params=[selected_date, selected_track],
-)
-
-with col3:
-    race_options = {f"Race {r['race_number']}": r["race_id"] for _, r in races_df.iterrows()}
-    if not race_options:
-        st.info("No races found for this date/track.")
-        conn.close()
+    if not available_dates:
+        st.info("No races in database.")
         st.stop()
 
-    selected_label = st.selectbox("Race", list(race_options.keys()))
-    selected_race_id = race_options[selected_label]
+    col1, col2, col3 = st.columns(3)
 
-# Show race context
-race_row = races_df[races_df["race_id"] == selected_race_id].iloc[0]
-ctx1, ctx2, ctx3, ctx4, ctx5 = st.columns(5)
-ctx1.metric("Surface", race_row.get("course_type_code", "?"))
-ctx2.metric("Distance (yds)", f"{race_row.get('distance_yards', 0):,}")
-ctx3.metric("Race Type", race_row.get("race_type_code", "?"))
-ctx4.metric("Class", race_row.get("class_level", "?"))
-ctx5.metric("Purse", f"${race_row.get('purse_usd', 0):,.0f}")
+    with col1:
+        selected_date = st.selectbox("Race Date", available_dates)
 
-conn.close()
+    # Get tracks for selected date
+    tracks_df = pd.read_sql_query(
+        "SELECT DISTINCT track_code FROM races_standardized WHERE race_date = ? ORDER BY track_code",
+        conn,
+        params=[selected_date],
+    )
+
+    with col2:
+        selected_track = st.selectbox("Track", tracks_df["track_code"].tolist())
+
+    # Get race numbers for selected date + track
+    races_df = pd.read_sql_query(
+        "SELECT race_number, race_id, course_type_code, distance_yards, race_type_code, class_level, purse_usd "
+        "FROM races_standardized WHERE race_date = ? AND track_code = ? ORDER BY race_number",
+        conn,
+        params=[selected_date, selected_track],
+    )
+
+    with col3:
+        race_options = {f"Race {r['race_number']}": r["race_id"] for _, r in races_df.iterrows()}
+        if not race_options:
+            st.info("No races found for this date/track.")
+            st.stop()
+
+        selected_label = st.selectbox("Race", list(race_options.keys()))
+        selected_race_id = race_options[selected_label]
+
+    # Show race context
+    race_matches = races_df[races_df["race_id"] == selected_race_id]
+    if race_matches.empty:
+        st.error("Selected race not found in data.")
+        st.stop()
+    race_row = race_matches.iloc[0]
+    ctx1, ctx2, ctx3, ctx4, ctx5 = st.columns(5)
+    ctx1.metric("Surface", race_row.get("course_type_code", "?"))
+    ctx2.metric("Distance (yds)", f"{race_row.get('distance_yards', 0):,}")
+    ctx3.metric("Race Type", race_row.get("race_type_code", "?"))
+    ctx4.metric("Class", race_row.get("class_level", "?"))
+    ctx5.metric("Purse", f"${race_row.get('purse_usd', 0):,.0f}")
 
 st.markdown("---")
 
@@ -142,21 +144,20 @@ if st.button("Generate Predictions", type="primary"):
         features_df = pd.DataFrame(features_list)
 
         # Get horse names
-        conn = sqlite3.connect(DB_PATH)
-        entries_df = pd.read_sql_query(
-            """
-            SELECT e.entry_id, e.registration_number, e.post_position, e.program_number,
-                   e.morning_line_odds, e.actual_odds, e.official_finish_position,
-                   h.horse_name
-            FROM race_entries_standardized e
-            LEFT JOIN horses_master h ON e.registration_number = h.registration_number
-            WHERE e.race_id = ? AND e.scratched = 0
-            ORDER BY e.post_position
-            """,
-            conn,
-            params=[selected_race_id],
-        )
-        conn.close()
+        with sqlite3.connect(DB_PATH) as conn:
+            entries_df = pd.read_sql_query(
+                """
+                SELECT e.entry_id, e.registration_number, e.post_position, e.program_number,
+                       e.morning_line_odds, e.actual_odds, e.official_finish_position,
+                       h.horse_name
+                FROM race_entries_standardized e
+                LEFT JOIN horses_master h ON e.registration_number = h.registration_number
+                WHERE e.race_id = ? AND e.scratched = 0
+                ORDER BY e.post_position
+                """,
+                conn,
+                params=[selected_race_id],
+            )
 
         # Prepare model features
         available_cols = [c for c in feature_columns if c in features_df.columns]
@@ -257,6 +258,16 @@ if st.button("Generate Predictions", type="primary"):
 
         # Display
         st.subheader("Predictions")
+
+        # Column legend
+        with st.expander("Column definitions", expanded=False):
+            legend_cols = st.columns(3)
+            legend_cols[0].markdown(f"**Prob** -- Model's predicted win probability")
+            legend_cols[0].markdown(f"**EV** -- {BETTING['ev']}")
+            legend_cols[1].markdown(f"**Overlay** -- {BETTING['overlay']}")
+            legend_cols[1].markdown(f"**Implied** -- {BETTING['implied_prob']}")
+            legend_cols[2].markdown(f"**Kelly %** -- {BETTING['kelly_pct']}")
+            legend_cols[2].markdown(f"**Bet?** -- YES if all filters pass (min EV, min prob, min overlay, max odds)")
 
         # Format for display
         display_df = pred_df.copy()

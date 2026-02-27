@@ -334,9 +334,12 @@ class ModelTrainingPipeline:
         val_races = set(val_df['race_id'].unique())
         test_races = set(test_df['race_id'].unique())
 
-        assert len(train_races & val_races) == 0, "Data leakage: train and validation overlap"
-        assert len(train_races & test_races) == 0, "Data leakage: train and test overlap"
-        assert len(val_races & test_races) == 0, "Data leakage: validation and test overlap"
+        if train_races & val_races:
+            raise ValueError("Data leakage: train and validation overlap")
+        if train_races & test_races:
+            raise ValueError("Data leakage: train and test overlap")
+        if val_races & test_races:
+            raise ValueError("Data leakage: validation and test overlap")
 
         logger.info("Data split verification passed - no leakage detected")
 
@@ -383,12 +386,10 @@ class ModelTrainingPipeline:
         # Prepare training data
         X_train = train_df[feature_cols].copy()
         y_train = train_df[TARGET_COLUMN].copy()
-        race_ids_train = train_df['race_id'].values
 
         # Prepare validation data
         X_val = val_df[feature_cols].copy()
         y_val = val_df[TARGET_COLUMN].copy()
-        race_ids_val = val_df['race_id'].values
 
         # Log feature info
         logger.info(f"Training with {len(feature_cols)} features")
@@ -411,28 +412,29 @@ class ModelTrainingPipeline:
         hyperparams = self.config.get('model', {}).get('hyperparameters', {})
         training_config = self.config.get('model', {}).get('training', {})
 
-        # Initialize model
-        model = RacingLightGBM(
-            n_estimators=hyperparams.get('n_estimators', 500),
-            max_depth=hyperparams.get('max_depth', 6),
-            learning_rate=hyperparams.get('learning_rate', 0.05),
-            subsample=hyperparams.get('subsample', 0.8),
-            colsample_bytree=hyperparams.get('colsample_bytree', 0.8),
-            reg_alpha=hyperparams.get('reg_alpha', 0.1),
-            reg_lambda=hyperparams.get('reg_lambda', 0.1),
-            min_child_samples=hyperparams.get('min_child_samples', 20),
-            num_leaves=hyperparams.get('num_leaves', 31),
-            random_state=training_config.get('random_state', 42),
-            n_jobs=training_config.get('n_jobs', -1),
-            verbose=training_config.get('verbose', -1)
-        )
+        # Initialize model — RacingLightGBM accepts a single params dict
+        params = {
+            'n_estimators': hyperparams.get('n_estimators', 500),
+            'max_depth': hyperparams.get('max_depth', 6),
+            'learning_rate': hyperparams.get('learning_rate', 0.05),
+            'bagging_fraction': hyperparams.get('subsample', 0.8),
+            'feature_fraction': hyperparams.get('colsample_bytree', 0.8),
+            'reg_alpha': hyperparams.get('reg_alpha', 0.1),
+            'reg_lambda': hyperparams.get('reg_lambda', 0.1),
+            'min_child_samples': hyperparams.get('min_child_samples', 20),
+            'num_leaves': hyperparams.get('num_leaves', 31),
+            'random_state': training_config.get('random_state', 42),
+            'n_jobs': training_config.get('n_jobs', -1),
+            'verbose': training_config.get('verbose', -1),
+            'early_stopping_rounds': training_config.get('early_stopping_rounds', 50),
+        }
+        model = RacingLightGBM(params=params)
 
         # Train model with early stopping
         logger.info("Starting model training...")
         model.fit(
-            X_train, y_train, race_ids_train,
-            eval_set=[(X_val, y_val, race_ids_val)],
-            early_stopping_rounds=training_config.get('early_stopping_rounds', 50)
+            X_train, y_train,
+            eval_set=(X_val, y_val)
         )
 
         logger.info(f"Model training completed")

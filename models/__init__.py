@@ -25,6 +25,15 @@ Usage Example:
     >>> predictions = model.predict(race_data)
 """
 
+# Numpy compatibility shim: pickles saved with numpy 2.x reference numpy._core,
+# which doesn't exist on numpy 1.x. Patching once here on package import avoids
+# duplicating the workaround in every consumer module.
+import sys
+import numpy as np
+if not hasattr(np, "_core") or not hasattr(np._core, "numeric"):
+    import numpy.core.numeric
+    sys.modules.setdefault("numpy._core.numeric", numpy.core.numeric)
+
 from .training_pipeline import ModelTrainingPipeline
 from .lightgbm_model import RacingLightGBM
 from .calibration import FieldSizeCalibrator
