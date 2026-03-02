@@ -845,3 +845,328 @@ Sample entry record:
 2025-12-16 09:29:15,541 - INFO - Duration: 684.18 seconds
 2025-12-16 09:29:15,541 - INFO - Files per second: 8.66
 2025-12-16 09:29:15,541 - INFO - ============================================================
+2026-02-24 15:56:21,929 - INFO - Starting Past Performance extraction from 2023 PPs
+2026-02-24 15:56:21,929 - INFO - Using 45 workers with standardization
+2026-02-24 15:56:23,418 - INFO - Found 5924 Past Performance XML files to process
+2026-02-24 15:56:33,052 - INFO - Performing batch database insert...
+2026-02-24 15:56:33,289 - INFO - Inserted 575 races
+2026-02-24 15:56:34,995 - INFO - Inserted 5942 entries
+2026-02-24 15:56:35,116 - INFO - Inserted 605 equipment records
+2026-02-24 15:56:41,616 - INFO - Performing batch database insert...
+2026-02-24 15:56:41,893 - INFO - Inserted 514 races
+2026-02-24 15:56:42,679 - INFO - Processed 100 files. Races: 869, Entries: 7759
+2026-02-24 15:56:44,146 - INFO - Inserted 5805 entries
+2026-02-24 15:56:44,292 - INFO - Inserted 456 equipment records
+2026-02-24 15:56:50,656 - INFO - Performing batch database insert...
+2026-02-24 15:56:50,919 - INFO - Inserted 520 races
+2026-02-24 15:56:52,874 - INFO - Inserted 5532 entries
+2026-02-24 15:56:52,984 - INFO - Inserted 515 equipment records
+2026-02-24 15:56:54,508 - INFO - Processed 200 files. Races: 1797, Entries: 16092
+2026-02-24 15:56:59,434 - INFO - Performing batch database insert...
+2026-02-24 15:56:59,735 - INFO - Inserted 516 races
+2026-02-24 15:57:02,674 - INFO - Inserted 5884 entries
+2026-02-24 15:57:02,785 - INFO - Inserted 548 equipment records
+2026-02-24 15:57:06,298 - INFO - Processed 300 files. Races: 2698, Entries: 24228
+2026-02-24 15:57:09,181 - INFO - Performing batch database insert...
+2026-02-24 15:57:09,433 - INFO - Inserted 528 races
+2026-02-24 15:57:12,140 - INFO - Inserted 5871 entries
+2026-02-24 15:57:12,172 - INFO - Inserted 516 equipment records
+2026-02-24 15:57:17,886 - INFO - Processed 400 files. Races: 3572, Entries: 32032
+2026-02-24 15:57:18,722 - INFO - Performing batch database insert...
+2026-02-24 15:57:19,085 - INFO - Inserted 536 races
+2026-02-24 15:57:21,774 - INFO - Inserted 5696 entries
+2026-02-24 15:57:21,823 - INFO - Inserted 506 equipment records
+2026-02-24 15:57:28,573 - INFO - Performing batch database insert...
+2026-02-24 15:57:29,389 - INFO - Processed 500 files. Races: 4439, Entries: 39629
+2026-02-24 15:57:29,389 - INFO - Inserted 585 races
+2026-02-24 15:57:32,375 - INFO - Inserted 6403 entries
+2026-02-24 15:57:32,596 - INFO - Inserted 623 equipment records
+2026-02-24 15:57:38,951 - INFO - Performing batch database insert...
+2026-02-24 15:57:39,108 - INFO - Inserted 515 races
+2026-02-24 15:57:41,193 - INFO - Inserted 5407 entries
+2026-02-24 15:57:41,303 - INFO - Processed 600 files. Races: 5314, Entries: 47296
+2026-02-24 15:57:41,303 - INFO - Inserted 549 equipment records
+2026-02-24 15:57:48,576 - INFO - Performing batch database insert...
+2026-02-24 15:57:49,050 - INFO - Inserted 532 races
+2026-02-24 15:57:53,177 - INFO - Inserted 6688 entries
+2026-02-24 15:57:53,320 - INFO - Inserted 486 equipment records
+2026-02-24 15:57:54,076 - INFO - Processed 700 files. Races: 6210, Entries: 55337
+2026-02-24 15:57:59,632 - INFO - Performing batch database insert...
+2026-02-24 15:57:59,901 - INFO - Inserted 509 races
+2026-02-24 15:58:02,698 - INFO - Inserted 5762 entries
+2026-02-24 15:58:02,809 - INFO - Inserted 465 equipment records
+2026-02-24 15:58:05,878 - INFO - Processed 800 files. Races: 7137, Entries: 63445
+2026-02-24 15:58:09,091 - INFO - Performing batch database insert...
+2026-02-24 15:58:09,549 - INFO - Inserted 523 races
+2026-02-24 15:58:12,275 - INFO - Inserted 6119 entries
+2026-02-24 15:58:12,386 - INFO - Inserted 462 equipment records
+2026-02-24 15:58:15,865 - INFO - Processed 900 files. Races: 8029, Entries: 71384
+2026-02-24 15:58:19,647 - INFO - Performing batch database insert...
+2026-02-24 15:58:19,867 - INFO - Inserted 556 races
+2026-02-24 15:58:22,458 - INFO - Inserted 5958 entries
+2026-02-24 15:58:22,669 - INFO - Inserted 558 equipment records
+2026-02-24 15:58:29,518 - INFO - Processed 1000 files. Races: 8940, Entries: 79361
+2026-02-24 15:58:29,534 - INFO - Performing batch database insert...
+2026-02-24 15:58:30,119 - INFO - Inserted 550 races
+2026-02-24 15:58:33,543 - INFO - Inserted 5948 entries
+2026-02-24 15:58:33,732 - INFO - Inserted 532 equipment records
+2026-02-24 15:58:40,783 - INFO - Performing batch database insert...
+2026-02-24 15:58:41,100 - INFO - Inserted 536 races
+2026-02-24 15:58:42,774 - INFO - Processed 1100 files. Races: 9851, Entries: 87387
+2026-02-24 15:58:45,103 - INFO - Inserted 6432 entries
+2026-02-24 15:58:45,260 - INFO - Inserted 437 equipment records
+2026-02-24 15:58:52,697 - INFO - Performing batch database insert...
+2026-02-24 15:58:53,085 - INFO - Inserted 565 races
+2026-02-24 15:58:56,055 - INFO - Processed 1200 files. Races: 10771, Entries: 95562
+2026-02-24 15:58:57,403 - INFO - Inserted 6570 entries
+2026-02-24 15:58:57,479 - INFO - Inserted 426 equipment records
+2026-02-24 15:59:06,746 - INFO - Performing batch database insert...
+2026-02-24 15:59:07,061 - INFO - Inserted 582 races
+2026-02-24 15:59:10,869 - INFO - Processed 1300 files. Races: 11664, Entries: 103399
+2026-02-24 15:59:11,496 - INFO - Inserted 6951 entries
+2026-02-24 15:59:11,574 - INFO - Inserted 548 equipment records
+2026-02-24 15:59:18,708 - INFO - Performing batch database insert...
+2026-02-24 15:59:19,117 - INFO - Inserted 514 races
+2026-02-24 15:59:22,708 - INFO - Inserted 5880 entries
+2026-02-24 15:59:22,857 - INFO - Inserted 480 equipment records
+2026-02-24 15:59:24,188 - INFO - Processed 1400 files. Races: 12586, Entries: 112009
+2026-02-24 15:59:29,714 - INFO - Performing batch database insert...
+2026-02-24 15:59:30,247 - INFO - Inserted 520 races
+2026-02-24 15:59:34,962 - INFO - Inserted 6502 entries
+2026-02-24 15:59:35,163 - INFO - Inserted 547 equipment records
+2026-02-24 15:59:38,384 - INFO - Processed 1500 files. Races: 13487, Entries: 120190
+2026-02-24 15:59:42,797 - INFO - Performing batch database insert...
+2026-02-24 15:59:43,013 - INFO - Inserted 527 races
+2026-02-24 15:59:47,425 - INFO - Inserted 6431 entries
+2026-02-24 15:59:47,685 - INFO - Inserted 422 equipment records
+2026-02-24 15:59:50,850 - INFO - Processed 1600 files. Races: 14386, Entries: 128282
+2026-02-24 15:59:54,387 - INFO - Performing batch database insert...
+2026-02-24 15:59:54,860 - INFO - Inserted 531 races
+2026-02-24 15:59:57,519 - INFO - Inserted 5695 entries
+2026-02-24 15:59:57,678 - INFO - Inserted 501 equipment records
+2026-02-24 16:00:02,992 - INFO - Processed 1700 files. Races: 15293, Entries: 136347
+2026-02-24 16:00:05,314 - INFO - Performing batch database insert...
+2026-02-24 16:00:06,013 - INFO - Inserted 562 races
+2026-02-24 16:00:12,430 - INFO - Inserted 7637 entries
+2026-02-24 16:00:12,514 - INFO - Inserted 373 equipment records
+2026-02-24 16:00:16,031 - INFO - Processed 1800 files. Races: 16203, Entries: 144341
+2026-02-24 16:00:19,081 - INFO - Performing batch database insert...
+2026-02-24 16:00:19,514 - INFO - Inserted 520 races
+2026-02-24 16:00:23,379 - INFO - Inserted 5899 entries
+2026-02-24 16:00:23,714 - INFO - Inserted 535 equipment records
+2026-02-24 16:00:28,747 - INFO - Processed 1900 files. Races: 17097, Entries: 151904
+2026-02-24 16:00:30,664 - INFO - Performing batch database insert...
+2026-02-24 16:00:31,081 - INFO - Inserted 533 races
+2026-02-24 16:00:34,745 - INFO - Inserted 5834 entries
+2026-02-24 16:00:34,841 - INFO - Inserted 410 equipment records
+2026-02-24 16:00:41,545 - INFO - Processed 2000 files. Races: 17965, Entries: 159307
+2026-02-24 16:00:42,033 - INFO - Performing batch database insert...
+2026-02-24 16:00:42,460 - INFO - Inserted 512 races
+2026-02-24 16:00:45,917 - INFO - Inserted 5725 entries
+2026-02-24 16:00:46,043 - INFO - Inserted 461 equipment records
+2026-02-24 16:00:52,388 - INFO - Performing batch database insert...
+2026-02-24 16:00:52,690 - INFO - Inserted 548 races
+2026-02-24 16:00:53,865 - INFO - Processed 2100 files. Races: 18896, Entries: 167447
+2026-02-24 16:00:56,309 - INFO - Inserted 5820 entries
+2026-02-24 16:00:56,623 - INFO - Inserted 505 equipment records
+2026-02-24 16:01:06,853 - INFO - Performing batch database insert...
+2026-02-24 16:01:07,185 - INFO - Inserted 661 races
+2026-02-24 16:01:07,953 - INFO - Processed 2200 files. Races: 19785, Entries: 174969
+2026-02-24 16:01:10,710 - INFO - Inserted 6881 entries
+2026-02-24 16:01:10,881 - INFO - Inserted 461 equipment records
+2026-02-24 16:01:17,630 - INFO - Performing batch database insert...
+2026-02-24 16:01:17,948 - INFO - Inserted 536 races
+2026-02-24 16:01:20,565 - INFO - Processed 2300 files. Races: 20695, Entries: 182623
+2026-02-24 16:01:23,977 - INFO - Inserted 6753 entries
+2026-02-24 16:01:24,349 - INFO - Inserted 383 equipment records
+2026-02-24 16:01:30,387 - INFO - Performing batch database insert...
+2026-02-24 16:01:30,970 - INFO - Inserted 536 races
+2026-02-24 16:01:31,241 - INFO - Processed 2400 files. Races: 21529, Entries: 189700
+2026-02-24 16:01:35,374 - INFO - Inserted 5879 entries
+2026-02-24 16:01:35,491 - INFO - Inserted 388 equipment records
+2026-02-24 16:01:44,026 - INFO - Performing batch database insert...
+2026-02-24 16:01:44,294 - INFO - Inserted 585 races
+2026-02-24 16:01:44,576 - INFO - Processed 2500 files. Races: 22431, Entries: 197346
+2026-02-24 16:01:47,982 - INFO - Inserted 6460 entries
+2026-02-24 16:01:48,231 - INFO - Inserted 454 equipment records
+2026-02-24 16:01:56,557 - INFO - Performing batch database insert...
+2026-02-24 16:01:57,007 - INFO - Inserted 550 races
+2026-02-24 16:01:58,527 - INFO - Processed 2600 files. Races: 23332, Entries: 204796
+2026-02-24 16:02:01,489 - INFO - Inserted 6635 entries
+2026-02-24 16:02:01,644 - INFO - Inserted 434 equipment records
+2026-02-24 16:02:08,558 - INFO - Performing batch database insert...
+2026-02-24 16:02:08,979 - INFO - Inserted 523 races
+2026-02-24 16:02:10,835 - INFO - Processed 2700 files. Races: 24223, Entries: 212937
+2026-02-24 16:02:13,399 - INFO - Inserted 6310 entries
+2026-02-24 16:02:13,620 - INFO - Inserted 481 equipment records
+2026-02-24 16:02:22,168 - INFO - Performing batch database insert...
+2026-02-24 16:02:22,523 - INFO - Inserted 610 races
+2026-02-24 16:02:24,298 - INFO - Processed 2800 files. Races: 25153, Entries: 220997
+2026-02-24 16:02:26,692 - INFO - Inserted 6922 entries
+2026-02-24 16:02:26,925 - INFO - Inserted 462 equipment records
+2026-02-24 16:02:36,520 - INFO - Performing batch database insert...
+2026-02-24 16:02:37,546 - INFO - Inserted 644 races
+2026-02-24 16:02:37,979 - INFO - Processed 2900 files. Races: 26038, Entries: 228128
+2026-02-24 16:02:42,957 - INFO - Inserted 7851 entries
+2026-02-24 16:02:43,145 - INFO - Inserted 505 equipment records
+2026-02-24 16:02:49,764 - INFO - Performing batch database insert...
+2026-02-24 16:02:50,019 - INFO - Processed 3000 files. Races: 26994, Entries: 236689
+2026-02-24 16:02:50,120 - INFO - Inserted 519 races
+2026-02-24 16:02:53,678 - INFO - Inserted 5599 entries
+2026-02-24 16:02:53,893 - INFO - Inserted 436 equipment records
+2026-02-24 16:03:00,698 - INFO - Performing batch database insert...
+2026-02-24 16:03:01,048 - INFO - Inserted 535 races
+2026-02-24 16:03:02,575 - INFO - Processed 3100 files. Races: 27875, Entries: 244189
+2026-02-24 16:03:05,777 - INFO - Inserted 5863 entries
+2026-02-24 16:03:05,998 - INFO - Inserted 420 equipment records
+2026-02-24 16:03:13,356 - INFO - Performing batch database insert...
+2026-02-24 16:03:13,763 - INFO - Inserted 515 races
+2026-02-24 16:03:15,862 - INFO - Processed 3200 files. Races: 28754, Entries: 251470
+2026-02-24 16:03:17,463 - INFO - Inserted 5692 entries
+2026-02-24 16:03:17,489 - INFO - Inserted 479 equipment records
+2026-02-24 16:03:23,635 - INFO - Performing batch database insert...
+2026-02-24 16:03:24,238 - INFO - Inserted 525 races
+2026-02-24 16:03:27,794 - INFO - Processed 3300 files. Races: 29657, Entries: 259220
+2026-02-24 16:03:28,347 - INFO - Inserted 5938 entries
+2026-02-24 16:03:28,458 - INFO - Inserted 485 equipment records
+2026-02-24 16:03:40,565 - INFO - Performing batch database insert...
+2026-02-24 16:03:40,855 - INFO - Inserted 738 races
+2026-02-24 16:03:42,118 - INFO - Processed 3400 files. Races: 30562, Entries: 267058
+2026-02-24 16:03:46,794 - INFO - Inserted 8164 entries
+2026-02-24 16:03:47,063 - INFO - Inserted 564 equipment records
+2026-02-24 16:03:56,015 - INFO - Performing batch database insert...
+2026-02-24 16:03:57,053 - INFO - Inserted 526 races
+2026-02-24 16:03:57,053 - INFO - Processed 3500 files. Races: 31413, Entries: 274368
+2026-02-24 16:04:01,167 - INFO - Inserted 6447 entries
+2026-02-24 16:04:01,339 - INFO - Inserted 453 equipment records
+2026-02-24 16:04:08,878 - INFO - Performing batch database insert...
+2026-02-24 16:04:09,068 - INFO - Inserted 525 races
+2026-02-24 16:04:10,648 - INFO - Processed 3600 files. Races: 32332, Entries: 282699
+2026-02-24 16:04:13,418 - INFO - Inserted 5990 entries
+2026-02-24 16:04:13,545 - INFO - Inserted 498 equipment records
+2026-02-24 16:04:20,006 - INFO - Performing batch database insert...
+2026-02-24 16:04:20,323 - INFO - Inserted 526 races
+2026-02-24 16:04:23,093 - INFO - Processed 3700 files. Races: 33219, Entries: 290392
+2026-02-24 16:04:24,829 - INFO - Inserted 5719 entries
+2026-02-24 16:04:25,022 - INFO - Inserted 501 equipment records
+2026-02-24 16:04:31,914 - INFO - Performing batch database insert...
+2026-02-24 16:04:32,326 - INFO - Inserted 519 races
+2026-02-24 16:04:35,952 - INFO - Processed 3800 files. Races: 34131, Entries: 298264
+2026-02-24 16:04:36,233 - INFO - Inserted 6008 entries
+2026-02-24 16:04:36,321 - INFO - Inserted 400 equipment records
+2026-02-24 16:04:43,337 - INFO - Performing batch database insert...
+2026-02-24 16:04:43,888 - INFO - Inserted 529 races
+2026-02-24 16:04:48,608 - INFO - Processed 3900 files. Races: 35003, Entries: 305645
+2026-02-24 16:04:49,396 - INFO - Inserted 6611 entries
+2026-02-24 16:04:49,664 - INFO - Inserted 395 equipment records
+2026-02-24 16:04:55,974 - INFO - Performing batch database insert...
+2026-02-24 16:04:56,439 - INFO - Inserted 533 races
+2026-02-24 16:04:59,197 - INFO - Processed 4000 files. Races: 35878, Entries: 313049
+2026-02-24 16:05:01,093 - INFO - Inserted 5783 entries
+2026-02-24 16:05:01,281 - INFO - Inserted 514 equipment records
+2026-02-24 16:05:08,863 - INFO - Performing batch database insert...
+2026-02-24 16:05:09,151 - INFO - Inserted 529 races
+2026-02-24 16:05:12,599 - INFO - Processed 4100 files. Races: 36736, Entries: 320410
+2026-02-24 16:05:13,354 - INFO - Inserted 6344 entries
+2026-02-24 16:05:13,637 - INFO - Inserted 442 equipment records
+2026-02-24 16:05:19,689 - INFO - Performing batch database insert...
+2026-02-24 16:05:19,847 - INFO - Inserted 520 races
+2026-02-24 16:05:23,356 - INFO - Processed 4200 files. Races: 37624, Entries: 327921
+2026-02-24 16:05:24,811 - INFO - Inserted 5999 entries
+2026-02-24 16:05:24,842 - INFO - Inserted 479 equipment records
+2026-02-24 16:05:31,064 - INFO - Performing batch database insert...
+2026-02-24 16:05:31,499 - INFO - Inserted 521 races
+2026-02-24 16:05:35,424 - INFO - Inserted 5969 entries
+2026-02-24 16:05:35,440 - INFO - Processed 4300 files. Races: 38532, Entries: 335647
+2026-02-24 16:05:35,456 - INFO - Inserted 436 equipment records
+2026-02-24 16:05:41,707 - INFO - Performing batch database insert...
+2026-02-24 16:05:42,070 - INFO - Inserted 541 races
+2026-02-24 16:05:45,968 - INFO - Inserted 6166 entries
+2026-02-24 16:05:46,001 - INFO - Inserted 506 equipment records
+2026-02-24 16:05:46,668 - INFO - Processed 4400 files. Races: 39458, Entries: 343904
+2026-02-24 16:05:52,794 - INFO - Performing batch database insert...
+2026-02-24 16:05:53,069 - INFO - Inserted 537 races
+2026-02-24 16:05:57,316 - INFO - Inserted 6558 entries
+2026-02-24 16:05:57,850 - INFO - Inserted 490 equipment records
+2026-02-24 16:05:57,957 - INFO - Processed 4500 files. Races: 40370, Entries: 351753
+2026-02-24 16:06:07,366 - INFO - Performing batch database insert...
+2026-02-24 16:06:08,135 - INFO - Inserted 523 races
+2026-02-24 16:06:15,192 - INFO - Inserted 7030 entries
+2026-02-24 16:06:15,485 - INFO - Inserted 459 equipment records
+2026-02-24 16:06:15,596 - INFO - Processed 4600 files. Races: 41310, Entries: 360492
+2026-02-24 16:06:24,801 - INFO - Performing batch database insert...
+2026-02-24 16:06:25,150 - INFO - Inserted 611 races
+2026-02-24 16:06:29,845 - INFO - Inserted 7059 entries
+2026-02-24 16:06:29,864 - INFO - Processed 4700 files. Races: 42204, Entries: 368523
+2026-02-24 16:06:30,017 - INFO - Inserted 474 equipment records
+2026-02-24 16:06:38,679 - INFO - Performing batch database insert...
+2026-02-24 16:06:39,177 - INFO - Inserted 544 races
+2026-02-24 16:06:44,998 - INFO - Processed 4800 files. Races: 43081, Entries: 376344
+2026-02-24 16:06:45,650 - INFO - Inserted 6749 entries
+2026-02-24 16:06:45,923 - INFO - Inserted 487 equipment records
+2026-02-24 16:06:56,215 - INFO - Performing batch database insert...
+2026-02-24 16:06:56,641 - INFO - Inserted 592 races
+2026-02-24 16:07:01,481 - INFO - Inserted 6822 entries
+2026-02-24 16:07:01,630 - INFO - Processed 4900 files. Races: 43969, Entries: 384806
+2026-02-24 16:07:01,630 - INFO - Inserted 537 equipment records
+2026-02-24 16:07:10,669 - INFO - Performing batch database insert...
+2026-02-24 16:07:11,112 - INFO - Inserted 536 races
+2026-02-24 16:07:16,284 - INFO - Inserted 6650 entries
+2026-02-24 16:07:16,316 - INFO - Inserted 459 equipment records
+2026-02-24 16:07:16,334 - INFO - Processed 5000 files. Races: 44838, Entries: 393014
+2026-02-24 16:07:24,481 - INFO - Performing batch database insert...
+2026-02-24 16:07:24,934 - INFO - Inserted 575 races
+2026-02-24 16:07:30,434 - INFO - Processed 5100 files. Races: 45722, Entries: 401242
+2026-02-24 16:07:30,434 - INFO - Inserted 6934 entries
+2026-02-24 16:07:30,484 - INFO - Inserted 630 equipment records
+2026-02-24 16:07:39,922 - INFO - Performing batch database insert...
+2026-02-24 16:07:40,198 - INFO - Inserted 621 races
+2026-02-24 16:07:44,308 - INFO - Processed 5200 files. Races: 46601, Entries: 409290
+2026-02-24 16:07:45,528 - INFO - Inserted 7069 entries
+2026-02-24 16:07:45,686 - INFO - Inserted 578 equipment records
+2026-02-24 16:07:54,114 - INFO - Performing batch database insert...
+2026-02-24 16:07:54,443 - INFO - Inserted 526 races
+2026-02-24 16:07:59,572 - INFO - Inserted 6340 entries
+2026-02-24 16:07:59,600 - INFO - Inserted 554 equipment records
+2026-02-24 16:07:59,616 - INFO - Processed 5300 files. Races: 47503, Entries: 417556
+2026-02-24 16:08:08,716 - INFO - Performing batch database insert...
+2026-02-24 16:08:09,452 - INFO - Inserted 546 races
+2026-02-24 16:08:15,178 - INFO - Inserted 7074 entries
+2026-02-24 16:08:15,508 - INFO - Inserted 560 equipment records
+2026-02-24 16:08:15,671 - INFO - Processed 5400 files. Races: 48456, Entries: 426454
+2026-02-24 16:08:28,860 - INFO - Performing batch database insert...
+2026-02-24 16:08:29,112 - INFO - Inserted 768 races
+2026-02-24 16:08:34,035 - INFO - Processed 5500 files. Races: 49422, Entries: 435647
+2026-02-24 16:08:35,822 - INFO - Inserted 8921 entries
+2026-02-24 16:08:36,296 - INFO - Inserted 698 equipment records
+2026-02-24 16:08:46,870 - INFO - Performing batch database insert...
+2026-02-24 16:08:47,843 - INFO - Inserted 596 races
+2026-02-24 16:08:51,582 - INFO - Processed 5600 files. Races: 50352, Entries: 444403
+2026-02-24 16:08:52,992 - INFO - Inserted 6836 entries
+2026-02-24 16:08:53,263 - INFO - Inserted 634 equipment records
+2026-02-24 16:09:03,845 - INFO - Performing batch database insert...
+2026-02-24 16:09:04,373 - INFO - Inserted 540 races
+2026-02-24 16:09:08,304 - INFO - Processed 5700 files. Races: 51248, Entries: 452703
+2026-02-24 16:09:08,717 - INFO - Inserted 6515 entries
+2026-02-24 16:09:08,828 - INFO - Inserted 596 equipment records
+2026-02-24 16:09:17,584 - INFO - Performing batch database insert...
+2026-02-24 16:09:18,500 - INFO - Inserted 562 races
+2026-02-24 16:09:22,341 - INFO - Inserted 7232 entries
+2026-02-24 16:09:22,551 - INFO - Inserted 716 equipment records
+2026-02-24 16:09:22,742 - INFO - Processed 5800 files. Races: 52164, Entries: 461498
+2026-02-24 16:09:29,633 - INFO - Performing batch database insert...
+2026-02-24 16:09:29,981 - INFO - Inserted 510 races
+2026-02-24 16:09:33,250 - INFO - Inserted 6547 entries
+2026-02-24 16:09:33,281 - INFO - Inserted 545 equipment records
+2026-02-24 16:09:33,377 - INFO - Processed 5900 files. Races: 53080, Entries: 470755
+2026-02-24 16:09:33,377 - INFO - ============================================================
+2026-02-24 16:09:33,377 - INFO - PAST PERFORMANCE EXTRACTION COMPLETE
+2026-02-24 16:09:33,377 - INFO - ============================================================
+2026-02-24 16:09:33,377 - INFO - Files processed: 5924
+2026-02-24 16:09:33,377 - INFO - Races extracted: 53283
+2026-02-24 16:09:33,377 - INFO - Entries extracted: 472666
+2026-02-24 16:09:33,377 - INFO - Equipment records: 77290
+2026-02-24 16:09:33,377 - INFO - Errors: 0
+2026-02-24 16:09:33,377 - INFO - Duration: 791.45 seconds
+2026-02-24 16:09:33,377 - INFO - Files per second: 7.49
+2026-02-24 16:09:33,377 - INFO - ============================================================

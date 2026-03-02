@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from app.components.sidebar import render_sidebar, get_available_models, load_config
 from app.components.charts import feature_importance_chart, calibration_plot, roc_curve_chart
+from app.components.tooltips import METRICS, HYPERPARAMS, SPLITS
 
 render_sidebar()
 
@@ -54,6 +55,7 @@ with col_left:
     train_start = st.date_input(
         "Train start",
         value=date.fromisoformat(splits_config.get("train", {}).get("start", "2023-01-01")),
+        help=SPLITS["train"],
     )
     train_end = st.date_input(
         "Train end",
@@ -62,6 +64,7 @@ with col_left:
     val_start = st.date_input(
         "Validation start",
         value=date.fromisoformat(splits_config.get("validation", {}).get("start", "2023-07-01")),
+        help=SPLITS["validation"],
     )
     val_end = st.date_input(
         "Validation end",
@@ -70,6 +73,7 @@ with col_left:
     test_start = st.date_input(
         "Test start",
         value=date.fromisoformat(splits_config.get("test", {}).get("start", "2023-10-01")),
+        help=SPLITS["test"],
     )
     test_end = st.date_input(
         "Test end",
@@ -78,12 +82,12 @@ with col_left:
 
 with col_right:
     st.markdown("**Hyperparameters**")
-    n_estimators = st.number_input("n_estimators", value=hyper_config.get("n_estimators", 500), min_value=50, max_value=5000, step=50)
-    max_depth = st.number_input("max_depth", value=hyper_config.get("max_depth", 6), min_value=2, max_value=15)
-    learning_rate = st.number_input("learning_rate", value=hyper_config.get("learning_rate", 0.05), min_value=0.001, max_value=0.5, step=0.005, format="%.3f")
-    subsample = st.slider("subsample", 0.1, 1.0, hyper_config.get("subsample", 0.8), 0.05)
-    reg_alpha = st.number_input("reg_alpha (L1)", value=hyper_config.get("reg_alpha", 0.1), min_value=0.0, max_value=10.0, step=0.1)
-    reg_lambda = st.number_input("reg_lambda (L2)", value=hyper_config.get("reg_lambda", 0.1), min_value=0.0, max_value=10.0, step=0.1)
+    n_estimators = st.number_input("n_estimators", value=hyper_config.get("n_estimators", 500), min_value=50, max_value=5000, step=50, help=HYPERPARAMS["n_estimators"])
+    max_depth = st.number_input("max_depth", value=hyper_config.get("max_depth", 6), min_value=2, max_value=15, help=HYPERPARAMS["max_depth"])
+    learning_rate = st.number_input("learning_rate", value=hyper_config.get("learning_rate", 0.05), min_value=0.001, max_value=0.5, step=0.005, format="%.3f", help=HYPERPARAMS["learning_rate"])
+    subsample = st.slider("subsample", 0.1, 1.0, hyper_config.get("subsample", 0.8), 0.05, help=HYPERPARAMS["subsample"])
+    reg_alpha = st.number_input("reg_alpha (L1)", value=hyper_config.get("reg_alpha", 0.1), min_value=0.0, max_value=10.0, step=0.1, help=HYPERPARAMS["reg_alpha"])
+    reg_lambda = st.number_input("reg_lambda (L2)", value=hyper_config.get("reg_lambda", 0.1), min_value=0.0, max_value=10.0, step=0.1, help=HYPERPARAMS["reg_lambda"])
 
     version_name = st.text_input("Model version", value="v1.2")
 
@@ -208,10 +212,10 @@ if st.button("Start Training", type="primary"):
         st.success(f"Training complete! Model saved as **{version_name}**")
 
         mc1, mc2, mc3, mc4, mc5 = st.columns(5)
-        mc1.metric("ROC-AUC", f"{roc_auc:.4f}")
-        mc2.metric("Brier Score", f"{brier:.4f}")
-        mc3.metric("ECE", f"{cal_metrics['ece']:.4f}")
-        mc4.metric("Log Loss", f"{logloss:.4f}")
+        mc1.metric("ROC-AUC", f"{roc_auc:.4f}", help=METRICS["roc_auc"])
+        mc2.metric("Brier Score", f"{brier:.4f}", help=METRICS["brier_score"])
+        mc3.metric("ECE", f"{cal_metrics['ece']:.4f}", help=METRICS["ece"])
+        mc4.metric("Log Loss", f"{logloss:.4f}", help=METRICS["log_loss"])
         mc5.metric("Features", len(feature_cols))
 
         # Feature importance chart

@@ -96,24 +96,25 @@ class ResultChartExtractor:
             race_date = chart_element.get('RACE_DATE')
             if not race_date:
                 return None
-                
+
             track_element = chart_element.find('TRACK')
             if track_element is None:
                 return None
-                
+
             track_code = self.extract_text(track_element, 'CODE')
             if not track_code:
                 return None
-            
+
             # Process each race
             race_updates = []
             for race_element in chart_element.findall('RACE'):
                 race_number = race_element.get('NUMBER')
                 if not race_number:
                     continue
-                
-                # Extract result-specific data (use race_date/race_number for matching)
+
+                # Extract result-specific data
                 race_update = {
+                    'track_code': track_code,
                     'race_date': race_date,
                     'race_number': race_number,
                     'winning_time': self.parse_time(self.extract_text(race_element, 'WIN_TIME')),
@@ -125,14 +126,11 @@ class ResultChartExtractor:
                     'wind_speed': self.parse_numeric(self.extract_text(race_element, 'WIND_SPEED')),
                     'wind_direction': self.extract_text(race_element, 'WIND_DIRECTION')
                 }
-                
-                # Note: Fractions and wagering extraction skipped - would need race_id lookup
-                # These can be added later once the core result data is working
-                
+
                 race_updates.append(race_update)
-            
+
             return race_updates
-            
+
         except Exception as e:
             logger.error(f"Error extracting race updates: {e}")
             return None
@@ -198,32 +196,32 @@ class ResultChartExtractor:
         return wagering_records
     
     def extract_entry_updates(self, chart_element, filename: str) -> List[Dict]:
-        """Extract entry result updates"""
+        """Extract entry result updates, matching by program_number/post_position."""
         entry_updates = []
-        
+
         try:
             race_date = chart_element.get('RACE_DATE')
+
+            track_element = chart_element.find('TRACK')
+            track_code = self.extract_text(track_element, 'CODE') if track_element is not None else None
 
             for race_element in chart_element.findall('RACE'):
                 race_number = race_element.get('NUMBER')
 
                 # Process each entry
                 for entry_element in race_element.findall('ENTRY'):
-                    horse_name = self.extract_text(entry_element, 'NAME')
-                    if not horse_name:
+                    program_number = self.extract_text(entry_element, 'PROGRAM_NUM')
+                    post_position = self.parse_numeric(self.extract_text(entry_element, 'POST_POS'))
+
+                    if not program_number and post_position is None:
                         continue
 
-                    # Find registration number by horse name lookup
-                    registration_number = self.lookup_registration_number(horse_name)
-                    if not registration_number:
-                        logger.warning(f"Could not find registration number for horse: {horse_name}")
-                        continue
-
-                    # Extract result data (uses race_date/race_number for matching)
                     entry_update = {
+                        'track_code': track_code,
                         'race_date': race_date,
                         'race_number': race_number,
-                        'registration_number': registration_number,
+                        'program_number': program_number,
+                        'post_position': int(post_position) if post_position is not None else None,
                         'official_finish_position': self.parse_numeric(self.extract_text(entry_element, 'OFFICIAL_FIN')),
                         'final_time': self.parse_time(self.extract_text(entry_element, 'FINISH_TIME')),
                         'speed_rating': self.parse_numeric(self.extract_text(entry_element, 'SPEED_RATING')),
@@ -236,12 +234,11 @@ class ResultChartExtractor:
                         'trainer_id': self.extract_text(entry_element, 'TRAINER/KEY')
                     }
 
-                    # Note: Position calls extraction skipped - would need race_id lookup
                     entry_updates.append(entry_update)
-        
+
         except Exception as e:
             logger.error(f"Error extracting entry updates: {e}")
-        
+
         return entry_updates
     
     def extract_position_calls(self, entry_element, race_id: str, registration_number: str) -> List[Dict]:
@@ -440,7 +437,7 @@ class ResultChartExtractor:
         cursor = conn.cursor()
         
         try:
-            # Update races with result data - match by race_date and race_number
+            # Update races with result data - match by track_code + race_date + race_number
             if self.race_updates:
                 updated_count = 0
                 for race_update in list(self.race_updates):
@@ -449,7 +446,7 @@ class ResultChartExtractor:
                         SET winning_time = ?, final_fraction_time = ?, track_condition = ?,
                             weather = ?, wind_speed = ?, wind_direction = ?,
                             updated_at = CURRENT_TIMESTAMP
-                        WHERE race_date = ? AND race_number = ?
+                        WHERE track_code = ? AND race_date = ? AND race_number = ?
                     """, (
                         race_update.get('winning_time'),
                         race_update.get('final_fraction_time'),
@@ -457,45 +454,86 @@ class ResultChartExtractor:
                         race_update.get('weather'),
                         race_update.get('wind_speed'),
                         race_update.get('wind_direction'),
+                        race_update['track_code'],
                         race_update['race_date'],
                         race_update['race_number']
                     ))
                     updated_count += cursor.rowcount
 
                 logger.info(f"Updated {updated_count} races with results (attempted {len(self.race_updates)})")
-            
-            # Update entries with result data - match by race_date, race_number, registration_number
+
+            # Update entries with result data - match by track_code + race_date + race_number + program_number/post_position
             if self.entry_updates:
                 updated_count = 0
+                skipped_count = 0
                 for entry_update in list(self.entry_updates):
-                    # Find matching entry via join with races_standardized
-                    cursor.execute("""
-                        UPDATE race_entries_standardized
-                        SET official_finish_position = ?, final_time = ?, speed_rating = ?,
-                            win_payoff = ?, place_payoff = ?, show_payoff = ?,
-                            actual_odds = ?, race_comments = ?,
-                            updated_at = CURRENT_TIMESTAMP
-                        WHERE registration_number = ?
-                          AND race_id IN (
-                              SELECT race_id FROM races_standardized
-                              WHERE race_date = ? AND race_number = ?
-                          )
-                    """, (
-                        entry_update.get('official_finish_position'),
-                        entry_update.get('final_time'),
-                        entry_update.get('speed_rating'),
-                        entry_update.get('win_payoff'),
-                        entry_update.get('place_payoff'),
-                        entry_update.get('show_payoff'),
-                        entry_update.get('actual_odds'),
-                        entry_update.get('race_comments'),
-                        entry_update['registration_number'],
-                        entry_update['race_date'],
-                        entry_update['race_number']
-                    ))
-                    updated_count += cursor.rowcount
+                    track_code = entry_update.get('track_code')
+                    race_date = entry_update.get('race_date')
+                    race_number = entry_update.get('race_number')
+                    program_number = entry_update.get('program_number')
+                    post_position = entry_update.get('post_position')
 
-                logger.info(f"Updated {updated_count} entries with results (attempted {len(self.entry_updates)})")
+                    # Primary match: program_number within the race
+                    if program_number:
+                        cursor.execute("""
+                            UPDATE race_entries_standardized
+                            SET official_finish_position = ?, final_time = ?, speed_rating = ?,
+                                win_payoff = ?, place_payoff = ?, show_payoff = ?,
+                                actual_odds = ?, race_comments = ?,
+                                updated_at = CURRENT_TIMESTAMP
+                            WHERE program_number = ?
+                              AND race_id IN (
+                                  SELECT race_id FROM races_standardized
+                                  WHERE track_code = ? AND race_date = ? AND race_number = ?
+                              )
+                        """, (
+                            entry_update.get('official_finish_position'),
+                            entry_update.get('final_time'),
+                            entry_update.get('speed_rating'),
+                            entry_update.get('win_payoff'),
+                            entry_update.get('place_payoff'),
+                            entry_update.get('show_payoff'),
+                            entry_update.get('actual_odds'),
+                            entry_update.get('race_comments'),
+                            program_number,
+                            track_code, race_date, race_number
+                        ))
+                        if cursor.rowcount > 0:
+                            updated_count += cursor.rowcount
+                            continue
+
+                    # Fallback match: post_position within the race
+                    if post_position is not None:
+                        cursor.execute("""
+                            UPDATE race_entries_standardized
+                            SET official_finish_position = ?, final_time = ?, speed_rating = ?,
+                                win_payoff = ?, place_payoff = ?, show_payoff = ?,
+                                actual_odds = ?, race_comments = ?,
+                                updated_at = CURRENT_TIMESTAMP
+                            WHERE post_position = ?
+                              AND race_id IN (
+                                  SELECT race_id FROM races_standardized
+                                  WHERE track_code = ? AND race_date = ? AND race_number = ?
+                              )
+                        """, (
+                            entry_update.get('official_finish_position'),
+                            entry_update.get('final_time'),
+                            entry_update.get('speed_rating'),
+                            entry_update.get('win_payoff'),
+                            entry_update.get('place_payoff'),
+                            entry_update.get('show_payoff'),
+                            entry_update.get('actual_odds'),
+                            entry_update.get('race_comments'),
+                            post_position,
+                            track_code, race_date, race_number
+                        ))
+                        if cursor.rowcount > 0:
+                            updated_count += cursor.rowcount
+                            continue
+
+                    skipped_count += 1
+
+                logger.info(f"Updated {updated_count} entries with results (attempted {len(self.entry_updates)}, skipped {skipped_count})")
             
             # Insert wagering data
             if self.wagering_batch:
