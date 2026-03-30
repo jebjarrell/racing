@@ -145,6 +145,14 @@ if st.button("Start Training", type="primary", disabled=not valid_version):
                 state="complete",
             )
 
+        if train_df.empty or val_df.empty:
+            st.error(
+                f"Not enough data for the selected date ranges. "
+                f"Train has {len(train_df):,} rows, validation has {len(val_df):,} rows. "
+                f"Your data covers races from the database — adjust the split dates to match."
+            )
+            st.stop()
+
         # Step 4: Prepare features
         with st.status("Step 4: Preparing features...", expanded=True) as status:
             feature_cols = [c for c in FEATURE_COLUMNS if c in train_df.columns]
