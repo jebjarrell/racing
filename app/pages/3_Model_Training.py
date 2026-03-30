@@ -125,6 +125,16 @@ if st.button("Start Training", type="primary", disabled=not valid_version):
         with st.status("Step 1: Generating features...", expanded=True) as status:
             full_start = min(train_start, val_start, test_start)
             full_end = max(train_end, val_end, test_end)
+
+            # Estimate race count so user knows how long this will take
+            from app.utils.db import query_single
+            race_count = query_single(
+                "SELECT COUNT(*) FROM races_standardized WHERE race_date >= ? AND race_date <= ?",
+                params=[str(full_start), str(full_end)],
+            ) or 0
+            est_minutes = max(1, race_count * 2 / 60)  # ~2 sec per race
+            st.write(f"Computing features for **{race_count:,} races** (est. {est_minutes:.0f} min)...")
+
             data = pipeline.prepare_training_data(full_start, full_end)
             status.update(label=f"Features generated: {len(data):,} entries", state="complete")
 
