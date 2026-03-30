@@ -225,12 +225,14 @@ class FeatureEngine:
     def _get_connection(self) -> sqlite3.Connection:
         """Get or create database connection with performance optimizations."""
         if self._conn is None:
-            self._conn = sqlite3.connect(self.db_path)
+            self._conn = sqlite3.connect(self.db_path, timeout=30)
             self._conn.row_factory = sqlite3.Row
-            # Performance: memory-map the DB and use WAL mode for concurrent reads
-            self._conn.execute("PRAGMA mmap_size = 268435456")  # 256MB mmap
-            self._conn.execute("PRAGMA cache_size = -64000")  # 64MB page cache
-            self._conn.execute("PRAGMA journal_mode = WAL")
+            try:
+                self._conn.execute("PRAGMA mmap_size = 268435456")  # 256MB mmap
+                self._conn.execute("PRAGMA cache_size = -64000")  # 64MB page cache
+                self._conn.execute("PRAGMA journal_mode = WAL")
+            except sqlite3.OperationalError:
+                pass  # WAL may fail under contention; connection still usable
         return self._conn
 
     def close(self) -> None:
@@ -759,8 +761,16 @@ class FeatureEngine:
 
         logger.info(f"Using {max_workers} workers, {len(chunks)} chunks of ~{chunk_size} races")
 
+        # Set WAL mode once from the main process before spawning workers
+        conn = self._get_connection()
+        try:
+            conn.execute("PRAGMA journal_mode = WAL")
+        except sqlite3.OperationalError:
+            pass
+
         all_features = []
         completed = 0
+        failed_races = 0
 
         with ProcessPoolExecutor(max_workers=max_workers) as executor:
             futures = {
@@ -769,15 +779,26 @@ class FeatureEngine:
             }
 
             for future in as_completed(futures):
+                chunk = futures[future]
                 try:
                     chunk_features = future.result()
                     all_features.extend(chunk_features)
                 except Exception as e:
-                    logger.warning(f"Worker error: {e}")
+                    failed_races += len(chunk)
+                    logger.warning(f"Worker error ({len(chunk)} races lost): {e}")
 
-                completed += len(futures[future])
+                completed += len(chunk)
                 if progress_callback:
                     progress_callback("", completed, total_races)
+
+        if failed_races > 0:
+            fail_pct = 100 * failed_races / total_races
+            logger.warning(f"{failed_races} races failed ({fail_pct:.1f}%)")
+            if fail_pct > 20:
+                raise RuntimeError(
+                    f"Too many feature computation failures: {failed_races}/{total_races} "
+                    f"races ({fail_pct:.1f}%) failed. Check logs for details."
+                )
 
         logger.info(f"Generated {len(all_features)} feature rows using {max_workers} workers")
 
@@ -813,8 +834,13 @@ def _process_race_chunk(db_path: str, races: List[Tuple[str, str]]) -> List[Dict
     Each worker creates its own FeatureEngine (and DB connection).
     Must be a top-level function for ProcessPoolExecutor pickling.
     """
+    # Ensure logging works in spawned worker processes
+    logging.basicConfig(level=logging.WARNING)
+    worker_logger = logging.getLogger(__name__)
+
     engine = FeatureEngine(db_path=db_path)
     results = []
+    errors = 0
     try:
         for race_id, race_date_str in races:
             race_dt = date.fromisoformat(race_date_str)
@@ -822,7 +848,9 @@ def _process_race_chunk(db_path: str, races: List[Tuple[str, str]]) -> List[Dict
                 features = engine.calculate_all_features(race_id, race_dt)
                 results.extend(features)
             except Exception as e:
-                logger.warning(f"Error in worker for {race_id}: {e}")
+                errors += 1
+                if errors <= 3:  # Don't spam logs
+                    worker_logger.warning(f"Error computing features for {race_id}: {e}")
     finally:
         engine.close()
     return results

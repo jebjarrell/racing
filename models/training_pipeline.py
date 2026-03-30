@@ -201,20 +201,25 @@ class ModelTrainingPipeline:
         conn = sqlite3.connect(self.db_path)
 
         try:
-            # Query finish positions for all entries
+            # Query finish positions for all entries (batched to avoid SQLite variable limit)
             entry_ids = df['entry_id'].tolist()
-            placeholders = ','.join(['?'] * len(entry_ids))
+            batch_size = 5000  # SQLite limit is ~32766 variables
+            result_frames = []
 
-            query = f"""
-                SELECT
-                    entry_id,
-                    official_finish_position,
-                    scratched
-                FROM race_entries_standardized
-                WHERE entry_id IN ({placeholders})
-            """
+            for i in range(0, len(entry_ids), batch_size):
+                batch = entry_ids[i:i + batch_size]
+                placeholders = ','.join(['?'] * len(batch))
+                query = f"""
+                    SELECT
+                        entry_id,
+                        official_finish_position,
+                        scratched
+                    FROM race_entries_standardized
+                    WHERE entry_id IN ({placeholders})
+                """
+                result_frames.append(pd.read_sql_query(query, conn, params=batch))
 
-            results_df = pd.read_sql_query(query, conn, params=entry_ids)
+            results_df = pd.concat(result_frames, ignore_index=True) if result_frames else pd.DataFrame()
 
             # Create is_winner column (1 if finished first, 0 otherwise)
             # Exclude scratched horses from dataset
