@@ -438,7 +438,7 @@ class ModelTrainingPipeline:
         )
 
         logger.info(f"Model training completed")
-        logger.info(f"Best iteration: {model.best_iteration_}")
+        logger.info(f"Best iteration: {model.model.best_iteration}")
 
         return model
 

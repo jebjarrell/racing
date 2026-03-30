@@ -2,27 +2,30 @@
 
 import json
 import os
-import sqlite3
 import sys
 from datetime import date
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from app.components.sidebar import render_sidebar, get_available_models, load_config
+from app.components.sidebar import render_sidebar, get_available_models, load_config, PROJECT_ROOT
 from app.components.charts import feature_importance_chart
 from app.components.tooltips import BETTING
+from app.components.model_selector import select_model
+from app.utils.db import get_connection, db_exists, db_path_default, streamlit_error_boundary
+from app.utils.betting import to_decimal_odds, calculate_metrics, qualifies_for_bet
+from app.utils.features import prepare_feature_matrix
 
 render_sidebar()
 
 st.title("Race Predictions")
 st.markdown("---")
 
-DB_PATH = "racing_data.db"
 config = load_config()
 betting_config = config.get("betting", {})
 bankroll_config = config.get("bankroll", {})
@@ -30,27 +33,19 @@ bankroll_config = config.get("bankroll", {})
 
 # --- Validate Prerequisites ---
 models = get_available_models()
-if not models:
-    st.warning("No trained model found. Train one in **Model Training** first.")
-    st.stop()
 
-if not os.path.exists(DB_PATH):
-    st.warning(f"Database `{DB_PATH}` not found.")
+if not db_exists():
+    st.warning(f"Database `{db_path_default()}` not found.")
     st.stop()
 
 
 # --- Model Selection ---
-model_versions = [m["version"] for m in models]
-selected_version = st.selectbox("Model Version", model_versions)
-selected_model_info = next((m for m in models if m["version"] == selected_version), None)
-if selected_model_info is None:
-    st.error(f"Model version '{selected_version}' not found.")
-    st.stop()
+selected_model_info = select_model(models, require_features=True)
 
 
 @st.cache_resource
-def load_model(model_path: str):
-    """Load model and calibrator."""
+def load_model(model_path: str, mtime: float = 0):
+    """Load model and calibrator. mtime busts cache when model file changes."""
     from models.lightgbm_model import RacingLightGBM
     from models.calibration import FieldSizeCalibrator
 
@@ -62,7 +57,7 @@ def load_model(model_path: str):
 # --- Race Selection ---
 st.subheader("Select Race")
 
-with sqlite3.connect(DB_PATH) as conn:
+with get_connection() as conn:
     # Get available dates
     dates_df = pd.read_sql_query(
         "SELECT DISTINCT race_date FROM races_standardized ORDER BY race_date DESC LIMIT 365",
@@ -85,6 +80,10 @@ with sqlite3.connect(DB_PATH) as conn:
         conn,
         params=[selected_date],
     )
+
+    if tracks_df.empty:
+        st.info("No tracks found for this date.")
+        st.stop()
 
     with col2:
         selected_track = st.selectbox("Track", tracks_df["track_code"].tolist())
@@ -124,15 +123,17 @@ st.markdown("---")
 
 # --- Generate Predictions ---
 if st.button("Generate Predictions", type="primary"):
-    try:
+    with streamlit_error_boundary("Prediction"):
         from features.feature_engine import FeatureEngine
 
-        model, calibrator = load_model(selected_model_info["path"])
+        model_pkl = os.path.join(selected_model_info["path"], "model.pkl")
+        model_mtime = os.path.getmtime(model_pkl) if os.path.exists(model_pkl) else 0
+        model, calibrator = load_model(selected_model_info["path"], mtime=model_mtime)
         feature_columns = selected_model_info.get("feature_columns", [])
 
         # Calculate features
         with st.spinner("Calculating features..."):
-            engine = FeatureEngine(db_path=DB_PATH)
+            engine = FeatureEngine(db_path=db_path_default())
             race_date = date.fromisoformat(selected_date)
             features_list = engine.calculate_all_features(selected_race_id, race_date)
             engine.close()
@@ -144,7 +145,7 @@ if st.button("Generate Predictions", type="primary"):
         features_df = pd.DataFrame(features_list)
 
         # Get horse names
-        with sqlite3.connect(DB_PATH) as conn:
+        with get_connection() as conn:
             entries_df = pd.read_sql_query(
                 """
                 SELECT e.entry_id, e.registration_number, e.post_position, e.program_number,
@@ -160,12 +161,7 @@ if st.button("Generate Predictions", type="primary"):
             )
 
         # Prepare model features
-        available_cols = [c for c in feature_columns if c in features_df.columns]
-        X = features_df[available_cols].copy()
-        for c in feature_columns:
-            if c not in X.columns:
-                X[c] = 0
-        X = X[feature_columns].fillna(0)
+        X = prepare_feature_matrix(features_df, feature_columns)
 
         # Predict
         with st.spinner("Running model prediction..."):
@@ -190,6 +186,12 @@ if st.button("Generate Predictions", type="primary"):
             suffixes=("", "_entry"),
         )
 
+        # Warn about entries with missing predictions
+        nan_count = result["model_prob"].isna().sum()
+        if nan_count > 0:
+            st.warning(f"{nan_count} entries excluded (missing features or merge mismatch)")
+            result = result.dropna(subset=["model_prob"])
+
         # Calculate betting metrics
         bankroll = bankroll_config.get("initial", 2000.0)
         min_ev = betting_config.get("min_ev_threshold", 0.08)
@@ -201,40 +203,20 @@ if st.button("Generate Predictions", type="primary"):
 
         rows = []
         for _, r in result.iterrows():
-            ml_odds = r.get("morning_line_odds") or r.get("morning_line_odds_entry")
-            actual = r.get("actual_odds")
-            odds_to_use = actual if pd.notna(actual) and actual > 0 else ml_odds
-
-            if pd.isna(odds_to_use) or odds_to_use <= 0:
-                decimal_odds = 2.0
-            else:
-                # Convert to decimal if needed
-                if odds_to_use >= 100:
-                    decimal_odds = (odds_to_use / 100) + 1
-                elif odds_to_use <= -100:
-                    decimal_odds = (100 / abs(odds_to_use)) + 1
-                else:
-                    decimal_odds = odds_to_use + 1 if odds_to_use > 0 else odds_to_use
+            raw_actual = r.get("actual_odds")
+            raw_ml = r.get("morning_line_odds") or r.get("morning_line_odds_entry")
+            try:
+                actual_val = float(raw_actual) if pd.notna(raw_actual) else None
+            except (ValueError, TypeError):
+                actual_val = None
+            odds_source = actual_val if actual_val and actual_val > 0 else raw_ml
+            decimal_odds = to_decimal_odds(odds_source)
 
             prob = r["model_prob"]
-            implied_prob = 1.0 / decimal_odds if decimal_odds > 0 else 0
-            ev = (prob * decimal_odds) - 1
-            overlay = prob / implied_prob if implied_prob > 0 else 0
-
-            # Kelly
-            b = decimal_odds - 1
-            kelly_full = ((b * prob) - (1 - prob)) / b if b > 0 else 0
-            kelly = max(0, kelly_full * kelly_frac)
-            stake = min(bankroll * kelly, bankroll * max_per_race)
-            stake = max(stake, 0)
-
-            # Qualifying?
-            qualifies = (
-                ev >= min_ev
-                and prob >= min_prob
-                and overlay >= min_overlay
-                and decimal_odds <= max_odds + 1
-                and kelly > 0
+            bet = calculate_metrics(prob, decimal_odds, kelly_frac, max_per_race, bankroll)
+            qualifies = qualifies_for_bet(
+                bet["ev"], prob, bet["overlay"], decimal_odds, bet["kelly"],
+                min_ev=min_ev, min_prob=min_prob, min_overlay=min_overlay, max_odds=max_odds,
             )
 
             finish = r.get("official_finish_position")
@@ -243,13 +225,13 @@ if st.button("Generate Predictions", type="primary"):
                 "PP": r.get("post_position") or r.get("post_position_entry", ""),
                 "Horse": r.get("horse_name", "Unknown"),
                 "Prob": prob,
-                "ML Odds": f"{ml_odds}" if pd.notna(ml_odds) else "-",
-                "Actual Odds": f"{actual}" if pd.notna(actual) else "-",
-                "Implied": f"{implied_prob:.1%}" if implied_prob > 0 else "-",
-                "EV": ev,
-                "Overlay": overlay,
-                "Kelly %": kelly,
-                "Stake": stake,
+                "ML Odds": f"{raw_ml}" if pd.notna(raw_ml) else "-",
+                "Actual Odds": f"{actual_val}" if actual_val is not None else "-",
+                "Implied": f"{bet['implied_prob']:.1%}" if bet["implied_prob"] > 0 else "-",
+                "EV": bet["ev"],
+                "Overlay": bet["overlay"],
+                "Kelly %": bet["kelly"],
+                "Stake": bet["stake"],
                 "Bet?": "YES" if qualifies else "",
                 "Finish": int(finish) if pd.notna(finish) else "-",
             })
@@ -292,6 +274,27 @@ if st.button("Generate Predictions", type="primary"):
         else:
             st.info("No qualifying bets for this race (no entries pass all filters).")
 
+        # Speed figure comparison chart
+        speed_cols = [c for c in ['best_speed_last', 'best_speed_90_days', 'avg_speed_figure'] if c in result.columns]
+        if speed_cols:
+            speed_col = speed_cols[0]
+            chart_data = result[['horse_name', speed_col]].dropna(subset=[speed_col])
+            if not chart_data.empty:
+                chart_data = chart_data.sort_values(speed_col, ascending=True)
+                st.subheader("Speed Figure Comparison")
+                fig = go.Figure(go.Bar(
+                    x=chart_data[speed_col],
+                    y=chart_data['horse_name'],
+                    orientation='h',
+                    marker_color='#2563eb',
+                ))
+                fig.update_layout(
+                    xaxis_title="Speed Figure",
+                    template="plotly_white",
+                    height=max(300, len(chart_data) * 30),
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
         # Feature details
         st.markdown("---")
         st.subheader("Feature Details")
@@ -310,8 +313,3 @@ if st.button("Generate Predictions", type="primary"):
         # CSV download
         csv = display_df.to_csv(index=False)
         st.download_button("Download Predictions CSV", csv, "predictions.csv", "text/csv")
-
-    except Exception as e:
-        st.error(f"Prediction failed: {e}")
-        import traceback
-        st.code(traceback.format_exc())

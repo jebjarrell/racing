@@ -22,7 +22,7 @@ from app.components.sidebar import render_sidebar
 # Page configuration
 st.set_page_config(
     page_title="Racing Betting System",
-    page_icon="horse_racing",
+    page_icon="\U0001F3C7",
     layout="wide",
     initial_sidebar_state="expanded",
 )

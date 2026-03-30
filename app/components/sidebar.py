@@ -8,9 +8,15 @@ from pathlib import Path
 import streamlit as st
 import yaml
 
+from app.components.metrics_display import display_model_metrics
 
-def get_available_models(artifacts_dir: str = "artifacts/models") -> list:
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
+
+def get_available_models(artifacts_dir: str = None) -> list:
     """Scan artifacts directory for available model versions."""
+    if artifacts_dir is None:
+        artifacts_dir = str(PROJECT_ROOT / "artifacts" / "models")
     models = []
     artifacts_path = Path(artifacts_dir)
     if not artifacts_path.exists():
@@ -33,8 +39,10 @@ def get_available_models(artifacts_dir: str = "artifacts/models") -> list:
     return models
 
 
-def load_config(config_path: str = "config/config.yaml") -> dict:
+def load_config(config_path: str = None) -> dict:
     """Load YAML configuration."""
+    if config_path is None:
+        config_path = str(PROJECT_ROOT / "config" / "config.yaml")
     try:
         with open(config_path) as f:
             return yaml.safe_load(f)
@@ -63,15 +71,7 @@ def render_sidebar():
                 except ValueError:
                     pass
 
-            from app.components.tooltips import METRICS
-
-            col1, col2 = st.columns(2)
-            col1.metric("AUC", f"{metrics.get('roc_auc', 0):.3f}", help=METRICS["roc_auc"])
-            col2.metric("ECE", f"{metrics.get('ece', 0):.4f}", help=METRICS["ece"])
-
-            brier = metrics.get("brier_score", 0)
-            col1.metric("Brier", f"{brier:.4f}", help=METRICS["brier_score"])
-            col2.metric("Log Loss", f"{metrics.get('log_loss', 0):.3f}", help=METRICS["log_loss"])
+            display_model_metrics(metrics)
 
             # Alert: calibration drift
             ece = metrics.get("ece", 0)
@@ -98,7 +98,7 @@ def render_sidebar():
         st.divider()
 
         # DB status
-        db_path = "racing_data.db"
+        db_path = str(PROJECT_ROOT / "racing_data.db")
         if os.path.exists(db_path):
             size_mb = os.path.getsize(db_path) / (1024 * 1024)
             st.caption(f"DB: {size_mb:.1f} MB")

@@ -8,14 +8,14 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from app.components.sidebar import render_sidebar, load_config
+from app.components.sidebar import render_sidebar, load_config, PROJECT_ROOT
 
 render_sidebar()
 
 st.title("Settings")
 st.markdown("---")
 
-CONFIG_PATH = "config/config.yaml"
+CONFIG_PATH = str(PROJECT_ROOT / "config" / "config.yaml")
 
 
 def save_config(config: dict):
@@ -26,6 +26,7 @@ def save_config(config: dict):
 
 config = load_config()
 if not config:
+    st.error("Could not load configuration file. Check that `config/config.yaml` exists.")
     st.stop()
 
 
@@ -156,13 +157,13 @@ all_tracks = sorted(set(
 with tk1:
     high_volume = st.multiselect(
         "High Volume Tracks",
-        options=all_tracks + ["CD", "SAR", "BEL", "GP", "SA", "DMR", "KEE", "AQU"],
+        options=sorted(set(all_tracks + ["CD", "SAR", "BEL", "GP", "SA", "DMR", "KEE", "AQU"])),
         default=tracks.get("high_volume", []),
     )
 with tk2:
     regional = st.multiselect(
         "Regional Tracks",
-        options=all_tracks + ["TP", "CT", "PEN", "LRL", "TAM", "FG", "OP", "GG", "PRM", "IND"],
+        options=sorted(set(all_tracks + ["TP", "CT", "PEN", "LRL", "TAM", "FG", "OP", "GG", "PRM", "IND"])),
         default=tracks.get("regional", []),
     )
 
@@ -190,6 +191,12 @@ with hc3:
 st.markdown("---")
 
 if st.button("Save Configuration", type="primary"):
+    # Ensure config sections exist
+    config.setdefault("betting", {})
+    config.setdefault("bankroll", {})
+    config.setdefault("tracks", {})
+    config.setdefault("model", {}).setdefault("hyperparameters", {})
+
     # Build updated config
     config["betting"]["fractional_kelly"] = fractional_kelly
     config["betting"]["min_ev_threshold"] = min_ev_threshold
@@ -207,6 +214,9 @@ if st.button("Save Configuration", type="primary"):
 
     config["tracks"]["high_volume"] = sorted(list(set(high_volume)))
     config["tracks"]["regional"] = sorted(list(set(regional)))
+    all_known_tracks = sorted(set(all_tracks + list(high_volume) + list(regional)))
+    excluded = [t for t in all_known_tracks if t not in high_volume and t not in regional]
+    config["tracks"]["excluded"] = sorted(excluded)
 
     config["model"]["hyperparameters"]["n_estimators"] = hp_n_estimators
     config["model"]["hyperparameters"]["max_depth"] = hp_max_depth

@@ -1,7 +1,6 @@
 """Dashboard - System overview, database stats, model health."""
 
 import os
-import sqlite3
 import sys
 from pathlib import Path
 
@@ -12,54 +11,67 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from app.components.sidebar import render_sidebar, get_available_models, load_config
 from app.components.tooltips import METRICS, BETTING
+from app.utils.db import query_single, query_df, db_exists, db_path_default
+from app.components.metrics_display import display_model_metrics
 
 render_sidebar()
 
 st.title("Dashboard")
 st.markdown("---")
 
-DB_PATH = "racing_data.db"
-
 
 @st.cache_data(ttl=300)
 def get_db_stats(db_path: str) -> dict:
     """Query database for summary statistics."""
-    if not os.path.exists(db_path):
+    if not db_exists(db_path):
         return {}
 
-    conn = sqlite3.connect(db_path)
     stats = {}
+    errors = []
+
+    # Race count and date range
     try:
-        # Race count and date range
-        row = conn.execute(
-            "SELECT COUNT(*), MIN(race_date), MAX(race_date) FROM races_standardized"
-        ).fetchone()
-        stats["total_races"] = row[0]
-        stats["min_date"] = row[1]
-        stats["max_date"] = row[2]
+        stats["total_races"] = query_single(
+            "SELECT COUNT(*) FROM races_standardized", db_path=db_path
+        )
+        stats["min_date"] = query_single(
+            "SELECT MIN(race_date) FROM races_standardized", db_path=db_path
+        )
+        stats["max_date"] = query_single(
+            "SELECT MAX(race_date) FROM races_standardized", db_path=db_path
+        )
+    except Exception as e:
+        errors.append(str(e))
 
-        # Entry count
-        stats["total_entries"] = conn.execute(
-            "SELECT COUNT(*) FROM race_entries_standardized"
-        ).fetchone()[0]
+    # Entry count
+    try:
+        stats["total_entries"] = query_single(
+            "SELECT COUNT(*) FROM race_entries_standardized", db_path=db_path
+        )
+    except Exception as e:
+        errors.append(str(e))
 
-        # Horse count
-        stats["total_horses"] = conn.execute(
-            "SELECT COUNT(*) FROM horses_master"
-        ).fetchone()[0]
+    # Horse count
+    try:
+        stats["total_horses"] = query_single(
+            "SELECT COUNT(*) FROM horses_master", db_path=db_path
+        )
+    except Exception as e:
+        errors.append(str(e))
 
-        # Track count
-        stats["total_tracks"] = conn.execute(
-            "SELECT COUNT(DISTINCT track_code) FROM races_standardized"
-        ).fetchone()[0]
+    # Track count
+    try:
+        stats["total_tracks"] = query_single(
+            "SELECT COUNT(DISTINCT track_code) FROM races_standardized", db_path=db_path
+        )
+    except Exception as e:
+        errors.append(str(e))
 
-        # DB file size
-        stats["db_size_mb"] = os.path.getsize(db_path) / (1024 * 1024)
+    # DB file size
+    stats["db_size_mb"] = os.path.getsize(db_path) / (1024 * 1024)
 
-    except sqlite3.Error as e:
-        stats["error"] = str(e)
-    finally:
-        conn.close()
+    if errors:
+        stats["error"] = "; ".join(errors)
 
     return stats
 
@@ -67,12 +79,11 @@ def get_db_stats(db_path: str) -> dict:
 @st.cache_data(ttl=300)
 def get_recent_races(db_path: str, limit: int = 20) -> pd.DataFrame:
     """Get most recent races."""
-    if not os.path.exists(db_path):
+    if not db_exists(db_path):
         return pd.DataFrame()
 
-    conn = sqlite3.connect(db_path)
     try:
-        df = pd.read_sql_query("""
+        return query_df("""
             SELECT
                 r.race_date,
                 r.track_code,
@@ -87,18 +98,15 @@ def get_recent_races(db_path: str, limit: int = 20) -> pd.DataFrame:
             FROM races_standardized r
             ORDER BY r.race_date DESC, r.track_code, r.race_number
             LIMIT ?
-        """, conn, params=[limit])
-        return df
-    except sqlite3.Error:
+        """, params=[limit], db_path=db_path)
+    except Exception:
         return pd.DataFrame()
-    finally:
-        conn.close()
 
 
 @st.cache_data(ttl=300)
 def get_top_performers(db_path: str, entity: str = "trainer", limit: int = 10) -> pd.DataFrame:
     """Get top trainers or jockeys by win rate."""
-    if not os.path.exists(db_path):
+    if not db_exists(db_path):
         return pd.DataFrame()
 
     allowed = {"trainer": "trainer_id", "jockey": "jockey_id"}
@@ -106,7 +114,6 @@ def get_top_performers(db_path: str, entity: str = "trainer", limit: int = 10) -
         return pd.DataFrame()
     id_col = allowed[entity]
 
-    conn = sqlite3.connect(db_path)
     try:
         query = f"""
             SELECT
@@ -124,33 +131,30 @@ def get_top_performers(db_path: str, entity: str = "trainer", limit: int = 10) -
             ORDER BY win_pct DESC
             LIMIT ?
         """
-        df = pd.read_sql_query(query, conn, params=[limit])
-        return df
-    except sqlite3.Error:
+        return query_df(query, params=[limit], db_path=db_path)
+    except Exception:
         return pd.DataFrame()
-    finally:
-        conn.close()
 
 
 # --- Database Stats ---
 st.subheader("Database")
 
-if not os.path.exists(DB_PATH):
-    st.error(f"Database not found at `{DB_PATH}`. Upload data in Data Management.")
+if not db_exists():
+    st.error(f"Database not found at `{db_path_default()}`. Upload data in Data Management.")
 else:
-    stats = get_db_stats(DB_PATH)
+    stats = get_db_stats(db_path_default())
 
     if "error" in stats:
-        st.error(f"Database error: {stats['error']}")
-    else:
-        c1, c2, c3, c4, c5 = st.columns(5)
-        c1.metric("Races", f"{stats.get('total_races', 0):,}")
-        c2.metric("Entries", f"{stats.get('total_entries', 0):,}")
-        c3.metric("Horses", f"{stats.get('total_horses', 0):,}")
-        c4.metric("Tracks", f"{stats.get('total_tracks', 0):,}")
-        c5.metric("DB Size", f"{stats.get('db_size_mb', 0):.1f} MB")
+        st.warning(f"Some stats unavailable: {stats['error']}")
 
-        st.caption(f"Date range: **{stats.get('min_date', '?')}** to **{stats.get('max_date', '?')}**")
+    c1, c2, c3, c4, c5 = st.columns(5)
+    c1.metric("Races", f"{stats.get('total_races', 0):,}")
+    c2.metric("Entries", f"{stats.get('total_entries', 0):,}")
+    c3.metric("Horses", f"{stats.get('total_horses', 0):,}")
+    c4.metric("Tracks", f"{stats.get('total_tracks', 0):,}")
+    c5.metric("DB Size", f"{stats.get('db_size_mb', 0):.1f} MB")
+
+    st.caption(f"Date range: **{stats.get('min_date', '?')}** to **{stats.get('max_date', '?')}**")
 
 # --- Model Status ---
 st.markdown("---")
@@ -161,11 +165,7 @@ if models:
     for m in models:
         metrics = m.get("metrics", {})
         with st.expander(f"**{m['version']}** -- AUC {metrics.get('roc_auc', 0):.3f} | ECE {metrics.get('ece', 0):.4f}", expanded=(m == models[0])):
-            mc1, mc2, mc3, mc4 = st.columns(4)
-            mc1.metric("ROC-AUC", f"{metrics.get('roc_auc', 0):.4f}", help=METRICS["roc_auc"])
-            mc2.metric("Brier Score", f"{metrics.get('brier_score', 0):.4f}", help=METRICS["brier_score"])
-            mc3.metric("ECE", f"{metrics.get('ece', 0):.4f}", help=METRICS["ece"])
-            mc4.metric("Log Loss", f"{metrics.get('log_loss', 0):.4f}", help=METRICS["log_loss"])
+            display_model_metrics(metrics)
 
             st.caption(f"Trained: {m.get('timestamp', 'unknown')}")
             st.caption(f"Features: {len(m.get('feature_columns', []))}")
@@ -210,7 +210,7 @@ if config:
 st.markdown("---")
 st.subheader("Recent Races")
 
-recent = get_recent_races(DB_PATH)
+recent = get_recent_races(db_path_default())
 if not recent.empty:
     st.dataframe(recent, use_container_width=True, hide_index=True)
 else:
@@ -223,14 +223,14 @@ st.subheader("Top Performers")
 tab_trainer, tab_jockey = st.tabs(["Trainers", "Jockeys"])
 
 with tab_trainer:
-    trainers = get_top_performers(DB_PATH, "trainer")
+    trainers = get_top_performers(db_path_default(), "trainer")
     if not trainers.empty:
         st.dataframe(trainers, use_container_width=True, hide_index=True)
     else:
         st.info("No trainer data available.")
 
 with tab_jockey:
-    jockeys = get_top_performers(DB_PATH, "jockey")
+    jockeys = get_top_performers(db_path_default(), "jockey")
     if not jockeys.empty:
         st.dataframe(jockeys, use_container_width=True, hide_index=True)
     else:

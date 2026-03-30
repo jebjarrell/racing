@@ -48,15 +48,15 @@ def daily_pnl_chart(dates: list, pnl: list) -> go.Figure:
     return fig
 
 
-def calibration_plot(predicted_means, observed_means, bin_counts=None) -> go.Figure:
+def calibration_plot(predicted_means, observed_means) -> go.Figure:
     """Reliability diagram: predicted vs actual probability."""
-    predicted_means = np.asarray(predicted_means)
-    observed_means = np.asarray(observed_means)
+    predicted_means = np.asarray(predicted_means, dtype=float)
+    observed_means = np.asarray(observed_means, dtype=float)
 
-    # Filter out NaN bins
-    valid = ~np.isnan(observed_means)
-    pred = predicted_means[valid]
-    obs = observed_means[valid]
+    # Filter out NaN bins from both arrays
+    valid = ~(np.isnan(observed_means) | np.isnan(predicted_means))
+    pred = predicted_means[valid].tolist()
+    obs = observed_means[valid].tolist()
 
     fig = go.Figure()
 
@@ -93,6 +93,10 @@ def calibration_plot(predicted_means, observed_means, bin_counts=None) -> go.Fig
 
 def feature_importance_chart(importance_dict: dict, top_n: int = 20) -> go.Figure:
     """Horizontal bar chart of feature importances."""
+    if not importance_dict:
+        fig = go.Figure()
+        fig.update_layout(title="No feature importance data available", template="plotly_white")
+        return fig
     sorted_items = sorted(importance_dict.items(), key=lambda x: x[1], reverse=True)[:top_n]
     features = [item[0] for item in reversed(sorted_items)]
     scores = [item[1] for item in reversed(sorted_items)]

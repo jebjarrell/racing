@@ -164,9 +164,9 @@ class RacingLightGBM:
             valid_names.append('valid')
             logger.info(f"Using validation set with {len(X_val)} samples")
 
-        # Extract training parameters
-        n_estimators = self.params.pop('n_estimators', 500)
-        early_stopping_rounds = self.params.pop('early_stopping_rounds', 50)
+        # Extract training parameters (use .get to avoid mutating self.params)
+        n_estimators = self.params.get('n_estimators', 500)
+        early_stopping_rounds = self.params.get('early_stopping_rounds', 50)
 
         # Train the model
         logger.info("Starting model training...")
@@ -174,18 +174,18 @@ class RacingLightGBM:
         if eval_set is not None and early_stopping_rounds:
             callbacks.append(lgb.early_stopping(stopping_rounds=early_stopping_rounds))
 
+        # Filter out sklearn-style keys that lgb.train doesn't recognize
+        _non_lgb_keys = {'n_estimators', 'early_stopping_rounds', 'random_state', 'n_jobs'}
+        lgb_params = {k: v for k, v in self.params.items() if k not in _non_lgb_keys}
+
         self.model = lgb.train(
-            self.params,
+            lgb_params,
             train_data,
             num_boost_round=n_estimators,
             valid_sets=valid_sets,
             valid_names=valid_names,
             callbacks=callbacks
         )
-
-        # Restore params for future use
-        self.params['n_estimators'] = n_estimators
-        self.params['early_stopping_rounds'] = early_stopping_rounds
 
         logger.info(f"Model training completed. Best iteration: {self.model.best_iteration}")
 
@@ -210,13 +210,18 @@ class RacingLightGBM:
         if self.model is None:
             raise ValueError("Model not fitted. Call fit() before predict_raw()")
 
-        if list(X.columns) != self.feature_names:
+        if set(X.columns) != set(self.feature_names):
+            missing = set(self.feature_names) - set(X.columns)
+            extra = set(X.columns) - set(self.feature_names)
             raise ValueError(
-                f"Feature mismatch. Expected {len(self.feature_names)} features, got {len(X.columns)}"
+                f"Feature mismatch. Expected {len(self.feature_names)} features, got {len(X.columns)}. "
+                f"Missing: {missing or 'none'}. Extra: {extra or 'none'}"
             )
+        X = X[self.feature_names]
 
         logger.debug(f"Generating raw predictions for {len(X)} samples")
-        raw_probs = self.model.predict(X, num_iteration=self.model.best_iteration)
+        num_iter = self.model.best_iteration if self.model.best_iteration > 0 else self.model.num_trees()
+        raw_probs = self.model.predict(X, num_iteration=num_iter)
 
         return raw_probs
 

@@ -1,6 +1,7 @@
 """Model Training - Train/retrain LightGBM model via ModelTrainingPipeline."""
 
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -10,9 +11,12 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from app.components.sidebar import render_sidebar, get_available_models, load_config
+from app.components.sidebar import render_sidebar, get_available_models, load_config, PROJECT_ROOT
 from app.components.charts import feature_importance_chart, calibration_plot, roc_curve_chart
 from app.components.tooltips import METRICS, HYPERPARAMS, SPLITS
+from app.utils.features import prepare_feature_matrix, get_field_sizes
+from app.utils.db import streamlit_error_boundary, db_path_default
+from app.components.metrics_display import display_model_metrics
 
 render_sidebar()
 
@@ -85,7 +89,8 @@ with col_right:
     n_estimators = st.number_input("n_estimators", value=hyper_config.get("n_estimators", 500), min_value=50, max_value=5000, step=50, help=HYPERPARAMS["n_estimators"])
     max_depth = st.number_input("max_depth", value=hyper_config.get("max_depth", 6), min_value=2, max_value=15, help=HYPERPARAMS["max_depth"])
     learning_rate = st.number_input("learning_rate", value=hyper_config.get("learning_rate", 0.05), min_value=0.001, max_value=0.5, step=0.005, format="%.3f", help=HYPERPARAMS["learning_rate"])
-    subsample = st.slider("subsample", 0.1, 1.0, hyper_config.get("subsample", 0.8), 0.05, help=HYPERPARAMS["subsample"])
+    subsample = st.slider("subsample (row)", 0.1, 1.0, hyper_config.get("subsample", 0.8), 0.05, help=HYPERPARAMS["subsample"])
+    colsample = st.slider("colsample (column)", 0.1, 1.0, hyper_config.get("colsample_bytree", 0.8), 0.05, help="Fraction of features sampled per tree. Controls column subsampling.")
     reg_alpha = st.number_input("reg_alpha (L1)", value=hyper_config.get("reg_alpha", 0.1), min_value=0.0, max_value=10.0, step=0.1, help=HYPERPARAMS["reg_alpha"])
     reg_lambda = st.number_input("reg_lambda (L2)", value=hyper_config.get("reg_lambda", 0.1), min_value=0.0, max_value=10.0, step=0.1, help=HYPERPARAMS["reg_lambda"])
 
@@ -93,16 +98,28 @@ with col_right:
 
 st.markdown("---")
 
+# --- Validation ---
+valid_version = bool(version_name and re.match(r'^[a-zA-Z0-9._-]+$', version_name))
+if version_name and not valid_version:
+    st.warning("Version name must contain only letters, numbers, dots, hyphens, and underscores.")
+
 # --- Run Training ---
-if st.button("Start Training", type="primary"):
-    try:
+if st.button("Start Training", type="primary", disabled=not valid_version):
+    with streamlit_error_boundary("Training"):
         from models.training_pipeline import ModelTrainingPipeline, FEATURE_COLUMNS
         from models.lightgbm_model import RacingLightGBM
         from models.calibration import FieldSizeCalibrator
         from models.evaluation import ModelEvaluator
         import numpy as np
 
-        pipeline = ModelTrainingPipeline(db_path="racing_data.db", config_path="config/config.yaml")
+        save_dir = PROJECT_ROOT / "artifacts" / "models" / version_name
+        if save_dir.exists():
+            st.warning(f"Version `{version_name}` already exists and will be overwritten.")
+
+        pipeline = ModelTrainingPipeline(
+            db_path=db_path_default(),
+            config_path=str(PROJECT_ROOT / "config" / "config.yaml"),
+        )
 
         # Step 1: Prepare data
         with st.status("Step 1: Generating features...", expanded=True) as status:
@@ -117,8 +134,11 @@ if st.button("Start Training", type="primary"):
             winners = data["is_winner"].sum()
             status.update(label=f"Targets: {winners:,} winners / {len(data):,} entries", state="complete")
 
-        # Step 3: Split
+        # Step 3: Split (override pipeline config with user-selected dates)
         with st.status("Step 3: Splitting data...", expanded=True) as status:
+            pipeline.config['model']['splits']['train'] = {'start': str(train_start), 'end': str(train_end)}
+            pipeline.config['model']['splits']['validation'] = {'start': str(val_start), 'end': str(val_end)}
+            pipeline.config['model']['splits']['test'] = {'start': str(test_start), 'end': str(test_end)}
             train_df, val_df, test_df = pipeline.split_data(data)
             status.update(
                 label=f"Split: train={len(train_df):,}, val={len(val_df):,}, test={len(test_df):,}",
@@ -126,14 +146,15 @@ if st.button("Start Training", type="primary"):
             )
 
         # Step 4: Prepare features
-        feature_cols = [c for c in FEATURE_COLUMNS if c in train_df.columns]
-
-        X_train = train_df[feature_cols].fillna(0)
-        y_train = train_df["is_winner"]
-        X_val = val_df[feature_cols].fillna(0)
-        y_val = val_df["is_winner"]
-        X_test = test_df[feature_cols].fillna(0)
-        y_test = test_df["is_winner"]
+        with st.status("Step 4: Preparing features...", expanded=True) as status:
+            feature_cols = [c for c in FEATURE_COLUMNS if c in train_df.columns]
+            X_train = prepare_feature_matrix(train_df, feature_cols)
+            y_train = train_df["is_winner"]
+            X_val = prepare_feature_matrix(val_df, feature_cols)
+            y_val = val_df["is_winner"]
+            X_test = prepare_feature_matrix(test_df, feature_cols)
+            y_test = test_df["is_winner"]
+            status.update(label=f"Prepared {len(feature_cols)} features", state="complete")
 
         # Step 5: Train model
         with st.status("Step 5: Training LightGBM model...", expanded=True) as status:
@@ -141,7 +162,7 @@ if st.button("Start Training", type="primary"):
                 "n_estimators": n_estimators,
                 "learning_rate": learning_rate,
                 "max_depth": max_depth,
-                "feature_fraction": subsample,
+                "feature_fraction": colsample,
                 "bagging_fraction": subsample,
                 "reg_alpha": reg_alpha,
                 "reg_lambda": reg_lambda,
@@ -153,7 +174,7 @@ if st.button("Start Training", type="primary"):
         # Step 6: Calibrate
         with st.status("Step 6: Calibrating probabilities...", expanded=True) as status:
             raw_val_probs = model.predict_raw(X_val)
-            val_field_sizes = val_df["field_size"].fillna(8).values if "field_size" in val_df.columns else np.full(len(val_df), 8)
+            val_field_sizes = get_field_sizes(val_df)
 
             calibrator = FieldSizeCalibrator()
             calibrator.fit(raw_val_probs, y_val.values, val_field_sizes)
@@ -162,7 +183,7 @@ if st.button("Start Training", type="primary"):
         # Step 7: Evaluate
         with st.status("Step 7: Evaluating on test set...", expanded=True) as status:
             raw_test_probs = model.predict_raw(X_test)
-            test_field_sizes = test_df["field_size"].fillna(8).values if "field_size" in test_df.columns else np.full(len(test_df), 8)
+            test_field_sizes = get_field_sizes(test_df)
             calibrated_probs = calibrator.calibrate(raw_test_probs, test_field_sizes)
 
             evaluator = ModelEvaluator()
@@ -175,7 +196,6 @@ if st.button("Start Training", type="primary"):
 
         # Step 8: Save
         with st.status("Step 8: Saving model artifacts...", expanded=True) as status:
-            save_dir = Path("artifacts/models") / version_name
             save_dir.mkdir(parents=True, exist_ok=True)
 
             model.save(str(save_dir / "model.pkl"))
@@ -197,7 +217,7 @@ if st.button("Start Training", type="primary"):
                 "calibration_method": "isotonic",
             }
             with open(save_dir / "metadata.json", "w") as f:
-                json.dump(metadata, f, indent=2)
+                json.dump(metadata, f, indent=2, default=str)
 
             # Save evaluation plots
             evaluator.generate_calibration_plot(calibrated_probs, y_test.values, str(save_dir / "calibration_plot.png"))
@@ -211,12 +231,10 @@ if st.button("Start Training", type="primary"):
         # --- Display Results ---
         st.success(f"Training complete! Model saved as **{version_name}**")
 
-        mc1, mc2, mc3, mc4, mc5 = st.columns(5)
-        mc1.metric("ROC-AUC", f"{roc_auc:.4f}", help=METRICS["roc_auc"])
-        mc2.metric("Brier Score", f"{brier:.4f}", help=METRICS["brier_score"])
-        mc3.metric("ECE", f"{cal_metrics['ece']:.4f}", help=METRICS["ece"])
-        mc4.metric("Log Loss", f"{logloss:.4f}", help=METRICS["log_loss"])
-        mc5.metric("Features", len(feature_cols))
+        display_model_metrics(
+            {"roc_auc": roc_auc, "brier_score": brier, "ece": cal_metrics["ece"], "log_loss": logloss},
+            show_features=True, feature_count=len(feature_cols),
+        )
 
         # Feature importance chart
         st.plotly_chart(
@@ -231,7 +249,6 @@ if st.button("Start Training", type="primary"):
                 calibration_plot(
                     rel_data.get("bin_confidences", []),
                     rel_data.get("bin_accuracies", []),
-                    rel_data.get("bin_counts", []),
                 ),
                 use_container_width=True,
             )
@@ -242,8 +259,4 @@ if st.button("Start Training", type="primary"):
         st.plotly_chart(roc_curve_chart(fpr, tpr, roc_auc), use_container_width=True)
 
         st.cache_data.clear()
-
-    except Exception as e:
-        st.error(f"Training failed: {e}")
-        import traceback
-        st.code(traceback.format_exc())
+        st.cache_resource.clear()

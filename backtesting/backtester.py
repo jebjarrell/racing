@@ -6,6 +6,7 @@ and calculates performance metrics.
 """
 
 import logging
+import sys
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional, Any
@@ -13,6 +14,9 @@ import numpy as np
 import pandas as pd
 import sqlite3
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from app.utils.betting import to_decimal_odds
 
 from .strategies import BettingStrategy, FlatBetStrategy
 
@@ -281,6 +285,14 @@ class Backtester:
         # Find top pick
         top_pick_idx = race_entries['model_prob'].idxmax()
 
+        # Compute morning line rank for MorningFavoriteStrategy
+        race_entries = race_entries.copy()
+        if 'morning_line_odds' in race_entries.columns:
+            valid_ml = race_entries['morning_line_odds'].notna() & (race_entries['morning_line_odds'] > 0)
+            race_entries.loc[valid_ml, 'morning_line_rank'] = (
+                race_entries.loc[valid_ml, 'morning_line_odds'].rank(method='min', ascending=True)
+            )
+
         # Process each entry
         for idx, row in race_entries.iterrows():
             odds = row['actual_odds']
@@ -288,7 +300,7 @@ class Backtester:
                 continue
 
             # Convert American odds to decimal if needed
-            decimal_odds = self._to_decimal_odds(odds)
+            decimal_odds = to_decimal_odds(odds)
 
             # Calculate bet
             is_top_pick = (idx == top_pick_idx)
@@ -296,7 +308,9 @@ class Backtester:
                 model_prob=row['model_prob'],
                 odds=decimal_odds,
                 bankroll=bankroll,
-                is_top_pick=is_top_pick
+                is_top_pick=is_top_pick,
+                morning_line_rank=row.get('morning_line_rank'),
+                recent_form=row.get('recent_form'),
             )
 
             if bet_amount > 0:
@@ -349,18 +363,6 @@ class Backtester:
                 X[col] = 0
 
         return X[self.feature_columns]
-
-    def _to_decimal_odds(self, odds: float) -> float:
-        """Convert odds to decimal format."""
-        if odds >= 100:
-            # American odds (positive)
-            return (odds / 100) + 1
-        elif odds <= -100:
-            # American odds (negative)
-            return (100 / abs(odds)) + 1
-        else:
-            # Already decimal or close to it
-            return odds if odds > 1 else odds + 1
 
     def _calculate_metrics(
         self,

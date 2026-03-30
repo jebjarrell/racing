@@ -14,6 +14,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from app.components.sidebar import render_sidebar, get_available_models, load_config
 from app.components.charts import bankroll_curve, daily_pnl_chart, bet_distribution_chart
 from app.components.tooltips import BETTING, STRATEGIES
+from app.components.model_selector import select_model
+from app.components.metrics_display import display_backtest_summary
+from app.utils.db import streamlit_error_boundary, db_path_default
 
 render_sidebar()
 
@@ -23,22 +26,13 @@ st.markdown("---")
 config = load_config()
 models = get_available_models()
 
-if not models:
-    st.warning("No trained models found. Train a model first in **Model Training**.")
-    st.stop()
-
 
 # --- Configuration Sidebar ---
 with st.sidebar:
     st.subheader("Backtest Config")
 
     # Model selection
-    model_versions = [m["version"] for m in models]
-    selected_version = st.selectbox("Model Version", model_versions)
-    selected_model_info = next((m for m in models if m["version"] == selected_version), None)
-    if selected_model_info is None:
-        st.error(f"Model version '{selected_version}' not found.")
-        st.stop()
+    selected_model_info = select_model(models)
 
     # Strategy selection
     strategy_name = st.selectbox(
@@ -108,6 +102,9 @@ def build_strategy():
         return MomentumStrategy(base_fraction=mom_base, momentum_multiplier=mom_mult)
     elif strategy_name == "Morning Favorite":
         return MorningFavoriteStrategy(min_edge=mf_min_edge, bet_fraction=mf_bet_frac)
+    else:
+        st.warning(f"Unknown strategy: {strategy_name}")
+        return FlatBetStrategy()
 
 
 # --- Run Backtest ---
@@ -133,7 +130,7 @@ def load_model_and_backtester():
         model=model,
         calibrator=calibrator,
         feature_columns=feature_columns,
-        db_path="racing_data.db",
+        db_path=db_path_default(),
     )
     return backtester
 
@@ -141,13 +138,7 @@ def load_model_and_backtester():
 def display_results(results):
     """Display backtest results with charts."""
     # Summary metrics
-    mc1, mc2, mc3, mc4, mc5, mc6 = st.columns(6)
-    mc1.metric("ROI", f"{results.roi:+.2%}", help=BETTING["roi"])
-    mc2.metric("Profit", f"${results.profit:+,.2f}")
-    mc3.metric("Total Bets", f"{results.total_bets:,}")
-    mc4.metric("Win Rate", f"{results.win_rate:.1%}", help=BETTING["win_rate"])
-    mc5.metric("Avg Odds", f"{results.avg_odds_bet:.1f}", help=BETTING["avg_odds"])
-    mc6.metric("Max Drawdown", f"{results.max_drawdown:.1%}", help=BETTING["max_drawdown"])
+    display_backtest_summary(results)
 
     # Bankroll curve
     if results.bankroll_history:
@@ -195,9 +186,12 @@ def display_results(results):
 
 
 if run_single:
-    strategy = build_strategy()
-    with st.spinner(f"Running backtest: {strategy.name}..."):
-        try:
+    with streamlit_error_boundary("Backtest"):
+        strategy = build_strategy()
+        if strategy is None:
+            st.error("Strategy not configured.")
+            st.stop()
+        with st.spinner(f"Running backtest: {strategy.name}..."):
             backtester = load_model_and_backtester()
             results = backtester.run(
                 strategy=strategy,
@@ -207,10 +201,6 @@ if run_single:
             )
             st.success(f"Backtest complete: **{strategy.name}**")
             display_results(results)
-        except Exception as e:
-            st.error(f"Backtest failed: {e}")
-            import traceback
-            st.code(traceback.format_exc())
 
 elif run_compare:
     from backtesting import (
@@ -227,8 +217,8 @@ elif run_compare:
         TopPickStrategy(bet_amount=2.0, min_prob=0.15),
     ]
 
-    with st.spinner("Comparing all strategies..."):
-        try:
+    with streamlit_error_boundary("Strategy Comparison"):
+        with st.spinner("Comparing all strategies..."):
             backtester = load_model_and_backtester()
             comparison = backtester.compare_strategies(
                 strategies=strategies,
@@ -239,7 +229,3 @@ elif run_compare:
 
             st.success("Strategy comparison complete")
             st.dataframe(comparison, use_container_width=True, hide_index=True)
-        except Exception as e:
-            st.error(f"Comparison failed: {e}")
-            import traceback
-            st.code(traceback.format_exc())
