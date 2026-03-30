@@ -132,8 +132,8 @@ if st.button("Start Training", type="primary", disabled=not valid_version):
                 "SELECT COUNT(*) FROM races_standardized WHERE race_date >= ? AND race_date <= ?",
                 params=[str(full_start), str(full_end)],
             ) or 0
-            est_minutes = max(1, race_count * 2 / 60)  # ~2 sec per race
-            st.write(f"Computing features for **{race_count:,} races** (est. {est_minutes:.0f} min)...")
+            est_minutes = max(1, race_count // 400)  # ~400 races/min with parallel workers
+            st.write(f"Computing features for **{race_count:,} races** using parallel workers (est. ~{est_minutes} min)...")
 
             data = pipeline.prepare_training_data(full_start, full_end)
             status.update(label=f"Features generated: {len(data):,} entries", state="complete")

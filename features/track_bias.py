@@ -156,10 +156,13 @@ class TrackBiasCalculator:
         self._conn: Optional[sqlite3.Connection] = None
 
     def _get_connection(self) -> sqlite3.Connection:
-        """Get or create database connection."""
+        """Get or create database connection with performance optimizations."""
         if self._conn is None:
             self._conn = sqlite3.connect(self.db_path)
             self._conn.row_factory = sqlite3.Row
+            self._conn.execute("PRAGMA mmap_size = 268435456")
+            self._conn.execute("PRAGMA cache_size = -64000")
+            self._conn.execute("PRAGMA journal_mode = WAL")
         return self._conn
 
     def close(self) -> None:

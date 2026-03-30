@@ -223,10 +223,14 @@ class FeatureEngine:
         )
 
     def _get_connection(self) -> sqlite3.Connection:
-        """Get or create database connection."""
+        """Get or create database connection with performance optimizations."""
         if self._conn is None:
             self._conn = sqlite3.connect(self.db_path)
             self._conn.row_factory = sqlite3.Row
+            # Performance: memory-map the DB and use WAL mode for concurrent reads
+            self._conn.execute("PRAGMA mmap_size = 268435456")  # 256MB mmap
+            self._conn.execute("PRAGMA cache_size = -64000")  # 64MB page cache
+            self._conn.execute("PRAGMA journal_mode = WAL")
         return self._conn
 
     def close(self) -> None:
@@ -704,21 +708,27 @@ class FeatureEngine:
         self,
         start_date: date,
         end_date: date,
-        progress_callback: Optional[callable] = None
+        progress_callback: Optional[callable] = None,
+        max_workers: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
         """
-        Calculate features for all races in a date range.
+        Calculate features for all races in a date range using parallel workers.
 
-        Useful for building training datasets.
+        Each worker gets its own FeatureEngine/DB connection to avoid SQLite
+        thread-safety issues. Falls back to single-threaded for small datasets.
 
         Args:
             start_date: Start date (inclusive)
             end_date: End date (inclusive)
             progress_callback: Optional callback(race_id, current, total)
+            max_workers: Number of parallel workers (default: CPU count - 2)
 
         Returns:
             List of all feature dicts
         """
+        import multiprocessing
+        from concurrent.futures import ProcessPoolExecutor, as_completed
+
         conn = self._get_connection()
 
         cursor = conn.execute("""
@@ -728,19 +738,64 @@ class FeatureEngine:
             ORDER BY race_date
         """, (start_date.isoformat(), end_date.isoformat()))
 
-        races = cursor.fetchall()
+        races = [(row['race_id'], row['race_date']) for row in cursor.fetchall()]
         total_races = len(races)
 
         logger.info(f"Calculating features for {total_races} races")
 
+        # For small datasets, explicit sequential request, or when parallelism isn't worth it
+        if total_races < 50 or max_workers == 0:
+            return self._calculate_features_sequential(races, total_races, progress_callback)
+
+        # Parallel execution
+        if max_workers is None:
+            max_workers = max(1, multiprocessing.cpu_count() - 2)
+
+        # Chunk races into batches for each worker
+        chunk_size = max(10, total_races // (max_workers * 4))
+        chunks = []
+        for i in range(0, total_races, chunk_size):
+            chunks.append(races[i:i + chunk_size])
+
+        logger.info(f"Using {max_workers} workers, {len(chunks)} chunks of ~{chunk_size} races")
+
+        all_features = []
+        completed = 0
+
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                executor.submit(_process_race_chunk, self.db_path, chunk): chunk
+                for chunk in chunks
+            }
+
+            for future in as_completed(futures):
+                try:
+                    chunk_features = future.result()
+                    all_features.extend(chunk_features)
+                except Exception as e:
+                    logger.warning(f"Worker error: {e}")
+
+                completed += len(futures[future])
+                if progress_callback:
+                    progress_callback("", completed, total_races)
+
+        logger.info(f"Generated {len(all_features)} feature rows using {max_workers} workers")
+
+        return all_features
+
+    def _calculate_features_sequential(
+        self,
+        races: List[Tuple[str, str]],
+        total_races: int,
+        progress_callback: Optional[callable] = None,
+    ) -> List[Dict[str, Any]]:
+        """Single-threaded fallback for small datasets."""
         all_features = []
 
-        for i, row in enumerate(races):
-            race_id = row['race_id']
-            race_date = date.fromisoformat(row['race_date'])
-
+        for i, (race_id, race_date_str) in enumerate(races):
+            race_dt = date.fromisoformat(race_date_str)
             try:
-                features = self.calculate_all_features(race_id, race_date)
+                features = self.calculate_all_features(race_id, race_dt)
                 all_features.extend(features)
             except Exception as e:
                 logger.warning(f"Error calculating features for {race_id}: {e}")
@@ -748,9 +803,29 @@ class FeatureEngine:
             if progress_callback:
                 progress_callback(race_id, i + 1, total_races)
 
-        logger.info(f"Generated {len(all_features)} feature rows")
-
+        logger.info(f"Generated {len(all_features)} feature rows (sequential)")
         return all_features
+
+
+def _process_race_chunk(db_path: str, races: List[Tuple[str, str]]) -> List[Dict[str, Any]]:
+    """Worker function for parallel feature computation.
+
+    Each worker creates its own FeatureEngine (and DB connection).
+    Must be a top-level function for ProcessPoolExecutor pickling.
+    """
+    engine = FeatureEngine(db_path=db_path)
+    results = []
+    try:
+        for race_id, race_date_str in races:
+            race_dt = date.fromisoformat(race_date_str)
+            try:
+                features = engine.calculate_all_features(race_id, race_dt)
+                results.extend(features)
+            except Exception as e:
+                logger.warning(f"Error in worker for {race_id}: {e}")
+    finally:
+        engine.close()
+    return results
 
 
 # Convenience function
