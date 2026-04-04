@@ -14,7 +14,13 @@
       "Bash(cat:*)",
       "Bash(dir:*)",
       "Bash(python3:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(xargs grep:*)",
+      "Bash(wmic process:*)",
+      "Bash(tasklist)",
+      "Bash(grep -r calibrat /f/racing/models/ --include=*.py)",
+      "Bash(cd:*)"
     ],
     "deny": [],
     "ask": []

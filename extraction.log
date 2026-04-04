@@ -3660,3 +3660,258 @@ Sample database record:
 2025-12-16 08:53:08,874 - INFO -    Races: 7,992
 2025-12-16 08:53:08,874 - INFO -    Entries: 75,314
 2025-12-16 08:53:08,874 - INFO -    Wagering records: 177,077
+2026-03-29 20:57:40,152 - INFO - Starting horse data extraction from 2023 PPs
+2026-03-29 20:57:40,152 - INFO - Using 45 workers with high-memory optimization
+2026-03-29 20:58:10,278 - INFO - Found 5925 XML files to process
+2026-03-29 20:58:10,633 - ERROR - Error processing file ('2023 PPs\\SIMD20230101AQU_USA.xml.zip', '__MACOSX/._SIMD20230101AQU_USA.xml'): 'utf-8' codec can't decode byte 0x80 in position 37: invalid start byte
+2026-03-29 20:58:18,653 - INFO - Performing batch database insert...
+2026-03-29 20:58:33,637 - INFO - Processed 100 files. Horses: 6824, Trainers: 2025, Owners: 4131
+2026-03-29 20:58:50,560 - INFO - Processed 200 files. Horses: 13643, Trainers: 2833, Owners: 6768
+2026-03-29 20:59:05,091 - INFO - Processed 300 files. Horses: 18421, Trainers: 3191, Owners: 8402
+2026-03-29 20:59:21,712 - INFO - Processed 400 files. Horses: 21557, Trainers: 3339, Owners: 9488
+2026-03-29 20:59:38,096 - INFO - Processed 500 files. Horses: 23821, Trainers: 3514, Owners: 10222
+2026-03-29 20:59:54,824 - INFO - Processed 600 files. Horses: 25495, Trainers: 3640, Owners: 10788
+2026-03-29 21:00:10,981 - INFO - Processed 700 files. Horses: 26856, Trainers: 3710, Owners: 11281
+2026-03-29 21:00:28,740 - INFO - Processed 800 files. Horses: 28533, Trainers: 3989, Owners: 11908
+2026-03-29 21:00:45,939 - INFO - Processed 900 files. Horses: 29913, Trainers: 4093, Owners: 12503
+2026-03-29 21:01:04,128 - INFO - Processed 1000 files. Horses: 31695, Trainers: 4259, Owners: 13149
+2026-03-29 21:01:19,934 - INFO - Processed 1100 files. Horses: 32991, Trainers: 4352, Owners: 13650
+2026-03-29 21:01:38,527 - INFO - Processed 1200 files. Horses: 34217, Trainers: 4465, Owners: 14153
+2026-03-29 21:01:57,820 - INFO - Processed 1300 files. Horses: 35872, Trainers: 4639, Owners: 14778
+2026-03-29 21:02:16,806 - INFO - Processed 1400 files. Horses: 37255, Trainers: 4755, Owners: 15212
+2026-03-29 21:02:33,746 - INFO - Processed 1500 files. Horses: 38782, Trainers: 4906, Owners: 15848
+2026-03-29 21:02:51,581 - INFO - Processed 1600 files. Horses: 40215, Trainers: 5067, Owners: 16450
+2026-03-29 21:03:09,996 - INFO - Processed 1700 files. Horses: 41795, Trainers: 5225, Owners: 17095
+2026-03-29 21:03:27,762 - INFO - Processed 1800 files. Horses: 43196, Trainers: 5391, Owners: 17766
+2026-03-29 21:03:43,715 - INFO - Processed 1900 files. Horses: 45017, Trainers: 5578, Owners: 18527
+2026-03-29 21:04:01,651 - INFO - Processed 2000 files. Horses: 46310, Trainers: 5672, Owners: 19043
+2026-03-29 21:04:20,308 - INFO - Processed 2100 files. Horses: 47760, Trainers: 5778, Owners: 19605
+2026-03-29 21:04:38,561 - INFO - Processed 2200 files. Horses: 49342, Trainers: 5869, Owners: 20164
+2026-03-29 21:04:54,270 - INFO - Processed 2300 files. Horses: 50513, Trainers: 5956, Owners: 20641
+2026-03-29 21:05:11,341 - INFO - Processed 2400 files. Horses: 51587, Trainers: 6030, Owners: 21035
+2026-03-29 21:05:29,643 - INFO - Processed 2500 files. Horses: 52455, Trainers: 6105, Owners: 21398
+2026-03-29 21:05:49,366 - INFO - Processed 2600 files. Horses: 53498, Trainers: 6207, Owners: 21837
+2026-03-29 21:06:05,030 - INFO - Processed 2700 files. Horses: 54361, Trainers: 6290, Owners: 22203
+2026-03-29 21:06:25,203 - INFO - Processed 2800 files. Horses: 55646, Trainers: 6414, Owners: 22760
+2026-03-29 21:06:45,705 - INFO - Processed 2900 files. Horses: 56492, Trainers: 6488, Owners: 23073
+2026-03-29 21:07:05,219 - INFO - Processed 3000 files. Horses: 57164, Trainers: 6524, Owners: 23320
+2026-03-29 21:07:22,421 - INFO - Processed 3100 files. Horses: 57740, Trainers: 6568, Owners: 23535
+2026-03-29 21:07:43,304 - INFO - Processed 3200 files. Horses: 58323, Trainers: 6614, Owners: 23792
+2026-03-29 21:08:03,116 - INFO - Processed 3300 files. Horses: 58993, Trainers: 6656, Owners: 24035
+2026-03-29 21:08:22,354 - INFO - Processed 3400 files. Horses: 59639, Trainers: 6688, Owners: 24277
+2026-03-29 21:08:40,516 - INFO - Processed 3500 files. Horses: 60249, Trainers: 6727, Owners: 24502
+2026-03-29 21:09:02,307 - INFO - Processed 3600 files. Horses: 60974, Trainers: 6753, Owners: 24769
+2026-03-29 21:09:20,790 - INFO - Processed 3700 files. Horses: 61547, Trainers: 6775, Owners: 24956
+2026-03-29 21:09:39,759 - INFO - Processed 3800 files. Horses: 62067, Trainers: 6803, Owners: 25142
+2026-03-29 21:09:45,683 - INFO - Starting horse data extraction from 2023 PPs
+2026-03-29 21:09:45,683 - INFO - Using 45 workers with high-memory optimization
+2026-03-29 21:09:45,881 - INFO - Found 5925 XML files to process
+2026-03-29 21:09:46,251 - ERROR - Error processing file ('2023 PPs\\SIMD20230101AQU_USA.xml.zip', '__MACOSX/._SIMD20230101AQU_USA.xml'): 'utf-8' codec can't decode byte 0x80 in position 37: invalid start byte
+2026-03-29 21:09:54,526 - INFO - Performing batch database insert...
+2026-03-29 21:09:58,688 - INFO - Processed 3900 files. Horses: 62801, Trainers: 6857, Owners: 25366
+2026-03-29 21:10:09,861 - INFO - Processed 100 files. Horses: 6848, Trainers: 2054, Owners: 4114
+2026-03-29 21:10:18,556 - INFO - Processed 4000 files. Horses: 63311, Trainers: 6895, Owners: 25544
+2026-03-29 21:10:27,250 - INFO - Processed 200 files. Horses: 13627, Trainers: 2843, Owners: 6772
+2026-03-29 21:10:39,918 - INFO - Processed 4100 files. Horses: 63807, Trainers: 6919, Owners: 25736
+2026-03-29 21:10:42,411 - INFO - Processed 300 files. Horses: 18347, Trainers: 3184, Owners: 8390
+2026-03-29 21:10:59,016 - INFO - Processed 400 files. Horses: 21518, Trainers: 3354, Owners: 9483
+2026-03-29 21:11:01,158 - INFO - Processed 4200 files. Horses: 64288, Trainers: 6944, Owners: 25936
+2026-03-29 21:11:16,169 - INFO - Processed 500 files. Horses: 23795, Trainers: 3515, Owners: 10201
+2026-03-29 21:11:22,686 - INFO - Processed 4300 files. Horses: 64850, Trainers: 6967, Owners: 26131
+2026-03-29 21:11:34,262 - INFO - Processed 600 files. Horses: 25415, Trainers: 3628, Owners: 10789
+2026-03-29 21:11:45,053 - INFO - Processed 4400 files. Horses: 65353, Trainers: 6998, Owners: 26323
+2026-03-29 21:11:51,601 - INFO - Processed 700 files. Horses: 26847, Trainers: 3723, Owners: 11280
+2026-03-29 21:12:08,356 - INFO - Processed 4500 files. Horses: 65855, Trainers: 7041, Owners: 26514
+2026-03-29 21:12:10,092 - INFO - Processed 800 files. Horses: 28425, Trainers: 4000, Owners: 11849
+2026-03-29 21:12:27,965 - INFO - Processed 900 files. Horses: 29917, Trainers: 4110, Owners: 12505
+2026-03-29 21:12:30,501 - INFO - Processed 4600 files. Horses: 66336, Trainers: 7063, Owners: 26675
+2026-03-29 21:12:46,790 - INFO - Processed 1000 files. Horses: 31708, Trainers: 4282, Owners: 13146
+2026-03-29 21:12:51,428 - INFO - Processed 4700 files. Horses: 66897, Trainers: 7099, Owners: 26874
+2026-03-29 21:13:04,337 - INFO - Processed 1100 files. Horses: 33002, Trainers: 4375, Owners: 13649
+2026-03-29 21:13:14,794 - INFO - Processed 4800 files. Horses: 67372, Trainers: 7147, Owners: 27071
+2026-03-29 21:13:23,776 - INFO - Processed 1200 files. Horses: 34280, Trainers: 4493, Owners: 14181
+2026-03-29 21:13:39,482 - INFO - Processed 4900 files. Horses: 67813, Trainers: 7165, Owners: 27252
+2026-03-29 21:13:44,200 - INFO - Processed 1300 files. Horses: 35885, Trainers: 4665, Owners: 14778
+2026-03-29 21:14:03,184 - INFO - Processed 5000 files. Horses: 68482, Trainers: 7195, Owners: 27479
+2026-03-29 21:14:04,065 - INFO - Processed 1400 files. Horses: 37275, Trainers: 4781, Owners: 15213
+2026-03-29 21:14:21,980 - INFO - Processed 1500 files. Horses: 38796, Trainers: 4932, Owners: 15849
+2026-03-29 21:14:24,231 - INFO - Processed 5100 files. Horses: 69020, Trainers: 7215, Owners: 27633
+2026-03-29 21:14:41,825 - INFO - Processed 1600 files. Horses: 40215, Trainers: 5089, Owners: 16454
+2026-03-29 21:14:48,606 - INFO - Processed 5200 files. Horses: 69559, Trainers: 7237, Owners: 27793
+2026-03-29 21:15:02,223 - INFO - Processed 1700 files. Horses: 41778, Trainers: 5248, Owners: 17086
+2026-03-29 21:15:13,680 - INFO - Processed 5300 files. Horses: 70088, Trainers: 7273, Owners: 27930
+2026-03-29 21:15:21,463 - INFO - Processed 1800 files. Horses: 43202, Trainers: 5415, Owners: 17764
+2026-03-29 21:15:38,246 - INFO - Processed 1900 files. Horses: 45045, Trainers: 5605, Owners: 18530
+2026-03-29 21:15:39,432 - INFO - Processed 5400 files. Horses: 70615, Trainers: 7290, Owners: 28102
+2026-03-29 21:15:58,138 - INFO - Processed 2000 files. Horses: 46310, Trainers: 5695, Owners: 19044
+2026-03-29 21:16:02,178 - INFO - Processed 5500 files. Horses: 71187, Trainers: 7315, Owners: 28283
+2026-03-29 21:16:16,668 - INFO - Processed 2100 files. Horses: 47825, Trainers: 5805, Owners: 19633
+2026-03-29 21:16:27,274 - INFO - Processed 5600 files. Horses: 71773, Trainers: 7338, Owners: 28455
+2026-03-29 21:16:36,121 - INFO - Processed 2200 files. Horses: 49227, Trainers: 5892, Owners: 20152
+2026-03-29 21:16:50,453 - INFO - Processed 5700 files. Horses: 72302, Trainers: 7355, Owners: 28652
+2026-03-29 21:16:52,449 - INFO - Processed 2300 files. Horses: 50535, Trainers: 5977, Owners: 20641
+2026-03-29 21:17:10,748 - INFO - Processed 2400 files. Horses: 51612, Trainers: 6050, Owners: 21037
+2026-03-29 21:17:17,418 - INFO - Processed 5800 files. Horses: 72828, Trainers: 7373, Owners: 28826
+2026-03-29 21:17:30,298 - INFO - Processed 2500 files. Horses: 52491, Trainers: 6126, Owners: 21402
+2026-03-29 21:17:33,637 - INFO - Processed 5900 files. Horses: 73436, Trainers: 7416, Owners: 28989
+2026-03-29 21:17:36,225 - INFO - Inserted 73847 horses
+2026-03-29 21:17:36,504 - INFO - Inserted 7421 trainers
+2026-03-29 21:17:37,628 - INFO - Inserted 29104 owners
+2026-03-29 21:17:37,962 - INFO - ============================================================
+2026-03-29 21:17:37,962 - INFO - EXTRACTION COMPLETE
+2026-03-29 21:17:37,962 - INFO - ============================================================
+2026-03-29 21:17:37,962 - INFO - Files processed: 5924
+2026-03-29 21:17:37,962 - INFO - Horses extracted: 73847
+2026-03-29 21:17:37,962 - INFO - Trainers extracted: 7421
+2026-03-29 21:17:37,962 - INFO - Owners extracted: 29104
+2026-03-29 21:17:37,962 - INFO - Errors: 1
+2026-03-29 21:17:37,962 - INFO - Duration: 1197.81 seconds
+2026-03-29 21:17:37,962 - INFO - Files per second: 4.95
+2026-03-29 21:17:37,962 - INFO - ============================================================
+2026-03-29 21:17:50,191 - INFO - Processed 2600 files. Horses: 53523, Trainers: 6226, Owners: 21832
+2026-03-29 21:18:05,971 - INFO - Processed 2700 files. Horses: 54405, Trainers: 6311, Owners: 22210
+2026-03-29 21:18:26,029 - INFO - Processed 2800 files. Horses: 55662, Trainers: 6433, Owners: 22757
+2026-03-29 21:18:45,204 - INFO - Processed 2900 files. Horses: 56545, Trainers: 6508, Owners: 23076
+2026-03-29 21:19:03,507 - INFO - Processed 3000 files. Horses: 57181, Trainers: 6540, Owners: 23320
+2026-03-29 21:19:19,325 - INFO - Processed 3100 files. Horses: 57753, Trainers: 6586, Owners: 23536
+2026-03-29 21:19:38,349 - INFO - Processed 3200 files. Horses: 58339, Trainers: 6632, Owners: 23792
+2026-03-29 21:19:56,325 - INFO - Processed 3300 files. Horses: 59004, Trainers: 6678, Owners: 24035
+2026-03-29 21:20:14,450 - INFO - Processed 3400 files. Horses: 59664, Trainers: 6710, Owners: 24279
+2026-03-29 21:20:32,749 - INFO - Processed 3500 files. Horses: 60266, Trainers: 6747, Owners: 24499
+2026-03-29 21:20:52,793 - INFO - Processed 3600 files. Horses: 60994, Trainers: 6775, Owners: 24768
+2026-03-29 21:21:11,747 - INFO - Processed 3700 files. Horses: 61588, Trainers: 6798, Owners: 24956
+2026-03-29 21:21:30,944 - INFO - Processed 3800 files. Horses: 62090, Trainers: 6825, Owners: 25141
+2026-03-29 21:21:48,841 - INFO - Processed 3900 files. Horses: 62830, Trainers: 6882, Owners: 25364
+2026-03-29 21:21:55,309 - INFO - Starting horse data extraction from 2023 PPs
+2026-03-29 21:21:55,309 - INFO - Using 45 workers with high-memory optimization
+2026-03-29 21:21:55,529 - INFO - Found 5925 XML files to process
+2026-03-29 21:21:55,902 - ERROR - Error processing file ('2023 PPs\\SIMD20230101AQU_USA.xml.zip', '__MACOSX/._SIMD20230101AQU_USA.xml'): 'utf-8' codec can't decode byte 0x80 in position 37: invalid start byte
+2026-03-29 21:22:04,434 - INFO - Performing batch database insert...
+2026-03-29 21:22:08,516 - INFO - Processed 4000 files. Horses: 63342, Trainers: 6918, Owners: 25543
+2026-03-29 21:22:19,903 - INFO - Processed 100 files. Horses: 6833, Trainers: 2062, Owners: 4115
+2026-03-29 21:22:30,047 - INFO - Processed 4100 files. Horses: 63828, Trainers: 6942, Owners: 25727
+2026-03-29 21:22:37,700 - INFO - Processed 200 files. Horses: 13592, Trainers: 2821, Owners: 6775
+2026-03-29 21:22:51,957 - INFO - Processed 4200 files. Horses: 64317, Trainers: 6967, Owners: 25933
+2026-03-29 21:22:53,498 - INFO - Processed 300 files. Horses: 18361, Trainers: 3187, Owners: 8402
+2026-03-29 21:23:11,242 - INFO - Processed 400 files. Horses: 21525, Trainers: 3358, Owners: 9486
+2026-03-29 21:23:13,826 - INFO - Processed 4300 files. Horses: 64882, Trainers: 6990, Owners: 26130
+2026-03-29 21:23:28,418 - INFO - Processed 500 files. Horses: 23794, Trainers: 3522, Owners: 10204
+2026-03-29 21:23:35,934 - INFO - Processed 4400 files. Horses: 65400, Trainers: 7021, Owners: 26335
+2026-03-29 21:23:46,387 - INFO - Processed 600 files. Horses: 25373, Trainers: 3618, Owners: 10793
+2026-03-29 21:23:59,384 - INFO - Processed 4500 files. Horses: 65891, Trainers: 7064, Owners: 26513
+2026-03-29 21:24:03,434 - INFO - Processed 700 files. Horses: 26839, Trainers: 3732, Owners: 11286
+2026-03-29 21:24:21,774 - INFO - Processed 4600 files. Horses: 66368, Trainers: 7084, Owners: 26674
+2026-03-29 21:24:22,231 - INFO - Processed 800 files. Horses: 28501, Trainers: 4010, Owners: 11886
+2026-03-29 21:24:39,045 - INFO - Processed 900 files. Horses: 29924, Trainers: 4118, Owners: 12508
+2026-03-29 21:24:42,058 - INFO - Processed 4700 files. Horses: 66815, Trainers: 7123, Owners: 26850
+2026-03-29 21:24:57,703 - INFO - Processed 1000 files. Horses: 31715, Trainers: 4286, Owners: 13150
+2026-03-29 21:25:04,763 - INFO - Processed 4800 files. Horses: 67418, Trainers: 7170, Owners: 27065
+2026-03-29 21:25:14,826 - INFO - Processed 1100 files. Horses: 33013, Trainers: 4379, Owners: 13652
+2026-03-29 21:25:28,903 - INFO - Processed 4900 files. Horses: 67888, Trainers: 7190, Owners: 27257
+2026-03-29 21:25:33,885 - INFO - Processed 1200 files. Horses: 34261, Trainers: 4501, Owners: 14171
+2026-03-29 21:25:53,393 - INFO - Processed 5000 files. Horses: 68517, Trainers: 7217, Owners: 27480
+2026-03-29 21:25:54,858 - INFO - Processed 1300 files. Horses: 35858, Trainers: 4669, Owners: 14785
+2026-03-29 21:26:13,308 - INFO - Processed 5100 files. Horses: 69066, Trainers: 7236, Owners: 27631
+2026-03-29 21:26:14,664 - INFO - Processed 1400 files. Horses: 37299, Trainers: 4782, Owners: 15219
+2026-03-29 21:26:31,731 - INFO - Processed 1500 files. Horses: 38821, Trainers: 4961, Owners: 15890
+2026-03-29 21:26:36,558 - INFO - Processed 5200 files. Horses: 69598, Trainers: 7256, Owners: 27790
+2026-03-29 21:26:51,043 - INFO - Processed 1600 files. Horses: 40201, Trainers: 5089, Owners: 16450
+2026-03-29 21:27:00,671 - INFO - Starting horse data extraction from 2023 PPs
+2026-03-29 21:27:00,671 - INFO - Using 45 workers with high-memory optimization
+2026-03-29 21:27:00,896 - INFO - Found 5925 XML files to process
+2026-03-29 21:27:00,951 - INFO - Processed 5300 files. Horses: 70125, Trainers: 7292, Owners: 27931
+2026-03-29 21:27:01,246 - ERROR - Error processing file ('2023 PPs\\SIMD20230101AQU_USA.xml.zip', '__MACOSX/._SIMD20230101AQU_USA.xml'): 'utf-8' codec can't decode byte 0x80 in position 37: invalid start byte
+2026-03-29 21:27:09,986 - INFO - Performing batch database insert...
+2026-03-29 21:27:25,246 - INFO - Processed 100 files. Horses: 6818, Trainers: 2056, Owners: 4121
+2026-03-29 21:27:27,489 - INFO - Processed 5400 files. Horses: 70656, Trainers: 7310, Owners: 28097
+2026-03-29 21:27:42,441 - INFO - Processed 200 files. Horses: 13636, Trainers: 2832, Owners: 6777
+2026-03-29 21:27:50,778 - INFO - Processed 5500 files. Horses: 71234, Trainers: 7336, Owners: 28278
+2026-03-29 21:27:59,410 - INFO - Processed 300 files. Horses: 18356, Trainers: 3176, Owners: 8395
+2026-03-29 21:28:17,389 - INFO - Processed 5600 files. Horses: 71822, Trainers: 7362, Owners: 28452
+2026-03-29 21:28:17,398 - INFO - Processed 400 files. Horses: 21550, Trainers: 3346, Owners: 9481
+2026-03-29 21:28:34,230 - INFO - Processed 500 files. Horses: 23848, Trainers: 3526, Owners: 10233
+2026-03-29 21:28:42,550 - INFO - Processed 5700 files. Horses: 72335, Trainers: 7378, Owners: 28645
+2026-03-29 21:28:52,922 - INFO - Processed 600 files. Horses: 25510, Trainers: 3651, Owners: 10791
+2026-03-29 21:29:10,997 - INFO - Processed 700 files. Horses: 26872, Trainers: 3720, Owners: 11284
+2026-03-29 21:29:11,064 - INFO - Processed 5800 files. Horses: 72872, Trainers: 7395, Owners: 28823
+2026-03-29 21:29:28,851 - INFO - Processed 5900 files. Horses: 73495, Trainers: 7440, Owners: 28985
+2026-03-29 21:29:30,793 - INFO - Processed 800 files. Horses: 28548, Trainers: 3995, Owners: 11889
+2026-03-29 21:29:31,652 - INFO - Inserted 73903 horses
+2026-03-29 21:29:31,941 - INFO - Inserted 7445 trainers
+2026-03-29 21:29:33,061 - INFO - Inserted 29101 owners
+2026-03-29 21:29:33,389 - INFO - ============================================================
+2026-03-29 21:29:33,389 - INFO - EXTRACTION COMPLETE
+2026-03-29 21:29:33,389 - INFO - ============================================================
+2026-03-29 21:29:33,389 - INFO - Files processed: 5924
+2026-03-29 21:29:33,389 - INFO - Horses extracted: 73903
+2026-03-29 21:29:33,389 - INFO - Trainers extracted: 7445
+2026-03-29 21:29:33,389 - INFO - Owners extracted: 29101
+2026-03-29 21:29:33,389 - INFO - Errors: 1
+2026-03-29 21:29:33,389 - INFO - Duration: 1187.71 seconds
+2026-03-29 21:29:33,389 - INFO - Files per second: 4.99
+2026-03-29 21:29:33,389 - INFO - ============================================================
+2026-03-29 21:29:48,142 - INFO - Processed 900 files. Horses: 29944, Trainers: 4104, Owners: 12505
+2026-03-29 21:30:07,329 - INFO - Processed 1000 files. Horses: 31735, Trainers: 4271, Owners: 13148
+2026-03-29 21:30:24,748 - INFO - Processed 1100 files. Horses: 33025, Trainers: 4364, Owners: 13652
+2026-03-29 21:30:43,866 - INFO - Processed 1200 files. Horses: 34274, Trainers: 4486, Owners: 14175
+2026-03-29 21:31:04,373 - INFO - Processed 1300 files. Horses: 35903, Trainers: 4647, Owners: 14781
+2026-03-29 21:31:25,649 - INFO - Processed 1400 files. Horses: 37290, Trainers: 4762, Owners: 15213
+2026-03-29 21:31:43,080 - INFO - Processed 1500 files. Horses: 38863, Trainers: 4941, Owners: 15889
+2026-03-29 21:32:02,784 - INFO - Processed 1600 files. Horses: 40243, Trainers: 5068, Owners: 16453
+2026-03-29 21:32:22,742 - INFO - Processed 1700 files. Horses: 41833, Trainers: 5234, Owners: 17097
+2026-03-29 21:32:42,712 - INFO - Processed 1800 files. Horses: 43225, Trainers: 5398, Owners: 17766
+2026-03-29 21:33:00,460 - INFO - Processed 1900 files. Horses: 45074, Trainers: 5586, Owners: 18532
+2026-03-29 21:33:20,104 - INFO - Processed 2000 files. Horses: 46345, Trainers: 5678, Owners: 19046
+2026-03-29 21:33:39,770 - INFO - Processed 2100 files. Horses: 47819, Trainers: 5786, Owners: 19622
+2026-03-29 21:34:00,573 - INFO - Processed 2200 files. Horses: 49245, Trainers: 5875, Owners: 20154
+2026-03-29 21:34:18,122 - INFO - Processed 2300 files. Horses: 50557, Trainers: 5962, Owners: 20642
+2026-03-29 21:34:37,571 - INFO - Processed 2400 files. Horses: 51632, Trainers: 6041, Owners: 21041
+2026-03-29 21:34:58,585 - INFO - Processed 2500 files. Horses: 52513, Trainers: 6116, Owners: 21405
+2026-03-29 21:35:20,835 - INFO - Processed 2600 files. Horses: 53551, Trainers: 6221, Owners: 21841
+2026-03-29 21:35:37,715 - INFO - Processed 2700 files. Horses: 54415, Trainers: 6303, Owners: 22206
+2026-03-29 21:35:59,903 - INFO - Processed 2800 files. Horses: 55696, Trainers: 6426, Owners: 22760
+2026-03-29 21:36:22,027 - INFO - Processed 2900 files. Horses: 56544, Trainers: 6501, Owners: 23071
+2026-03-29 21:36:42,336 - INFO - Processed 3000 files. Horses: 57215, Trainers: 6537, Owners: 23323
+2026-03-29 21:37:00,859 - INFO - Processed 3100 files. Horses: 57777, Trainers: 6581, Owners: 23541
+2026-03-29 21:37:23,338 - INFO - Processed 3200 files. Horses: 58367, Trainers: 6628, Owners: 23793
+2026-03-29 21:37:44,073 - INFO - Processed 3300 files. Horses: 59027, Trainers: 6673, Owners: 24028
+2026-03-29 21:38:04,105 - INFO - Processed 3400 files. Horses: 59700, Trainers: 6705, Owners: 24286
+2026-03-29 21:38:22,560 - INFO - Processed 3500 files. Horses: 60307, Trainers: 6742, Owners: 24504
+2026-03-29 21:38:45,563 - INFO - Processed 3600 files. Horses: 61026, Trainers: 6767, Owners: 24772
+2026-03-29 21:39:06,063 - INFO - Processed 3700 files. Horses: 61603, Trainers: 6789, Owners: 24959
+2026-03-29 21:39:27,390 - INFO - Processed 3800 files. Horses: 62123, Trainers: 6817, Owners: 25144
+2026-03-29 21:39:46,933 - INFO - Processed 3900 files. Horses: 62860, Trainers: 6875, Owners: 25367
+2026-03-29 21:40:06,511 - INFO - Processed 4000 files. Horses: 63376, Trainers: 6911, Owners: 25546
+2026-03-29 21:40:27,809 - INFO - Processed 4100 files. Horses: 63886, Trainers: 6936, Owners: 25743
+2026-03-29 21:40:49,215 - INFO - Processed 4200 files. Horses: 64353, Trainers: 6960, Owners: 25938
+2026-03-29 21:41:10,265 - INFO - Processed 4300 files. Horses: 64912, Trainers: 6983, Owners: 26132
+2026-03-29 21:41:30,074 - INFO - Processed 4400 files. Horses: 65430, Trainers: 7013, Owners: 26333
+2026-03-29 21:41:52,278 - INFO - Processed 4500 files. Horses: 65927, Trainers: 7059, Owners: 26515
+2026-03-29 21:42:13,294 - INFO - Processed 4600 files. Horses: 66466, Trainers: 7093, Owners: 26675
+2026-03-29 21:42:32,041 - INFO - Processed 4700 files. Horses: 66971, Trainers: 7119, Owners: 26876
+2026-03-29 21:42:52,216 - INFO - Processed 4800 files. Horses: 67435, Trainers: 7164, Owners: 27071
+2026-03-29 21:43:14,093 - INFO - Processed 4900 files. Horses: 67896, Trainers: 7184, Owners: 27259
+2026-03-29 21:43:35,662 - INFO - Processed 5000 files. Horses: 68540, Trainers: 7211, Owners: 27484
+2026-03-29 21:43:55,694 - INFO - Processed 5100 files. Horses: 69068, Trainers: 7228, Owners: 27633
+2026-03-29 21:44:22,276 - INFO - Processed 5200 files. Horses: 69608, Trainers: 7249, Owners: 27791
+2026-03-29 21:44:46,469 - INFO - Processed 5300 files. Horses: 70120, Trainers: 7285, Owners: 27927
+2026-03-29 21:45:11,618 - INFO - Processed 5400 files. Horses: 70656, Trainers: 7303, Owners: 28099
+2026-03-29 21:45:33,341 - INFO - Processed 5500 files. Horses: 71231, Trainers: 7329, Owners: 28280
+2026-03-29 21:45:58,007 - INFO - Processed 5600 files. Horses: 71811, Trainers: 7356, Owners: 28456
+2026-03-29 21:46:21,769 - INFO - Processed 5700 files. Horses: 72337, Trainers: 7373, Owners: 28650
+2026-03-29 21:46:48,293 - INFO - Processed 5800 files. Horses: 72886, Trainers: 7390, Owners: 28825
+2026-03-29 21:47:04,032 - INFO - Processed 5900 files. Horses: 73496, Trainers: 7434, Owners: 28986
+2026-03-29 21:47:05,994 - INFO - Inserted 73910 horses
+2026-03-29 21:47:06,269 - INFO - Inserted 7439 trainers
+2026-03-29 21:47:07,343 - INFO - Inserted 29104 owners
+2026-03-29 21:47:07,669 - INFO - ============================================================
+2026-03-29 21:47:07,669 - INFO - EXTRACTION COMPLETE
+2026-03-29 21:47:07,669 - INFO - ============================================================
+2026-03-29 21:47:07,669 - INFO - Files processed: 5924
+2026-03-29 21:47:07,669 - INFO - Horses extracted: 73910
+2026-03-29 21:47:07,669 - INFO - Trainers extracted: 7439
+2026-03-29 21:47:07,669 - INFO - Owners extracted: 29104
+2026-03-29 21:47:07,669 - INFO - Errors: 1
+2026-03-29 21:47:07,669 - INFO - Duration: 1207.00 seconds
+2026-03-29 21:47:07,669 - INFO - Files per second: 4.91
+2026-03-29 21:47:07,669 - INFO - ============================================================
