@@ -23,12 +23,16 @@ from .rolling_stats import RollingStatsCalculator
 from .track_bias import TrackBiasCalculator
 from .validation import LeakageValidator
 from .feature_engine import FeatureEngine
+from .pace_calculator import PaceCalculator
+from .speed_adjustments import SpeedAdjustmentCalculator
 
 __all__ = [
     'RollingStatsCalculator',
     'TrackBiasCalculator',
     'LeakageValidator',
     'FeatureEngine',
+    'PaceCalculator',
+    'SpeedAdjustmentCalculator',
 ]
 
 __version__ = '1.0.0'

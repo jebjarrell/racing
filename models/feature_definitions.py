@@ -67,6 +67,15 @@ FEATURE_COLUMNS: List[str] = [
 
     # Base (3 features)
     'morning_line_odds', 'age_at_race', 'class_level',
+
+    # Pace features (8 features)
+    'horse_pace_early', 'horse_pace_mid', 'horse_pace_late',
+    'horse_pace_style', 'race_pace_scenario', 'horse_pace_fit_score',
+    'field_early_speed_count', 'horse_is_lone_speed',
+
+    # Speed adjustments (4 features)
+    'horse_speed_track_adjusted', 'horse_speed_surface_adjusted',
+    'horse_speed_class_adjusted', 'daily_track_variant',
 ]
 
 # Target column for supervised learning
@@ -445,6 +454,110 @@ FEATURE_DEFINITIONS: Dict[str, FeatureDefinition] = {
         min_value=1,
         max_value=10
     ),
+
+    # =============================================================================
+    # PACE FEATURES (8 features)
+    # =============================================================================
+    'horse_pace_early': FeatureDefinition(
+        name='horse_pace_early',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Average early pace figure (first call position, 0-10 scale) over last 5 races',
+        min_value=0.0,
+        max_value=10.0
+    ),
+    'horse_pace_mid': FeatureDefinition(
+        name='horse_pace_mid',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Average mid pace figure (second call position, 0-10 scale) over last 5 races',
+        min_value=0.0,
+        max_value=10.0
+    ),
+    'horse_pace_late': FeatureDefinition(
+        name='horse_pace_late',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Average late pace gain/loss (positive = closes ground, negative = fades)',
+        min_value=-5.0,
+        max_value=5.0
+    ),
+    'horse_pace_style': FeatureDefinition(
+        name='horse_pace_style',
+        feature_type=FeatureType.NUMERIC,
+        default_value=2,
+        description='Running style classification (1=E early, 2=EP presser, 3=PS stalker, 4=S closer)',
+        min_value=1,
+        max_value=4
+    ),
+    'race_pace_scenario': FeatureDefinition(
+        name='race_pace_scenario',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Predicted pace scenario (positive = hot/contested, negative = slow/lone speed)',
+        min_value=-3.0,
+        max_value=3.0
+    ),
+    'horse_pace_fit_score': FeatureDefinition(
+        name='horse_pace_fit_score',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='How well running style fits pace scenario (positive = favorable)',
+        min_value=-3.0,
+        max_value=3.0
+    ),
+    'field_early_speed_count': FeatureDefinition(
+        name='field_early_speed_count',
+        feature_type=FeatureType.NUMERIC,
+        default_value=1,
+        description='Number of E-type (early speed) horses in the field',
+        min_value=0,
+        max_value=14
+    ),
+    'horse_is_lone_speed': FeatureDefinition(
+        name='horse_is_lone_speed',
+        feature_type=FeatureType.BINARY,
+        default_value=0,
+        description='Binary: 1 if this horse is the only E-type in the field',
+        min_value=0,
+        max_value=1
+    ),
+
+    # =============================================================================
+    # SPEED ADJUSTMENT FEATURES (4 features)
+    # =============================================================================
+    'horse_speed_track_adjusted': FeatureDefinition(
+        name='horse_speed_track_adjusted',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Best speed figure (90 days) adjusted for daily track variant',
+        min_value=0.0,
+        max_value=150.0
+    ),
+    'horse_speed_surface_adjusted': FeatureDefinition(
+        name='horse_speed_surface_adjusted',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Track-adjusted speed with surface conversion penalty applied',
+        min_value=0.0,
+        max_value=150.0
+    ),
+    'horse_speed_class_adjusted': FeatureDefinition(
+        name='horse_speed_class_adjusted',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Surface-adjusted speed with class level differential penalty',
+        min_value=0.0,
+        max_value=150.0
+    ),
+    'daily_track_variant': FeatureDefinition(
+        name='daily_track_variant',
+        feature_type=FeatureType.NUMERIC,
+        default_value=0.0,
+        description='Track variant for current race (previous day or 7-day trailing avg)',
+        min_value=-15.0,
+        max_value=15.0
+    ),
 }
 
 
@@ -592,6 +705,8 @@ FEATURE_SUMMARY = {
     'equipment': 4,
     'field_relative': 4,
     'base': 3,
+    'pace': 8,
+    'speed_adjustments': 4,
     'numeric': len(get_numeric_features()),
     'binary': len(get_binary_features()),
     'categorical': len(get_categorical_features()),

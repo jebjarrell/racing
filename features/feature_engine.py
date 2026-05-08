@@ -30,6 +30,8 @@ from typing import Dict, List, Optional, Any, Tuple
 
 from .rolling_stats import RollingStatsCalculator, HorseForm
 from .track_bias import TrackBiasCalculator, PostPositionBias, SpeedBias
+from .pace_calculator import PaceCalculator, HorsePaceData
+from .speed_adjustments import SpeedAdjustmentCalculator
 
 logger = logging.getLogger(__name__)
 
@@ -221,6 +223,8 @@ class FeatureEngine:
             db_path=db_path,
             min_sample_size=self.sample_thresholds['track_bias']
         )
+        self.pace_calc = PaceCalculator(db_path=db_path)
+        self.speed_adj = SpeedAdjustmentCalculator(db_path=db_path)
 
     def _get_connection(self) -> sqlite3.Connection:
         """Get or create database connection with performance optimizations."""
@@ -242,6 +246,8 @@ class FeatureEngine:
             self._conn = None
         self.rolling_stats.close()
         self.track_bias.close()
+        self.pace_calc.close()
+        self.speed_adj.close()
 
     def get_race_context(self, race_id: str) -> Optional[RaceContext]:
         """
@@ -548,6 +554,61 @@ class FeatureEngine:
             'purse_usd': race_context.purse_usd,
         }
 
+    def calculate_pace_features(
+        self,
+        registration_number: str,
+        race_date: date
+    ) -> Dict[str, Any]:
+        """
+        Calculate horse-level pace features.
+
+        POINT-IN-TIME: Only uses data from before race_date.
+
+        Args:
+            registration_number: Horse registration number
+            race_date: Target race date
+
+        Returns:
+            Dict of horse-level pace features (4 features).
+            Field-level pace features are added later in add_pace_field_features().
+        """
+        pace_data = self.pace_calc.calculate_horse_pace(registration_number, race_date)
+        return pace_data.to_dict()
+
+    def calculate_speed_adjustment_features(
+        self,
+        registration_number: str,
+        race_date: date,
+        race_context: 'RaceContext'
+    ) -> Dict[str, Any]:
+        """
+        Calculate speed adjustment features.
+
+        POINT-IN-TIME: Only uses data from before race_date.
+
+        Args:
+            registration_number: Horse registration number
+            race_date: Target race date
+            race_context: Race context for track/surface/class info
+
+        Returns:
+            Dict of speed adjustment features (4 features)
+        """
+        adj = self.speed_adj.calculate_adjusted_speeds(
+            registration_number=registration_number,
+            race_date=race_date,
+            current_track_code=race_context.track_code,
+            current_course_type=race_context.course_type,
+            current_class_level=race_context.class_level
+        )
+        # Return only the model features, not diagnostic keys
+        return {
+            'horse_speed_track_adjusted': adj['horse_speed_track_adjusted'],
+            'horse_speed_surface_adjusted': adj['horse_speed_surface_adjusted'],
+            'horse_speed_class_adjusted': adj['horse_speed_class_adjusted'],
+            'daily_track_variant': adj['daily_track_variant'],
+        }
+
     def calculate_entry_features(
         self,
         race_id: str,
@@ -614,6 +675,18 @@ class FeatureEngine:
         class_features = self.calculate_class_features(race_context, horse_features)
         features.update(class_features)
 
+        # Pace features (horse-level; field-level added later in calculate_all_features)
+        pace_features = self.calculate_pace_features(
+            entry.registration_number, race_date
+        )
+        features.update(pace_features)
+
+        # Speed adjustment features
+        speed_adj_features = self.calculate_speed_adjustment_features(
+            entry.registration_number, race_date, race_context
+        )
+        features.update(speed_adj_features)
+
         return features
 
     def calculate_all_features(
@@ -644,8 +717,58 @@ class FeatureEngine:
             if features:
                 features_list.append(features)
 
+        # Add field-level pace features (race_pace_scenario, pace_fit, lone_speed)
+        features_list = self.add_pace_field_features(features_list)
+
         # Add field-relative features
         features_list = self.add_field_relative_features(features_list)
+
+        return features_list
+
+    def add_pace_field_features(
+        self,
+        features_list: List[Dict[str, Any]]
+    ) -> List[Dict[str, Any]]:
+        """
+        Add field-level pace features computed from all entries' horse-level pace data.
+
+        Must be called AFTER all individual entries have horse_pace_style computed.
+        Adds: race_pace_scenario, field_early_speed_count, horse_pace_fit_score,
+        horse_is_lone_speed.
+
+        Args:
+            features_list: List of feature dicts for race entries
+
+        Returns:
+            Updated list with field-level pace features added
+        """
+        if not features_list:
+            return features_list
+
+        field_size = len(features_list)
+
+        # Calculate field-level pace data from individual pace styles
+        field_pace = self.pace_calc.calculate_field_pace_features(
+            entry_pace_data=features_list,
+            field_size=field_size
+        )
+
+        race_pace_scenario = field_pace['race_pace_scenario']
+        field_early_speed_count = field_pace['field_early_speed_count']
+
+        # Apply field-level features to each entry
+        for f in features_list:
+            f['race_pace_scenario'] = race_pace_scenario
+            f['field_early_speed_count'] = field_early_speed_count
+
+            # Per-entry pace fit and lone speed
+            style = f.get('horse_pace_style', 2)
+            f['horse_pace_fit_score'] = self.pace_calc.calculate_pace_fit(
+                style, race_pace_scenario
+            )
+            f['horse_is_lone_speed'] = int(self.pace_calc.is_lone_speed(
+                style, field_early_speed_count
+            ))
 
         return features_list
 
